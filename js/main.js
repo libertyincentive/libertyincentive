@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       planTrip: "Plan Your Trip",
 
       heroEyebrow: "Welcome to Armenia",
-      heroTitleMain: "Armenia,",
+      heroTitleMain: "Armenia",
       heroTitleOutline: "Beyond the Ordinary",
 
       heroDescription:
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       planTrip: "Պլանավորել ուղևորությունը",
 
       heroEyebrow: "Բարի գալուստ Հայաստան",
-      heroTitleMain: "Հայաստան,",
+      heroTitleMain: "Հայաստան",
       heroTitleOutline: "Սովորականից այն կողմ",
 
       heroDescription:
