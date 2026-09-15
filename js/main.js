@@ -1,48 +1,18 @@
+/* =========================================================
+   LIBERTY INCENTIVE — MAIN JAVASCRIPT
+   ========================================================= */
+
 document.addEventListener("DOMContentLoaded", function () {
 
-  /* ======================================================
-     ELEMENTS
-     ====================================================== */
-
-  const siteHeader =
-    document.getElementById("site-header");
-
-  const mobileMenuButton =
-    document.getElementById("mobile-menu-button");
-
-  const mobileNavigation =
-    document.getElementById("mobile-navigation");
-
-  const languageButton =
-    document.getElementById("language-button");
-
-  const currentLanguage =
-    document.getElementById("current-language");
-
-  const languageMenu =
-    document.getElementById("language-menu");
-
-  const languageOptions =
-    document.querySelectorAll("[data-language]");
-
-  const mobileNavigationLinks =
-    document.querySelectorAll(".mobile-navigation a");
-
-  const heroVideo =
-    document.querySelector(".hero-video");
-
-
-  /* ======================================================
-     TRANSLATIONS
-     ====================================================== */
+  /* =======================================================
+     1. TRANSLATIONS
+     ======================================================= */
 
   const translations = {
-
     en: {
-
       navAbout: "About Us",
       navArmenia: "Armenia",
-      navDestinations: "Destinations",
+      navDestinations: "Other Destinations",
       navBlog: "Blog",
       navGallery: "Gallery",
       navTeam: "Our Team",
@@ -67,10 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Tailor-made journeys, authentic experiences and unforgettable moments created by local experts.",
 
       discoverArmenia: "Discover Armenia",
-
-      sideLabel:
-        "Since 2011 · Yerevan, Armenia",
-
+      sideLabel: "Since 2011 · Yerevan, Armenia",
       explore: "Explore",
 
       companyName: "Liberty Incentive",
@@ -80,15 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
       nextSectionDescription:
         "The next homepage sections will be added here step by step."
-
     },
 
-
     hy: {
-
       navAbout: "Մեր մասին",
       navArmenia: "Հայաստան",
-      navDestinations: "Ուղղություններ",
+      navDestinations: "Այլ ուղղություններ",
       navBlog: "Բլոգ",
       navGallery: "Պատկերասրահ",
       navTeam: "Մեր թիմը",
@@ -113,10 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Անհատականացված ճամփորդություններ, իսկական փորձառություններ և անմոռանալի պահեր՝ ստեղծված տեղացի մասնագետների կողմից։",
 
       discoverArmenia: "Բացահայտեք Հայաստանը",
-
-      sideLabel:
-        "2011 թվականից · Երևան, Հայաստան",
-
+      sideLabel: "2011 թվականից · Երևան, Հայաստան",
       explore: "Բացահայտել",
 
       companyName: "Liberty Incentive",
@@ -125,18 +86,56 @@ document.addEventListener("DOMContentLoaded", function () {
         "Ձեր ճանապարհորդությունը Հայաստանում սկսվում է այստեղ։",
 
       nextSectionDescription:
-        "Գլխավոր էջի հաջորդ բաժինները կավելացվեն այստեղ՝ քայլ առ քայլ։"
-
+        "Գլխավոր էջի հաջորդ բաժինները կավելացվեն այստեղ քայլ առ քայլ։"
     }
-
   };
 
 
-  /* ======================================================
-     APPLY LANGUAGE
-     ====================================================== */
+  /* =======================================================
+     2. SELECT PAGE ELEMENTS
+     ======================================================= */
 
-  function applyLanguage(language) {
+  const siteHeader =
+    document.getElementById("site-header");
+
+  const languageButton =
+    document.getElementById("language-button");
+
+  const languageMenu =
+    document.getElementById("language-menu");
+
+  const currentLanguageText =
+    document.getElementById("current-language");
+
+  const languageOptions =
+    document.querySelectorAll("[data-language]");
+
+  const mobileMenuButton =
+    document.getElementById("mobile-menu-button");
+
+  const mobileNavigation =
+    document.getElementById("mobile-navigation");
+
+  const mobileDestinationsButton =
+    document.getElementById("mobile-destinations-button");
+
+  const mobileDestinationsMenu =
+    document.getElementById("mobile-destinations-menu");
+
+  const mobileNavigationLinks =
+    document.querySelectorAll(
+      ".mobile-navigation a"
+    );
+
+  const heroVideo =
+    document.querySelector(".hero-video");
+
+
+  /* =======================================================
+     3. CHANGE WEBSITE LANGUAGE
+     ======================================================= */
+
+  function changeLanguage(language) {
 
     const selectedTranslations =
       translations[language];
@@ -145,100 +144,148 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    const translatableElements =
+      document.querySelectorAll("[data-i18n]");
 
-    document
-      .querySelectorAll("[data-i18n]")
-      .forEach(function (element) {
+    translatableElements.forEach(function (element) {
 
-        const translationKey =
-          element.getAttribute("data-i18n");
+      const translationKey =
+        element.getAttribute("data-i18n");
 
-        const translatedText =
+      if (selectedTranslations[translationKey]) {
+        element.textContent =
           selectedTranslations[translationKey];
+      }
 
-        if (translatedText) {
-          element.textContent = translatedText;
-        }
+    });
 
-      });
+    document.documentElement.lang =
+      language === "hy" ? "hy" : "en";
 
-
-    if (language === "hy") {
-
-      currentLanguage.textContent = "AM";
-
-      document.documentElement.lang = "hy";
-
-      document.title =
-        "Liberty Incentive | Բացահայտեք Հայաստանը";
-
-    } else {
-
-      currentLanguage.textContent = "EN";
-
-      document.documentElement.lang = "en";
-
-      document.title =
-        "Liberty Incentive | Discover Armenia";
-
+    if (currentLanguageText) {
+      currentLanguageText.textContent =
+        language === "hy" ? "AM" : "EN";
     }
 
+    try {
+      localStorage.setItem(
+        "libertyLanguage",
+        language
+      );
+    } catch (error) {
+      console.log(
+        "The language preference could not be saved."
+      );
+    }
 
-    localStorage.setItem(
-      "libertyLanguage",
-      language
+    closeLanguageMenu();
+  }
+
+
+  /* =======================================================
+     4. LOAD SAVED LANGUAGE
+     ======================================================= */
+
+  let savedLanguage = "en";
+
+  try {
+    savedLanguage =
+      localStorage.getItem("libertyLanguage") || "en";
+  } catch (error) {
+    savedLanguage = "en";
+  }
+
+  changeLanguage(savedLanguage);
+
+
+  /* =======================================================
+     5. LANGUAGE MENU
+     ======================================================= */
+
+  function openLanguageMenu() {
+
+    if (!languageMenu || !languageButton) {
+      return;
+    }
+
+    languageMenu.classList.add("open");
+
+    languageButton.setAttribute(
+      "aria-expanded",
+      "true"
     );
-
   }
 
+  function closeLanguageMenu() {
 
-  /* ======================================================
-     LOAD SAVED LANGUAGE
-     ====================================================== */
+    if (!languageMenu || !languageButton) {
+      return;
+    }
 
-  const savedLanguage =
-    localStorage.getItem("libertyLanguage") || "en";
+    languageMenu.classList.remove("open");
 
-  applyLanguage(savedLanguage);
+    languageButton.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+  }
 
+  function toggleLanguageMenu() {
 
-  /* ======================================================
-     SCROLLING HEADER
-     ====================================================== */
+    if (!languageMenu) {
+      return;
+    }
 
-  function updateHeader() {
+    const menuIsOpen =
+      languageMenu.classList.contains("open");
 
-    if (window.scrollY > 30) {
-
-      siteHeader.classList.add("scrolled");
-
+    if (menuIsOpen) {
+      closeLanguageMenu();
     } else {
-
-      siteHeader.classList.remove("scrolled");
-
+      openLanguageMenu();
     }
-
   }
 
-  updateHeader();
+  if (languageButton) {
 
-  window.addEventListener(
-    "scroll",
-    updateHeader,
-    {
-      passive: true
-    }
-  );
+    languageButton.addEventListener(
+      "click",
+      function (event) {
+
+        event.stopPropagation();
+
+        toggleLanguageMenu();
+      }
+    );
+  }
+
+  languageOptions.forEach(function (option) {
+
+    option.addEventListener(
+      "click",
+      function () {
+
+        const selectedLanguage =
+          option.getAttribute("data-language");
+
+        changeLanguage(selectedLanguage);
+      }
+    );
+  });
 
 
-  /* ======================================================
-     MOBILE MENU
-     ====================================================== */
+  /* =======================================================
+     6. MOBILE MAIN MENU
+     ======================================================= */
 
   function openMobileMenu() {
 
-    mobileMenuButton.classList.add("active");
+    if (!mobileNavigation || !mobileMenuButton) {
+      return;
+    }
+
     mobileNavigation.classList.add("open");
+    mobileMenuButton.classList.add("active");
 
     mobileMenuButton.setAttribute(
       "aria-expanded",
@@ -250,15 +297,21 @@ document.addEventListener("DOMContentLoaded", function () {
       "Close navigation menu"
     );
 
-    document.body.classList.add("menu-open");
+    document.body.classList.add(
+      "mobile-menu-open"
+    );
 
+    closeLanguageMenu();
   }
-
 
   function closeMobileMenu() {
 
-    mobileMenuButton.classList.remove("active");
+    if (!mobileNavigation || !mobileMenuButton) {
+      return;
+    }
+
     mobileNavigation.classList.remove("open");
+    mobileMenuButton.classList.remove("active");
 
     mobileMenuButton.setAttribute(
       "aria-expanded",
@@ -270,201 +323,224 @@ document.addEventListener("DOMContentLoaded", function () {
       "Open navigation menu"
     );
 
-    document.body.classList.remove("menu-open");
+    document.body.classList.remove(
+      "mobile-menu-open"
+    );
 
+    closeMobileDestinations();
+  }
+
+  function toggleMobileMenu() {
+
+    if (!mobileNavigation) {
+      return;
+    }
+
+    const menuIsOpen =
+      mobileNavigation.classList.contains("open");
+
+    if (menuIsOpen) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  }
+
+  if (mobileMenuButton) {
+
+    mobileMenuButton.addEventListener(
+      "click",
+      function (event) {
+
+        event.stopPropagation();
+
+        toggleMobileMenu();
+      }
+    );
   }
 
 
-  mobileMenuButton.addEventListener(
-    "click",
-    function () {
+  /* =======================================================
+     7. MOBILE DESTINATIONS SUBMENU
+     ======================================================= */
 
-      const menuIsOpen =
-        mobileNavigation.classList.contains("open");
+  function openMobileDestinations() {
 
-      if (menuIsOpen) {
-
-        closeMobileMenu();
-
-      } else {
-
-        openMobileMenu();
-
-      }
-
+    if (
+      !mobileDestinationsMenu ||
+      !mobileDestinationsButton
+    ) {
+      return;
     }
-  );
 
+    mobileDestinationsMenu.classList.add("open");
 
-  mobileNavigationLinks.forEach(
-    function (link) {
-
-      link.addEventListener(
-        "click",
-        function () {
-
-          closeMobileMenu();
-
-        }
-      );
-
-    }
-  );
-
-
-  /* ======================================================
-     LANGUAGE MENU
-     ====================================================== */
-
-  function openLanguageMenu() {
-
-    languageMenu.classList.add("open");
-
-    languageButton.setAttribute(
+    mobileDestinationsButton.setAttribute(
       "aria-expanded",
       "true"
     );
-
   }
 
+  function closeMobileDestinations() {
 
-  function closeLanguageMenu() {
+    if (
+      !mobileDestinationsMenu ||
+      !mobileDestinationsButton
+    ) {
+      return;
+    }
 
-    languageMenu.classList.remove("open");
+    mobileDestinationsMenu.classList.remove("open");
 
-    languageButton.setAttribute(
+    mobileDestinationsButton.setAttribute(
       "aria-expanded",
       "false"
     );
+  }
 
+  function toggleMobileDestinations() {
+
+    if (!mobileDestinationsMenu) {
+      return;
+    }
+
+    const destinationsAreOpen =
+      mobileDestinationsMenu.classList.contains("open");
+
+    if (destinationsAreOpen) {
+      closeMobileDestinations();
+    } else {
+      openMobileDestinations();
+    }
+  }
+
+  if (mobileDestinationsButton) {
+
+    mobileDestinationsButton.addEventListener(
+      "click",
+      function (event) {
+
+        event.stopPropagation();
+
+        toggleMobileDestinations();
+      }
+    );
   }
 
 
-  languageButton.addEventListener(
-    "click",
-    function (event) {
+  /* =======================================================
+     8. CLOSE MOBILE MENU AFTER CHOOSING A LINK
+     ======================================================= */
 
-      event.stopPropagation();
+  mobileNavigationLinks.forEach(function (link) {
 
-      const menuIsOpen =
-        languageMenu.classList.contains("open");
+    link.addEventListener(
+      "click",
+      function () {
 
-      if (menuIsOpen) {
-
-        closeLanguageMenu();
-
-      } else {
-
-        openLanguageMenu();
-
+        closeMobileMenu();
       }
+    );
+  });
 
+
+  /* =======================================================
+     9. HEADER STYLE WHILE SCROLLING
+     ======================================================= */
+
+  function updateHeaderOnScroll() {
+
+    if (!siteHeader) {
+      return;
     }
+
+    if (window.scrollY > 30) {
+      siteHeader.classList.add("scrolled");
+    } else {
+      siteHeader.classList.remove("scrolled");
+    }
+  }
+
+  window.addEventListener(
+    "scroll",
+    updateHeaderOnScroll,
+    { passive: true }
   );
 
-
-  languageOptions.forEach(
-    function (option) {
-
-      option.addEventListener(
-        "click",
-        function () {
-
-          const selectedLanguage =
-            option.getAttribute("data-language");
-
-          applyLanguage(selectedLanguage);
-          closeLanguageMenu();
-
-        }
-      );
-
-    }
-  );
+  updateHeaderOnScroll();
 
 
-  /* ======================================================
-     CLOSE LANGUAGE MENU WHEN CLICKING OUTSIDE
-     ====================================================== */
+  /* =======================================================
+     10. CLOSE MENUS WHEN CLICKING OUTSIDE
+     ======================================================= */
 
   document.addEventListener(
     "click",
     function (event) {
 
-      const clickInsideLanguageSelector =
+      const clickedInsideLanguageSelector =
         event.target.closest(".language-selector");
 
-      if (!clickInsideLanguageSelector) {
-
+      if (!clickedInsideLanguageSelector) {
         closeLanguageMenu();
-
       }
-
     }
   );
 
 
-  /* ======================================================
-     ESCAPE KEY
-     ====================================================== */
+  /* =======================================================
+     11. CLOSE MENUS WITH ESCAPE KEY
+     ======================================================= */
 
   document.addEventListener(
     "keydown",
     function (event) {
 
       if (event.key === "Escape") {
-
-        closeMobileMenu();
         closeLanguageMenu();
-
+        closeMobileMenu();
       }
-
     }
   );
 
 
-  /* ======================================================
-     WINDOW RESIZE
-     ====================================================== */
+  /* =======================================================
+     12. RESET MOBILE MENU WHEN SCREEN BECOMES DESKTOP
+     ======================================================= */
 
   window.addEventListener(
     "resize",
     function () {
 
-      if (window.innerWidth > 1240) {
-
+      if (window.innerWidth > 980) {
         closeMobileMenu();
-
       }
-
     }
   );
 
 
-  /* ======================================================
-     HERO VIDEO
-     ====================================================== */
+  /* =======================================================
+     13. HERO VIDEO PLAYBACK
+     ======================================================= */
 
   if (heroVideo) {
 
     heroVideo.muted = true;
 
-    const playPromise =
+    const videoPlayback =
       heroVideo.play();
 
-    if (playPromise !== undefined) {
-
-      playPromise.catch(function () {
-
-        /*
-          Some browsers may wait for user interaction
-          before starting the background video.
-        */
-
-      });
-
+    if (
+      videoPlayback !== undefined
+    ) {
+      videoPlayback.catch(
+        function () {
+          console.log(
+            "The browser is waiting before playing the video."
+          );
+        }
+      );
     }
-
   }
 
 });
