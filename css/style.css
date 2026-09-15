@@ -1,32 +1,39 @@
 /* =========================================================
-   LIBERTY INCENTIVE — MAIN WEBSITE STYLES
+   LIBERTY INCENTIVE — MAIN STYLESHEET
    ========================================================= */
 
 
-/* ---------- Brand variables ---------- */
+/* =========================================================
+   1. VARIABLES
+   ========================================================= */
 
 :root {
-  --navy: #071d35;
-  --navy-light: #0d3156;
-  --blue: #0295ce;
-  --orange: #e79a22;
+  --brand-blue: #0295ce;
+  --brand-blue-dark: #007cae;
+  --navy: #071f38;
+  --navy-light: #123b60;
+  --orange: #f5a623;
   --white: #ffffff;
-  --soft-white: #f5f7f9;
-  --text-dark: #142236;
-  --text-muted: #657185;
+  --off-white: #f5f8fa;
+  --light-gray: #e8edf1;
+  --medium-gray: #697784;
+  --dark-text: #102438;
 
   --header-height: 74px;
   --container-width: 1400px;
+
   --transition: 0.3s ease;
 }
 
 
-/* ---------- Reset ---------- */
+/* =========================================================
+   2. RESET AND GENERAL STYLES
+   ========================================================= */
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -34,28 +41,22 @@ html {
 }
 
 body {
-  margin: 0;
+  min-width: 320px;
   overflow-x: hidden;
 
-  color: var(--text-dark);
-  background: var(--white);
+  background-color: var(--white);
+  color: var(--dark-text);
 
   font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
+    Arial,
+    Helvetica,
     sans-serif;
+
+  line-height: 1.6;
 }
 
-body.menu-open {
+body.mobile-menu-open {
   overflow: hidden;
-}
-
-img,
-video {
-  display: block;
-  max-width: 100%;
 }
 
 a {
@@ -68,82 +69,74 @@ button {
   font: inherit;
 }
 
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
 
 /* =========================================================
-   HEADER
+   3. HEADER
    ========================================================= */
 
 .site-header {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
   z-index: 1000;
 
+  width: 100%;
   height: var(--header-height);
 
-  background: rgba(2, 149, 206, 0.96);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.98);
+  border-top: 4px solid var(--brand-blue);
+  border-bottom: 1px solid rgba(7, 31, 56, 0.12);
 
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(7, 31, 56, 0.08);
 
   transition:
     height var(--transition),
-    background-color var(--transition),
-    box-shadow var(--transition);
+    box-shadow var(--transition),
+    background-color var(--transition);
 }
 
 .site-header.scrolled {
-  height: 66px;
+  height: 68px;
 
-  background: rgba(2, 149, 206, 0.98);
-
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.16);
-
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 5px 25px rgba(7, 31, 56, 0.15);
 }
 
 .header-container {
-  width: min(calc(100% - 48px), var(--container-width));
+  width: min(100% - 48px, var(--container-width));
   height: 100%;
   margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 25px;
+  gap: 22px;
 }
 
 
-/* ---------- Logo ---------- */
+/* =========================================================
+   4. LOGO
+   ========================================================= */
 
 .logo-link {
-  position: relative;
-  z-index: 2;
+  flex: 0 0 auto;
 
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  padding: 4px 8px;
-
-  background: rgba(255, 255, 255, 0.98);
   border-radius: 5px;
-
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.11);
-
-  transition:
-    transform var(--transition),
-    background-color var(--transition);
-}
-
-.logo-link:hover {
-  transform: translateY(-2px);
-  background: var(--white);
 }
 
 .site-logo {
-  width: 125px;
-  height: 45px;
+  width: 128px;
+  height: 48px;
 
   object-fit: contain;
 
@@ -153,137 +146,120 @@ button {
 }
 
 .site-header.scrolled .site-logo {
-  width: 115px;
-  height: 40px;
+  width: 116px;
+  height: 43px;
 }
 
 
-/* ---------- Desktop navigation ---------- */
+/* =========================================================
+   5. DESKTOP NAVIGATION
+   ========================================================= */
 
 .desktop-navigation {
-  height: 100%;
+  flex: 1;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  gap: clamp(15px, 1.35vw, 27px);
+  gap: clamp(14px, 1.55vw, 27px);
 }
 
 .desktop-navigation > a,
 .dropdown-button {
   position: relative;
 
-  padding: 27px 0;
-
-  color: var(--white);
-
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.045em;
-  white-space: nowrap;
-
-  background: transparent;
   border: 0;
+  background: transparent;
 
+  color: var(--navy);
   cursor: pointer;
 
-  transition:
-    color var(--transition),
-    padding var(--transition);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  transition: color var(--transition);
 }
 
-.site-header.scrolled .desktop-navigation > a,
-.site-header.scrolled .dropdown-button {
-  padding: 23px 0;
-}
-
-.desktop-navigation > a::after,
-.dropdown-button::after {
+.desktop-navigation > a::after {
   content: "";
 
   position: absolute;
   right: 0;
-  bottom: 16px;
+  bottom: -9px;
   left: 0;
 
   height: 2px;
 
-  background: var(--orange);
+  background-color: var(--brand-blue);
 
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: center;
 
   transition: transform var(--transition);
 }
 
-.site-header.scrolled .desktop-navigation > a::after,
-.site-header.scrolled .dropdown-button::after {
-  bottom: 13px;
-}
-
 .desktop-navigation > a:hover,
-.dropdown-button:hover {
-  color: #fff0d4;
+.desktop-navigation > a:focus-visible,
+.dropdown-button:hover,
+.dropdown-button:focus-visible {
+  color: var(--brand-blue);
 }
 
 .desktop-navigation > a:hover::after,
-.dropdown-button:hover::after {
+.desktop-navigation > a:focus-visible::after {
   transform: scaleX(1);
-  transform-origin: left;
 }
 
 
-/* ---------- Destination dropdown ---------- */
+/* =========================================================
+   6. DESKTOP DESTINATIONS DROPDOWN
+   ========================================================= */
 
 .navigation-dropdown {
   position: relative;
 
-  height: 100%;
-
   display: flex;
   align-items: center;
+
+  height: 100%;
 }
 
 .dropdown-button {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
+
+  height: 100%;
 }
 
-.dropdown-button span {
-  position: relative;
-  top: -1px;
+.dropdown-arrow {
+  display: inline-block;
 
-  font-size: 16px;
+  color: var(--brand-blue);
+  font-size: 12px;
 
-  transition: transform var(--transition);
-}
-
-.navigation-dropdown:hover .dropdown-button span,
-.navigation-dropdown:focus-within .dropdown-button span {
-  transform: rotate(180deg);
+  /* The arrow stays fixed and does not rotate */
+  transform: none;
 }
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% - 3px);
+  top: calc(100% - 5px);
   left: 50%;
 
-  width: 230px;
-  max-height: 390px;
+  width: 225px;
   padding: 10px;
 
-  overflow-y: auto;
-
-  background: rgba(255, 255, 255, 0.99);
-  border: 1px solid rgba(7, 29, 53, 0.08);
-  border-radius: 10px;
-
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
+
+  background-color: var(--white);
+  border: 1px solid rgba(7, 31, 56, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(7, 31, 56, 0.18);
 
   transform: translate(-50%, 12px);
 
@@ -295,8 +271,8 @@ button {
 
 .navigation-dropdown:hover .dropdown-menu,
 .navigation-dropdown:focus-within .dropdown-menu {
-  opacity: 1;
   visibility: visible;
+  opacity: 1;
 
   transform: translate(-50%, 0);
 }
@@ -304,183 +280,200 @@ button {
 .dropdown-menu a {
   display: block;
 
-  padding: 12px 15px;
+  padding: 10px 13px;
 
+  border-radius: 5px;
   color: var(--navy);
 
   font-size: 13px;
   font-weight: 600;
 
-  border-radius: 7px;
-
   transition:
     color var(--transition),
     background-color var(--transition),
-    transform var(--transition);
+    padding-left var(--transition);
 }
 
-.dropdown-menu a:hover {
-  color: var(--blue);
-  background: #edf8fc;
+.dropdown-menu a:hover,
+.dropdown-menu a:focus-visible {
+  padding-left: 17px;
 
-  transform: translateX(3px);
+  background-color: rgba(2, 149, 206, 0.09);
+  color: var(--brand-blue);
 }
 
 
-/* ---------- Header actions ---------- */
+/* =========================================================
+   7. HEADER ACTIONS
+   ========================================================= */
 
 .header-actions {
+  flex: 0 0 auto;
+
   display: flex;
   align-items: center;
-  gap: 11px;
-
-  flex-shrink: 0;
+  gap: 12px;
 }
 
 
-/* ---------- Language selector ---------- */
+/* =========================================================
+   8. LANGUAGE SELECTOR
+   ========================================================= */
 
 .language-selector {
   position: relative;
 }
 
 .language-button {
-  min-width: 53px;
-  height: 40px;
-  padding: 0 9px;
+  min-width: 58px;
+  height: 42px;
+  padding: 0 12px;
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
 
-  color: var(--white);
+  background-color: var(--white);
+  border: 1px solid rgba(7, 31, 56, 0.28);
+  border-radius: 6px;
 
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  border-radius: 5px;
-
+  color: var(--navy);
   cursor: pointer;
 
+  font-size: 13px;
+  font-weight: 700;
+
   transition:
-    background-color var(--transition),
-    border-color var(--transition);
+    color var(--transition),
+    border-color var(--transition),
+    background-color var(--transition);
 }
 
-.language-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.8);
+.language-button:hover,
+.language-button:focus-visible {
+  background-color: rgba(2, 149, 206, 0.08);
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
+}
+
+.language-arrow {
+  color: var(--brand-blue);
+  font-size: 11px;
+
+  /* The arrow stays fixed */
+  transform: none;
 }
 
 .language-menu {
   position: absolute;
-  top: calc(100% + 12px);
+  top: calc(100% + 10px);
   right: 0;
 
-  width: 150px;
-  padding: 8px;
+  width: 135px;
+  padding: 7px;
 
-  background: var(--white);
-  border-radius: 9px;
-
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
-
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
+
+  background-color: var(--white);
+  border: 1px solid rgba(7, 31, 56, 0.1);
+  border-radius: 7px;
+  box-shadow: 0 15px 35px rgba(7, 31, 56, 0.18);
 
   transform: translateY(8px);
 
   transition:
-    opacity var(--transition),
     visibility var(--transition),
+    opacity var(--transition),
     transform var(--transition);
 }
 
 .language-menu.open {
-  opacity: 1;
   visibility: visible;
+  opacity: 1;
 
   transform: translateY(0);
 }
 
 .language-menu button {
   width: 100%;
-  padding: 12px;
+  padding: 9px 11px;
 
-  color: var(--navy);
-
-  text-align: left;
-  font-size: 13px;
-  font-weight: 600;
+  display: block;
 
   background: transparent;
   border: 0;
-  border-radius: 6px;
+  border-radius: 4px;
 
+  color: var(--navy);
   cursor: pointer;
+  text-align: left;
+
+  font-size: 13px;
+  font-weight: 600;
 
   transition:
     color var(--transition),
     background-color var(--transition);
 }
 
-.language-menu button:hover {
-  color: var(--blue);
-  background: #edf8fc;
+.language-menu button:hover,
+.language-menu button:focus-visible {
+  background-color: rgba(2, 149, 206, 0.1);
+  color: var(--brand-blue);
 }
 
 
-/* ---------- Header inquiry button ---------- */
+/* =========================================================
+   9. PLAN YOUR TRIP BUTTON
+   ========================================================= */
 
 .header-inquiry-button {
-  min-height: 42px;
-  padding: 0 18px;
+  min-height: 44px;
+  padding: 0 19px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 6px;
+
   color: var(--navy);
 
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.07em;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
 
-  background: var(--orange);
-  border: 1px solid var(--orange);
-  border-radius: 5px;
-
-  box-shadow: 0 8px 22px rgba(231, 154, 34, 0.23);
-
   transition:
-    color var(--transition),
     background-color var(--transition),
-    transform var(--transition),
-    box-shadow var(--transition);
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
 }
 
-.header-inquiry-button:hover {
+.header-inquiry-button:hover,
+.header-inquiry-button:focus-visible {
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
   color: var(--white);
-  background: transparent;
 
   transform: translateY(-2px);
-
-  box-shadow: 0 12px 28px rgba(231, 154, 34, 0.3);
 }
 
 
-/* ---------- Mobile menu button ---------- */
+/* =========================================================
+   10. MOBILE MENU BUTTON
+   ========================================================= */
 
 .mobile-menu-button {
-  width: 42px;
-  height: 42px;
-  padding: 9px;
+  width: 43px;
+  height: 43px;
 
   display: none;
   align-items: center;
@@ -488,23 +481,23 @@ button {
   flex-direction: column;
   gap: 5px;
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(7, 31, 56, 0.25);
+  border-radius: 6px;
 
   cursor: pointer;
 }
 
 .mobile-menu-button span {
-  width: 21px;
+  width: 20px;
   height: 2px;
 
-  background: var(--white);
+  background-color: var(--navy);
   border-radius: 10px;
 
   transition:
-    transform var(--transition),
-    opacity var(--transition);
+    opacity var(--transition),
+    transform var(--transition);
 }
 
 .mobile-menu-button.active span:nth-child(1) {
@@ -520,85 +513,185 @@ button {
 }
 
 
-/* ---------- Mobile navigation ---------- */
+/* =========================================================
+   11. MOBILE NAVIGATION
+   ========================================================= */
 
 .mobile-navigation {
   position: fixed;
-  top: 0;
+  top: var(--header-height);
   right: 0;
+  bottom: 0;
+  z-index: 999;
 
   width: min(88%, 390px);
-  height: 100vh;
-  height: 100dvh;
-  padding: 100px 28px 35px;
+  padding: 25px 24px 40px;
 
-  display: flex;
-  flex-direction: column;
-
+  display: none;
   overflow-y: auto;
 
-  background: var(--blue);
+  background-color: var(--white);
+  border-top: 1px solid var(--light-gray);
+  box-shadow: -15px 20px 40px rgba(7, 31, 56, 0.18);
 
-  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
 
-  visibility: hidden;
-  transform: translateX(105%);
-
-  transition:
-    visibility var(--transition),
-    transform 0.42s ease;
+  transition: transform 0.35s ease;
 }
 
 .mobile-navigation.open {
-  visibility: visible;
   transform: translateX(0);
 }
 
 .mobile-navigation > a {
-  padding: 15px 2px;
+  display: block;
 
-  color: var(--white);
+  padding: 13px 3px;
 
-  font-size: 16px;
-  font-weight: 600;
+  border-bottom: 1px solid var(--light-gray);
+  color: var(--navy);
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  font-weight: 700;
 
   transition:
     color var(--transition),
     padding-left var(--transition);
 }
 
-.mobile-navigation > a:hover {
-  color: #fff0d4;
+.mobile-navigation > a:hover,
+.mobile-navigation > a:focus-visible {
   padding-left: 7px;
-}
-
-.mobile-navigation .mobile-inquiry-button {
-  margin-top: 25px;
-  padding: 15px 20px;
-
-  display: flex;
-  justify-content: center;
-
-  color: var(--navy);
-
-  background: var(--orange);
-  border: 0;
-  border-radius: 5px;
+  color: var(--brand-blue);
 }
 
 
 /* =========================================================
-   HERO SECTION
+   12. MOBILE DESTINATIONS DROPDOWN
+   ========================================================= */
+
+.mobile-destinations {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.mobile-destinations-button {
+  width: 100%;
+  padding: 13px 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: transparent;
+  border: 0;
+
+  color: var(--navy);
+  cursor: pointer;
+  text-align: left;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: color var(--transition);
+}
+
+.mobile-destinations-button:hover,
+.mobile-destinations-button:focus-visible {
+  color: var(--brand-blue);
+}
+
+.mobile-dropdown-arrow {
+  color: var(--brand-blue);
+  font-size: 13px;
+
+  /* The arrow does not rotate */
+  transform: none;
+}
+
+.mobile-destinations-menu {
+  display: none;
+
+  margin: 0 0 10px;
+  padding: 6px 0 8px 14px;
+
+  border-left: 2px solid var(--brand-blue);
+}
+
+.mobile-destinations-menu.open {
+  display: block;
+}
+
+.mobile-destinations-menu a {
+  display: block;
+
+  padding: 9px 12px;
+
+  color: var(--navy-light);
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    padding-left var(--transition);
+}
+
+.mobile-destinations-menu a:hover,
+.mobile-destinations-menu a:focus-visible {
+  padding-left: 17px;
+
+  background-color: rgba(2, 149, 206, 0.08);
+  color: var(--brand-blue);
+}
+
+
+/* =========================================================
+   13. MOBILE INQUIRY BUTTON
+   ========================================================= */
+
+.mobile-navigation .mobile-inquiry-button {
+  margin-top: 22px;
+  padding: 13px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--orange);
+  border: 0;
+  border-radius: 6px;
+
+  color: var(--navy);
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+
+.mobile-navigation .mobile-inquiry-button:hover,
+.mobile-navigation .mobile-inquiry-button:focus-visible {
+  padding-left: 18px;
+
+  background-color: var(--brand-blue);
+  color: var(--white);
+}
+
+
+/* =========================================================
+   14. HERO SECTION
    ========================================================= */
 
 .hero-section {
   position: relative;
 
-  min-height: 720px;
-  height: 100vh;
-  height: 100svh;
+  min-height: 100vh;
+  padding:
+    calc(var(--header-height) + 70px)
+    max(4vw, 30px)
+    75px;
 
   display: flex;
   align-items: center;
@@ -606,11 +699,14 @@ button {
   overflow: hidden;
   isolation: isolate;
 
-  background: var(--navy);
+  background-color: var(--navy);
+  color: var(--white);
 }
 
 
-/* ---------- Hero video ---------- */
+/* =========================================================
+   15. HERO VIDEO
+   ========================================================= */
 
 .hero-video {
   position: absolute;
@@ -625,7 +721,9 @@ button {
 }
 
 
-/* ---------- Hero overlay ---------- */
+/* =========================================================
+   16. HERO OVERLAY
+   ========================================================= */
 
 .hero-overlay {
   position: absolute;
@@ -635,327 +733,376 @@ button {
   background:
     linear-gradient(
       90deg,
-      rgba(4, 20, 38, 0.82) 0%,
-      rgba(4, 20, 38, 0.61) 40%,
-      rgba(4, 20, 38, 0.25) 72%,
-      rgba(4, 20, 38, 0.33) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(3, 14, 28, 0.26) 0%,
-      transparent 45%,
-      rgba(3, 14, 28, 0.43) 100%
+      rgba(4, 25, 45, 0.82) 0%,
+      rgba(4, 25, 45, 0.62) 44%,
+      rgba(4, 25, 45, 0.28) 72%,
+      rgba(4, 25, 45, 0.22) 100%
     );
 }
 
 
-/* ---------- Decorative lines ---------- */
+/* =========================================================
+   17. HERO DECORATIONS
+   ========================================================= */
 
 .hero-decoration {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 50%;
 
   pointer-events: none;
 }
 
 .hero-decoration-left {
-  bottom: -250px;
-  left: -320px;
+  bottom: -280px;
+  left: -255px;
 
-  width: 650px;
-  height: 650px;
+  width: 590px;
+  height: 590px;
 }
 
 .hero-decoration-right {
-  top: 16%;
-  right: -170px;
+  top: 125px;
+  right: -165px;
 
   width: 360px;
   height: 360px;
 }
 
 
-/* ---------- Hero content ---------- */
+/* =========================================================
+   18. HERO CONTENT
+   ========================================================= */
 
 .hero-content {
-  width: min(calc(100% - 112px), var(--container-width));
-  margin: 65px auto 0;
+  width: min(100%, 940px);
+  margin-left: max(0px, calc((100vw - var(--container-width)) / 2));
 
-  color: var(--white);
+  position: relative;
+  z-index: 2;
 }
 
 .hero-eyebrow {
-  margin: 0 0 22px;
+  margin-bottom: 22px;
 
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
 
-  color: #ffd38d;
+  color: var(--orange);
 
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .hero-eyebrow::before {
   content: "";
 
-  width: 42px;
+  width: 43px;
   height: 2px;
 
-  background: var(--orange);
+  background-color: var(--orange);
 }
 
 .hero-content h1 {
-  max-width: 920px;
-  margin: 0;
+  margin-bottom: 26px;
 
-  color: var(--white);
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(64px, 7vw, 112px);
+  font-size: clamp(58px, 7vw, 108px);
   font-weight: 400;
-  line-height: 0.92;
-  letter-spacing: -0.045em;
-
-  text-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.055em;
+  line-height: 0.85;
 }
 
-.hero-content h1 span {
-  color: transparent;
+.hero-title-main {
+  color: var(--white);
+}
 
-  -webkit-text-stroke: 1.4px rgba(255, 255, 255, 0.9);
-  text-stroke: 1.4px rgba(255, 255, 255, 0.9);
+.hero-title-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.92);
 }
 
 .hero-description {
-  max-width: 590px;
-  margin: 30px 0 0;
+  max-width: 620px;
+  margin-bottom: 35px;
 
-  color: rgba(255, 255, 255, 0.86);
+  color: rgba(255, 255, 255, 0.95);
 
-  font-size: clamp(16px, 1.25vw, 20px);
-  font-weight: 400;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.75;
 }
-
-
-/* ---------- Hero buttons ---------- */
 
 .hero-buttons {
-  margin-top: 38px;
-
   display: flex;
   align-items: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 14px;
 }
+
+
+/* =========================================================
+   19. HERO BUTTONS
+   ========================================================= */
 
 .primary-button,
 .secondary-button {
-  min-height: 55px;
-  padding: 0 27px;
+  min-height: 52px;
+  padding: 0 25px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
   border-radius: 6px;
 
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  text-align: center;
+  text-transform: uppercase;
+
   transition:
-    color var(--transition),
     background-color var(--transition),
     border-color var(--transition),
-    transform var(--transition),
-    box-shadow var(--transition);
+    color var(--transition),
+    transform var(--transition);
 }
 
 .primary-button {
-  color: var(--navy);
-
-  background: var(--orange);
+  background-color: var(--orange);
   border: 1px solid var(--orange);
-
-  box-shadow: 0 14px 35px rgba(231, 154, 34, 0.25);
+  color: var(--navy);
 }
 
-.primary-button:hover {
+.primary-button:hover,
+.primary-button:focus-visible {
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
   color: var(--white);
 
-  transform: translateY(-3px);
-
-  box-shadow: 0 18px 42px rgba(231, 154, 34, 0.36);
+  transform: translateY(-2px);
 }
 
 .secondary-button {
+  background-color: rgba(7, 31, 56, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   color: var(--white);
-
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.58);
-
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 }
 
-.secondary-button:hover {
+.secondary-button:hover,
+.secondary-button:focus-visible {
+  background-color: var(--white);
+  border-color: var(--white);
   color: var(--navy);
 
-  background: var(--white);
-  border-color: var(--white);
-
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 
-/* ---------- Hero side label ---------- */
+/* =========================================================
+   20. HERO SIDE LABEL
+   ========================================================= */
 
 .hero-side-label {
   position: absolute;
   top: 50%;
-  right: 27px;
+  right: 3.3%;
 
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.86);
 
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
-
   white-space: nowrap;
 
   transform: translateY(-50%) rotate(90deg);
-  transform-origin: center;
 }
 
 
-/* ---------- Scroll indicator ---------- */
+/* =========================================================
+   21. SCROLL INDICATOR
+   ========================================================= */
 
 .scroll-indicator {
   position: absolute;
+  right: 5%;
   bottom: 30px;
-  left: 50%;
 
   display: flex;
   align-items: center;
-  flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.82);
 
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-
-  transform: translateX(-50%);
 }
 
 .scroll-line {
   position: relative;
 
-  width: 1px;
-  height: 48px;
+  width: 55px;
+  height: 1px;
 
   overflow: hidden;
 
-  background: rgba(255, 255, 255, 0.28);
+  background-color: rgba(255, 255, 255, 0.45);
 }
 
 .scroll-line::after {
   content: "";
 
   position: absolute;
-  top: -100%;
-  left: 0;
+  top: 0;
+  left: -100%;
 
   width: 100%;
   height: 100%;
 
-  background: var(--white);
+  background-color: var(--orange);
 
-  animation: scrollLine 2s ease-in-out infinite;
+  animation: scrollLine 2.2s ease-in-out infinite;
 }
 
 @keyframes scrollLine {
   0% {
-    transform: translateY(0);
+    left: -100%;
   }
 
+  50%,
   100% {
-    transform: translateY(200%);
+    left: 100%;
   }
 }
 
 
 /* =========================================================
-   TEMPORARY NEXT SECTION
+   22. TEMPORARY NEXT SECTION
    ========================================================= */
 
 .next-section {
-  min-height: 500px;
-  padding: 120px 24px;
+  min-height: 480px;
+  padding: 100px 6%;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
+  background-color: var(--white);
   text-align: center;
-
-  background: var(--soft-white);
 }
 
 .section-eyebrow {
-  margin: 0 0 16px;
+  margin-bottom: 14px;
 
-  color: var(--orange);
+  color: var(--brand-blue);
 
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .next-section h2 {
-  max-width: 750px;
-  margin: 0;
+  max-width: 780px;
+  margin-bottom: 20px;
 
   color: var(--navy);
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(38px, 5vw, 68px);
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(35px, 5vw, 62px);
   font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -0.035em;
+  line-height: 1.12;
 }
 
-.next-section p:last-child {
-  max-width: 600px;
-  margin: 25px 0 0;
-
-  color: var(--text-muted);
-
+.next-section > p:last-child {
+  color: var(--medium-gray);
   font-size: 16px;
-  line-height: 1.7;
 }
 
 
 /* =========================================================
-   RESPONSIVE DESIGN
+   23. ACCESSIBILITY
    ========================================================= */
 
-@media (max-width: 1240px) {
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(2, 149, 206, 0.45);
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   24. SMALLER DESKTOP
+   ========================================================= */
+
+@media (max-width: 1180px) {
+  .header-container {
+    width: min(100% - 32px, var(--container-width));
+    gap: 14px;
+  }
 
   .desktop-navigation {
+    gap: 14px;
+  }
+
+  .desktop-navigation > a,
+  .dropdown-button {
+    font-size: 12px;
+  }
+
+  .site-logo {
+    width: 112px;
+  }
+
+  .header-inquiry-button {
+    padding: 0 14px;
+    font-size: 11px;
+  }
+
+  .hero-side-label {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   25. TABLET AND MOBILE
+   ========================================================= */
+
+@media (max-width: 980px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .site-header,
+  .site-header.scrolled {
+    height: var(--header-height);
+  }
+
+  .header-container {
+    width: calc(100% - 30px);
+  }
+
+  .desktop-navigation,
+  .header-inquiry-button {
     display: none;
   }
 
@@ -963,58 +1110,67 @@ button {
     display: flex;
   }
 
-  .header-container {
-    width: min(calc(100% - 36px), var(--container-width));
+  .mobile-navigation {
+    display: block;
+  }
+
+  .site-logo,
+  .site-header.scrolled .site-logo {
+    width: 118px;
+    height: 44px;
+  }
+
+  .hero-section {
+    min-height: 100svh;
+    padding:
+      calc(var(--header-height) + 55px)
+      28px
+      65px;
   }
 
   .hero-content {
-    width: min(calc(100% - 80px), var(--container-width));
+    width: 100%;
+    margin: 0;
   }
 
+  .hero-content h1 {
+    font-size: clamp(53px, 10vw, 82px);
+    line-height: 0.91;
+  }
+
+  .hero-decoration-right {
+    right: -235px;
+  }
 }
 
 
-@media (max-width: 768px) {
+/* =========================================================
+   26. MOBILE
+   ========================================================= */
 
+@media (max-width: 600px) {
   :root {
     --header-height: 66px;
   }
 
-  .site-header.scrolled {
-    height: 62px;
+  .site-header {
+    border-top-width: 3px;
   }
 
   .header-container {
     width: calc(100% - 24px);
-    gap: 10px;
   }
 
-  .logo-link {
-    padding: 3px 6px;
-    border-radius: 4px;
-  }
-
-  .site-logo {
-    width: 104px;
-    height: 39px;
-  }
-
+  .site-logo,
   .site-header.scrolled .site-logo {
-    width: 100px;
-    height: 36px;
-  }
-
-  .header-actions {
-    gap: 7px;
+    width: 105px;
+    height: 40px;
   }
 
   .language-button {
-    min-width: 47px;
+    min-width: 52px;
     height: 39px;
-  }
-
-  .header-inquiry-button {
-    display: none;
+    padding: 0 9px;
   }
 
   .mobile-menu-button {
@@ -1022,15 +1178,21 @@ button {
     height: 39px;
   }
 
+  .header-actions {
+    gap: 8px;
+  }
+
   .mobile-navigation {
-    width: min(88%, 365px);
-    padding: 92px 24px 30px;
+    top: var(--header-height);
+    width: 100%;
   }
 
   .hero-section {
-    min-height: 600px;
-    height: 82vh;
-    height: 82svh;
+    min-height: 100svh;
+    padding:
+      calc(var(--header-height) + 40px)
+      20px
+      70px;
   }
 
   .hero-video {
@@ -1041,128 +1203,112 @@ button {
     background:
       linear-gradient(
         90deg,
-        rgba(4, 20, 38, 0.74) 0%,
-        rgba(4, 20, 38, 0.46) 100%
-      ),
-      linear-gradient(
-        180deg,
-        rgba(3, 14, 28, 0.22) 0%,
-        rgba(3, 14, 28, 0.1) 35%,
-        rgba(3, 14, 28, 0.7) 100%
+        rgba(4, 25, 45, 0.78) 0%,
+        rgba(4, 25, 45, 0.61) 100%
       );
   }
 
-  .hero-content {
-    width: calc(100% - 40px);
-    margin-top: 60px;
+  .hero-decoration-left {
+    bottom: -230px;
+    left: -250px;
+
+    width: 480px;
+    height: 480px;
+  }
+
+  .hero-decoration-right {
+    top: 130px;
+    right: -245px;
+
+    width: 340px;
+    height: 340px;
   }
 
   .hero-eyebrow {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
+
+    gap: 10px;
 
     font-size: 10px;
+    letter-spacing: 0.16em;
   }
 
   .hero-eyebrow::before {
-    width: 30px;
+    width: 28px;
   }
 
   .hero-content h1 {
-    max-width: 600px;
+    margin-bottom: 22px;
 
-    font-size: clamp(48px, 13vw, 70px);
-    line-height: 0.96;
+    font-size: clamp(45px, 14vw, 66px);
+    letter-spacing: -0.05em;
+    line-height: 0.93;
   }
 
-  .hero-content h1 span {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
-    text-stroke: 1px rgba(255, 255, 255, 0.9);
+  .hero-title-outline {
+    -webkit-text-stroke-width: 1px;
   }
 
   .hero-description {
-    max-width: 500px;
-    margin-top: 22px;
+    max-width: 95%;
+    margin-bottom: 29px;
 
     font-size: 15px;
-    line-height: 1.58;
+    line-height: 1.65;
   }
 
   .hero-buttons {
-    margin-top: 29px;
-
     align-items: stretch;
     flex-direction: column;
-    gap: 10px;
   }
 
   .primary-button,
   .secondary-button {
     width: 100%;
-    max-width: 300px;
-    min-height: 51px;
-  }
-
-  .hero-side-label {
-    display: none;
+    min-height: 50px;
   }
 
   .scroll-indicator {
     right: 20px;
-    bottom: 20px;
-    left: auto;
-
-    transform: none;
-  }
-
-  .scroll-indicator span:first-child {
-    display: none;
-  }
-
-  .scroll-line {
-    height: 36px;
-  }
-
-  .hero-decoration-right {
-    display: none;
+    bottom: 23px;
   }
 
   .next-section {
     min-height: 420px;
-    padding: 85px 22px;
+    padding: 75px 22px;
   }
 
+  .next-section h2 {
+    font-size: 37px;
+  }
 }
 
 
-@media (max-width: 430px) {
+/* =========================================================
+   27. VERY SMALL MOBILE
+   ========================================================= */
 
-  .hero-section {
-    min-height: 590px;
-    height: 80vh;
-    height: 80svh;
+@media (max-width: 380px) {
+  .site-logo,
+  .site-header.scrolled .site-logo {
+    width: 94px;
   }
 
   .hero-content h1 {
-    font-size: clamp(43px, 12.5vw, 56px);
+    font-size: 43px;
   }
 
   .hero-description {
-    max-width: 340px;
     font-size: 14px;
   }
-
-  .primary-button,
-  .secondary-button {
-    max-width: 100%;
-  }
-
 }
 
 
-/* ---------- Reduced-motion accessibility ---------- */
+/* =========================================================
+   28. REDUCED MOTION
+   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-
   html {
     scroll-behavior: auto;
   }
@@ -1174,5 +1320,4 @@ button {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-
 }
