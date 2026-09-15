@@ -66,7 +66,7 @@
           Armenia
         </a>
 
-        <!-- Destinations dropdown -->
+        <!-- Desktop destinations dropdown -->
 
         <div class="navigation-dropdown">
 
@@ -76,10 +76,12 @@
             aria-expanded="false"
           >
             <span data-i18n="navDestinations">
-              Destinations
+              Other Destinations
             </span>
 
-            <span aria-hidden="true">⌄</span>
+            <span class="dropdown-arrow" aria-hidden="true">
+              ▾
+            </span>
           </button>
 
           <div class="dropdown-menu">
@@ -154,18 +156,27 @@
             aria-label="Choose language"
           >
             <span id="current-language">EN</span>
-            <span aria-hidden="true">⌄</span>
+
+            <span class="language-arrow" aria-hidden="true">
+              ▾
+            </span>
           </button>
 
           <div
             class="language-menu"
             id="language-menu"
           >
-            <button type="button" data-language="en">
+            <button
+              type="button"
+              data-language="en"
+            >
               English
             </button>
 
-            <button type="button" data-language="hy">
+            <button
+              type="button"
+              data-language="hy"
+            >
               Հայերեն
             </button>
           </div>
@@ -200,7 +211,9 @@
 
     </div>
 
-    <!-- Mobile navigation -->
+    <!-- =========================
+         MOBILE NAVIGATION
+         ========================= -->
 
     <nav
       class="mobile-navigation"
@@ -216,41 +229,66 @@
         Armenia
       </a>
 
-      <a href="#destinations" data-i18n="navDestinations">
-        Destinations
-      </a>
+      <!-- Mobile destinations dropdown -->
 
-      <a href="#georgia" data-i18n="destinationGeorgia">
-        Georgia
-      </a>
+      <div class="mobile-destinations">
 
-      <a href="#caucasus" data-i18n="destinationCaucasus">
-        Combined Caucasus
-      </a>
+        <button
+          class="mobile-destinations-button"
+          id="mobile-destinations-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-destinations-menu"
+        >
+          <span data-i18n="navDestinations">
+            Other Destinations
+          </span>
 
-      <a href="#egypt" data-i18n="destinationEgypt">
-        Egypt
-      </a>
+          <span class="mobile-dropdown-arrow" aria-hidden="true">
+            ▾
+          </span>
+        </button>
 
-      <a href="#qatar" data-i18n="destinationQatar">
-        Qatar
-      </a>
+        <div
+          class="mobile-destinations-menu"
+          id="mobile-destinations-menu"
+        >
 
-      <a href="#cyprus" data-i18n="destinationCyprus">
-        Cyprus
-      </a>
+          <a href="#georgia" data-i18n="destinationGeorgia">
+            Georgia
+          </a>
 
-      <a href="#albania" data-i18n="destinationAlbania">
-        Albania
-      </a>
+          <a href="#caucasus" data-i18n="destinationCaucasus">
+            Combined Caucasus
+          </a>
 
-      <a href="#tunisia" data-i18n="destinationTunisia">
-        Tunisia
-      </a>
+          <a href="#egypt" data-i18n="destinationEgypt">
+            Egypt
+          </a>
 
-      <a href="#uae" data-i18n="destinationUAE">
-        UAE
-      </a>
+          <a href="#qatar" data-i18n="destinationQatar">
+            Qatar
+          </a>
+
+          <a href="#cyprus" data-i18n="destinationCyprus">
+            Cyprus
+          </a>
+
+          <a href="#albania" data-i18n="destinationAlbania">
+            Albania
+          </a>
+
+          <a href="#tunisia" data-i18n="destinationTunisia">
+            Tunisia
+          </a>
+
+          <a href="#uae" data-i18n="destinationUAE">
+            UAE
+          </a>
+
+        </div>
+
+      </div>
 
       <a href="#blog" data-i18n="navBlog">
         Blog
@@ -286,7 +324,9 @@
 
   <main>
 
-    <!-- Hero section -->
+    <!-- =========================
+         HERO SECTION
+         ========================= -->
 
     <section
       class="hero-section"
@@ -312,7 +352,7 @@
         Your browser does not support background video.
       </video>
 
-      <!-- Overlay -->
+      <!-- Dark overlay -->
 
       <div class="hero-overlay"></div>
 
@@ -340,6 +380,7 @@
         </p>
 
         <h1>
+
           <span
             class="hero-title-main"
             data-i18n="heroTitleMain"
@@ -355,6 +396,7 @@
           >
             Beyond the Ordinary
           </span>
+
         </h1>
 
         <p
