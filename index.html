@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -10,36 +12,74 @@
 
   <meta
     name="description"
-    content="Liberty Incentive creates tailor-made journeys, tours and travel experiences throughout Armenia."
+    content="Liberty Incentive creates tailor-made journeys, tours and travel experiences throughout Armenia and other destinations."
   >
 
   <title>Liberty Incentive | Discover Armenia</title>
 
-  <link rel="icon" href="assets/images/liberty-incentive-logo.jpg">
-  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="icon"
+    href="assets/images/liberty-incentive-logo.jpg"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
 </head>
+
 
 <body>
 
-  <!-- Header -->
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
   <header class="site-header" id="site-header">
 
     <div class="header-container">
 
       <!-- Logo -->
-      <a class="logo-link" href="index.html" aria-label="Liberty Incentive home">
+
+      <a
+        class="logo-link"
+        href="index.html"
+        aria-label="Liberty Incentive home"
+      >
+
         <img
           class="site-logo"
           src="assets/images/liberty-incentive-logo.jpg"
           alt="Liberty Incentive"
         >
+
       </a>
 
-      <!-- Desktop navigation -->
-      <nav class="desktop-navigation" aria-label="Main navigation">
 
-        <a href="#about">About Us</a>
-        <a href="#armenia">Armenia</a>
+      <!-- Desktop navigation -->
+
+      <nav
+        class="desktop-navigation"
+        aria-label="Main navigation"
+      >
+
+        <a
+          href="#about"
+          data-i18n="navAbout"
+        >
+          About Us
+        </a>
+
+        <a
+          href="#armenia"
+          data-i18n="navArmenia"
+        >
+          Armenia
+        </a>
+
+
+        <!-- Destinations dropdown -->
 
         <div class="navigation-dropdown">
 
@@ -48,29 +88,118 @@
             type="button"
             aria-expanded="false"
           >
-            Destinations
-            <span aria-hidden="true">⌄</span>
+
+            <span data-i18n="navDestinations">
+              Destinations
+            </span>
+
+            <span aria-hidden="true">
+              ⌄
+            </span>
+
           </button>
+
 
           <div class="dropdown-menu">
 
-            <a href="#georgia">Georgia</a>
-            <a href="#azerbaijan">Azerbaijan</a>
-            <a href="#caucasus">Combined Caucasus</a>
+            <a
+              href="#georgia"
+              data-i18n="destinationGeorgia"
+            >
+              Georgia
+            </a>
+
+            <a
+              href="#caucasus"
+              data-i18n="destinationCaucasus"
+            >
+              Combined Caucasus
+            </a>
+
+            <a
+              href="#egypt"
+              data-i18n="destinationEgypt"
+            >
+              Egypt
+            </a>
+
+            <a
+              href="#qatar"
+              data-i18n="destinationQatar"
+            >
+              Qatar
+            </a>
+
+            <a
+              href="#cyprus"
+              data-i18n="destinationCyprus"
+            >
+              Cyprus
+            </a>
+
+            <a
+              href="#albania"
+              data-i18n="destinationAlbania"
+            >
+              Albania
+            </a>
+
+            <a
+              href="#tunisia"
+              data-i18n="destinationTunisia"
+            >
+              Tunisia
+            </a>
+
+            <a
+              href="#uae"
+              data-i18n="destinationUAE"
+            >
+              UAE
+            </a>
 
           </div>
 
         </div>
 
-        <a href="#blog">Blog</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#team">Our Team</a>
-        <a href="#contact">Contact</a>
+
+        <a
+          href="#blog"
+          data-i18n="navBlog"
+        >
+          Blog
+        </a>
+
+        <a
+          href="#gallery"
+          data-i18n="navGallery"
+        >
+          Gallery
+        </a>
+
+        <a
+          href="#team"
+          data-i18n="navTeam"
+        >
+          Our Team
+        </a>
+
+        <a
+          href="#contact"
+          data-i18n="navContact"
+        >
+          Contact
+        </a>
 
       </nav>
 
+
       <!-- Header actions -->
+
       <div class="header-actions">
+
+
+        <!-- Language selector -->
 
         <div class="language-selector">
 
@@ -81,17 +210,34 @@
             aria-expanded="false"
             aria-label="Choose language"
           >
-            EN
-            <span aria-hidden="true">⌄</span>
+
+            <span id="current-language">
+              EN
+            </span>
+
+            <span aria-hidden="true">
+              ⌄
+            </span>
+
           </button>
 
-          <div class="language-menu" id="language-menu">
 
-            <button type="button" data-language="en">
+          <div
+            class="language-menu"
+            id="language-menu"
+          >
+
+            <button
+              type="button"
+              data-language="en"
+            >
               English
             </button>
 
-            <button type="button" data-language="hy">
+            <button
+              type="button"
+              data-language="hy"
+            >
               Հայերեն
             </button>
 
@@ -99,11 +245,20 @@
 
         </div>
 
-        <a class="header-inquiry-button" href="#inquiry">
+
+        <!-- Desktop inquiry button -->
+
+        <a
+          class="header-inquiry-button"
+          href="#inquiry"
+          data-i18n="planTrip"
+        >
           Plan Your Trip
         </a>
 
+
         <!-- Mobile menu button -->
+
         <button
           class="mobile-menu-button"
           id="mobile-menu-button"
@@ -111,31 +266,143 @@
           aria-label="Open navigation menu"
           aria-expanded="false"
         >
+
           <span></span>
           <span></span>
           <span></span>
+
         </button>
 
       </div>
 
     </div>
 
-    <!-- Mobile navigation -->
+
+    <!-- ===================================================
+         MOBILE NAVIGATION
+         =================================================== -->
+
     <nav
       class="mobile-navigation"
       id="mobile-navigation"
       aria-label="Mobile navigation"
     >
 
-      <a href="#about">About Us</a>
-      <a href="#armenia">Armenia</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#blog">Blog</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#team">Our Team</a>
-      <a href="#contact">Contact</a>
+      <a
+        href="#about"
+        data-i18n="navAbout"
+      >
+        About Us
+      </a>
 
-      <a class="mobile-inquiry-button" href="#inquiry">
+      <a
+        href="#armenia"
+        data-i18n="navArmenia"
+      >
+        Armenia
+      </a>
+
+      <a
+        href="#destinations"
+        data-i18n="navDestinations"
+      >
+        Destinations
+      </a>
+
+
+      <!-- Mobile destination links -->
+
+      <a
+        href="#georgia"
+        data-i18n="destinationGeorgia"
+      >
+        Georgia
+      </a>
+
+      <a
+        href="#caucasus"
+        data-i18n="destinationCaucasus"
+      >
+        Combined Caucasus
+      </a>
+
+      <a
+        href="#egypt"
+        data-i18n="destinationEgypt"
+      >
+        Egypt
+      </a>
+
+      <a
+        href="#qatar"
+        data-i18n="destinationQatar"
+      >
+        Qatar
+      </a>
+
+      <a
+        href="#cyprus"
+        data-i18n="destinationCyprus"
+      >
+        Cyprus
+      </a>
+
+      <a
+        href="#albania"
+        data-i18n="destinationAlbania"
+      >
+        Albania
+      </a>
+
+      <a
+        href="#tunisia"
+        data-i18n="destinationTunisia"
+      >
+        Tunisia
+      </a>
+
+      <a
+        href="#uae"
+        data-i18n="destinationUAE"
+      >
+        UAE
+      </a>
+
+
+      <a
+        href="#blog"
+        data-i18n="navBlog"
+      >
+        Blog
+      </a>
+
+      <a
+        href="#gallery"
+        data-i18n="navGallery"
+      >
+        Gallery
+      </a>
+
+      <a
+        href="#team"
+        data-i18n="navTeam"
+      >
+        Our Team
+      </a>
+
+      <a
+        href="#contact"
+        data-i18n="navContact"
+      >
+        Contact
+      </a>
+
+
+      <a
+        class="mobile-inquiry-button"
+        href="#inquiry"
+        data-i18n="planTrip"
+      >
         Plan Your Trip
       </a>
 
@@ -143,13 +410,26 @@
 
   </header>
 
-  <!-- Main content -->
+
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+
   <main>
 
-    <!-- Hero section -->
-    <section class="hero-section" id="home">
+
+    <!-- ===================================================
+         HERO SECTION
+         =================================================== -->
+
+    <section
+      class="hero-section"
+      id="home"
+    >
+
 
       <!-- Background video -->
+
       <video
         class="hero-video"
         autoplay
@@ -159,43 +439,90 @@
         preload="metadata"
         aria-hidden="true"
       >
+
         <source
           src="assets/video/hero-video.mp4"
           type="video/mp4"
         >
+
       </video>
 
-      <!-- Dark overlay -->
+
+      <!-- Dark overlay for text readability -->
+
       <div class="hero-overlay"></div>
 
-      <!-- Decorative elements -->
-      <div class="hero-decoration hero-decoration-left"></div>
-      <div class="hero-decoration hero-decoration-right"></div>
+
+      <!-- Decorative circles -->
+
+      <div
+        class="hero-decoration hero-decoration-left"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero-decoration hero-decoration-right"
+        aria-hidden="true"
+      ></div>
+
 
       <!-- Hero content -->
+
       <div class="hero-content">
 
-        <p class="hero-eyebrow">
+        <p
+          class="hero-eyebrow"
+          data-i18n="heroEyebrow"
+        >
           Welcome to Armenia
         </p>
 
+
         <h1>
-          Armenia,<br>
-          <span>Beyond the Ordinary</span>
+
+          <span
+            class="hero-title-main"
+            data-i18n="heroTitleMain"
+          >
+            Armenia,
+          </span>
+
+          <br>
+
+          <span
+            class="hero-title-outline"
+            data-i18n="heroTitleOutline"
+          >
+            Beyond the Ordinary
+          </span>
+
         </h1>
 
-        <p class="hero-description">
+
+        <p
+          class="hero-description"
+          data-i18n="heroDescription"
+        >
           Tailor-made journeys, authentic experiences and unforgettable
           moments created by local experts.
         </p>
 
+
         <div class="hero-buttons">
 
-          <a class="primary-button" href="#armenia">
+          <a
+            class="primary-button"
+            href="#armenia"
+            data-i18n="discoverArmenia"
+          >
             Discover Armenia
           </a>
 
-          <a class="secondary-button" href="#inquiry">
+          <a
+            class="secondary-button"
+            href="#inquiry"
+            data-i18n="planTrip"
+          >
             Plan Your Trip
           </a>
 
@@ -203,33 +530,60 @@
 
       </div>
 
-      <!-- Hero side label -->
-      <div class="hero-side-label" aria-hidden="true">
+
+      <!-- Side label -->
+
+      <div
+        class="hero-side-label"
+        data-i18n="sideLabel"
+        aria-hidden="true"
+      >
         Since 2011 · Yerevan, Armenia
       </div>
 
+
       <!-- Scroll indicator -->
+
       <a
         class="scroll-indicator"
         href="#about"
         aria-label="Scroll to the next section"
       >
-        <span>Explore</span>
+
+        <span data-i18n="explore">
+          Explore
+        </span>
+
         <span class="scroll-line"></span>
+
       </a>
 
     </section>
 
-    <!-- Temporary section -->
-    <section class="next-section" id="about">
 
-      <p class="section-eyebrow">Liberty Incentive</p>
+    <!-- ===================================================
+         TEMPORARY NEXT SECTION
+         =================================================== -->
 
-      <h2>
+    <section
+      class="next-section"
+      id="about"
+    >
+
+      <p
+        class="section-eyebrow"
+        data-i18n="companyName"
+      >
+        Liberty Incentive
+      </p>
+
+
+      <h2 data-i18n="nextSectionTitle">
         Your journey through Armenia starts here.
       </h2>
 
-      <p>
+
+      <p data-i18n="nextSectionDescription">
         The next homepage sections will be added here step by step.
       </p>
 
@@ -237,7 +591,11 @@
 
   </main>
 
+
+  <!-- JavaScript -->
+
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
