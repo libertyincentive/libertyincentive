@@ -21,6 +21,15 @@
     href="assets/images/liberty-incentive-logo.jpg"
   >
 
+  <!-- Load the poster immediately -->
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/images/hero-poster-selected.jpg"
+    fetchpriority="high"
+  >
+
   <link
     rel="stylesheet"
     href="css/style.css"
@@ -401,10 +410,11 @@
         loop
         playsinline
         preload="auto"
+        poster="assets/images/hero-poster-selected.jpg"
         aria-hidden="true"
       >
         <source
-          src="assets/video/hero-video.mp4.mp4"
+          src="assets/video/liberty-hero-selected-photos.mp4"
           type="video/mp4"
         >
 
