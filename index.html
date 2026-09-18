@@ -21,13 +21,11 @@
     href="assets/images/liberty-incentive-logo.jpg"
   >
 
-  <!-- Load the poster immediately -->
-
+  <!-- Load the hero poster quickly -->
   <link
     rel="preload"
-    as="image"
     href="assets/images/hero-poster-selected.jpg"
-    fetchpriority="high"
+    as="image"
   >
 
   <link
@@ -88,69 +86,42 @@
               Other Destinations
             </span>
 
-            <span
-              class="dropdown-arrow"
-              aria-hidden="true"
-            >
+            <span class="dropdown-arrow" aria-hidden="true">
               ▾
             </span>
           </button>
 
           <div class="dropdown-menu">
 
-            <a
-              href="#georgia"
-              data-i18n="destinationGeorgia"
-            >
+            <a href="#georgia" data-i18n="destinationGeorgia">
               Georgia
             </a>
 
-            <a
-              href="#caucasus"
-              data-i18n="destinationCaucasus"
-            >
+            <a href="#caucasus" data-i18n="destinationCaucasus">
               Combined Caucasus
             </a>
 
-            <a
-              href="#egypt"
-              data-i18n="destinationEgypt"
-            >
+            <a href="#egypt" data-i18n="destinationEgypt">
               Egypt
             </a>
 
-            <a
-              href="#qatar"
-              data-i18n="destinationQatar"
-            >
+            <a href="#qatar" data-i18n="destinationQatar">
               Qatar
             </a>
 
-            <a
-              href="#cyprus"
-              data-i18n="destinationCyprus"
-            >
+            <a href="#cyprus" data-i18n="destinationCyprus">
               Cyprus
             </a>
 
-            <a
-              href="#albania"
-              data-i18n="destinationAlbania"
-            >
+            <a href="#albania" data-i18n="destinationAlbania">
               Albania
             </a>
 
-            <a
-              href="#tunisia"
-              data-i18n="destinationTunisia"
-            >
+            <a href="#tunisia" data-i18n="destinationTunisia">
               Tunisia
             </a>
 
-            <a
-              href="#uae"
-              data-i18n="destinationUAE"
-            >
+            <a href="#uae" data-i18n="destinationUAE">
               UAE
             </a>
 
@@ -207,17 +178,11 @@
             class="language-menu"
             id="language-menu"
           >
-            <button
-              type="button"
-              data-language="en"
-            >
+            <button type="button" data-language="en">
               English
             </button>
 
-            <button
-              type="button"
-              data-language="hy"
-            >
+            <button type="button" data-language="hy">
               Հայերեն
             </button>
           </div>
@@ -298,59 +263,35 @@
           id="mobile-destinations-menu"
         >
 
-          <a
-            href="#georgia"
-            data-i18n="destinationGeorgia"
-          >
+          <a href="#georgia" data-i18n="destinationGeorgia">
             Georgia
           </a>
 
-          <a
-            href="#caucasus"
-            data-i18n="destinationCaucasus"
-          >
+          <a href="#caucasus" data-i18n="destinationCaucasus">
             Combined Caucasus
           </a>
 
-          <a
-            href="#egypt"
-            data-i18n="destinationEgypt"
-          >
+          <a href="#egypt" data-i18n="destinationEgypt">
             Egypt
           </a>
 
-          <a
-            href="#qatar"
-            data-i18n="destinationQatar"
-          >
+          <a href="#qatar" data-i18n="destinationQatar">
             Qatar
           </a>
 
-          <a
-            href="#cyprus"
-            data-i18n="destinationCyprus"
-          >
+          <a href="#cyprus" data-i18n="destinationCyprus">
             Cyprus
           </a>
 
-          <a
-            href="#albania"
-            data-i18n="destinationAlbania"
-          >
+          <a href="#albania" data-i18n="destinationAlbania">
             Albania
           </a>
 
-          <a
-            href="#tunisia"
-            data-i18n="destinationTunisia"
-          >
+          <a href="#tunisia" data-i18n="destinationTunisia">
             Tunisia
           </a>
 
-          <a
-            href="#uae"
-            data-i18n="destinationUAE"
-          >
+          <a href="#uae" data-i18n="destinationUAE">
             UAE
           </a>
 
@@ -513,7 +454,7 @@
       <a
         class="scroll-indicator"
         href="#about"
-        aria-label="Scroll to the next section"
+        aria-label="Scroll to the About Us section"
       >
         <span data-i18n="explore">
           Explore
@@ -524,29 +465,293 @@
 
     </section>
 
-    <!-- Temporary next section -->
+    <!-- =========================
+         ABOUT / VISION SECTION
+         ========================= -->
 
     <section
-      class="next-section"
+      class="about-section"
       id="about"
     >
 
-      <p
-        class="section-eyebrow"
-        data-i18n="companyName"
-      >
-        Liberty Incentive
-      </p>
+      <div class="about-container">
 
-      <h2 data-i18n="nextSectionTitle">
-        Your journey through Armenia starts here.
-      </h2>
+        <!-- About image -->
 
-      <p data-i18n="nextSectionDescription">
-        The next homepage sections will be added here step by step.
-      </p>
+        <div class="about-image-column">
+
+          <div class="about-image-wrapper">
+
+            <img
+              class="about-image"
+              src="assets/images/about-ararat-vineyard.jpg"
+              alt="Mount Ararat and an Armenian vineyard"
+              loading="lazy"
+            >
+
+            <div
+              class="about-image-accent"
+              aria-hidden="true"
+            ></div>
+
+            <div class="about-experience-card">
+
+              <strong data-i18n="aboutSinceYear">
+                2011
+              </strong>
+
+              <span data-i18n="aboutSinceText">
+                Creating memorable journeys
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- About content -->
+
+        <div class="about-content">
+
+          <p
+            class="section-eyebrow"
+            data-i18n="aboutEyebrow"
+          >
+            About Liberty Incentive
+          </p>
+
+          <h2 class="about-title">
+
+            <span data-i18n="aboutTitleFirst">
+              More than a journey.
+            </span>
+
+            <span data-i18n="aboutTitleSecond">
+              An experience designed around you.
+            </span>
+
+          </h2>
+
+          <div class="about-divider"></div>
+
+          <p
+            class="about-description"
+            data-i18n="aboutDescriptionFirst"
+          >
+            Founded in 2011, Liberty Incentive is an experienced Armenian
+            tour operator creating tailor-made journeys and professional
+            travel solutions across Armenia and the region.
+          </p>
+
+          <p
+            class="about-description"
+            data-i18n="aboutDescriptionSecond"
+          >
+            Through local expertise, trusted partnerships and thoughtful
+            service, we introduce travellers to Armenia’s ancient heritage,
+            remarkable landscapes, traditions and genuine hospitality.
+          </p>
+
+          <!-- About benefits -->
+
+          <div class="about-benefits">
+
+            <article class="about-benefit">
+
+              <span
+                class="about-benefit-number"
+                aria-hidden="true"
+              >
+                01
+              </span>
+
+              <div>
+
+                <h3 data-i18n="aboutBenefitOneTitle">
+                  Since 2011
+                </h3>
+
+                <p data-i18n="aboutBenefitOneText">
+                  Creating memorable journeys
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="about-benefit">
+
+              <span
+                class="about-benefit-number"
+                aria-hidden="true"
+              >
+                02
+              </span>
+
+              <div>
+
+                <h3 data-i18n="aboutBenefitTwoTitle">
+                  Local Expertise
+                </h3>
+
+                <p data-i18n="aboutBenefitTwoText">
+                  Designed by people who know Armenia
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="about-benefit">
+
+              <span
+                class="about-benefit-number"
+                aria-hidden="true"
+              >
+                03
+              </span>
+
+              <div>
+
+                <h3 data-i18n="aboutBenefitThreeTitle">
+                  Tailor-Made
+                </h3>
+
+                <p data-i18n="aboutBenefitThreeText">
+                  Every journey shaped around the traveller
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="about-benefit">
+
+              <span
+                class="about-benefit-number"
+                aria-hidden="true"
+              >
+                04
+              </span>
+
+              <div>
+
+                <h3 data-i18n="aboutBenefitFourTitle">
+                  Multilingual Service
+                </h3>
+
+                <p data-i18n="aboutBenefitFourText">
+                  Professional support for international guests
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <a
+            class="about-button"
+            href="#our-story"
+            data-i18n="aboutButton"
+          >
+            Discover Our Story
+          </a>
+
+        </div>
+
+      </div>
 
     </section>
+
+    <!-- =========================
+         FUTURE SECTIONS
+         ========================= -->
+
+    <section
+      class="section-placeholder"
+      id="armenia"
+      aria-label="Discover Armenia section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="georgia"
+      aria-label="Georgia section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="caucasus"
+      aria-label="Combined Caucasus section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="egypt"
+      aria-label="Egypt section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="qatar"
+      aria-label="Qatar section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="cyprus"
+      aria-label="Cyprus section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="albania"
+      aria-label="Albania section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="tunisia"
+      aria-label="Tunisia section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="uae"
+      aria-label="UAE section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="blog"
+      aria-label="Blog section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="gallery"
+      aria-label="Gallery section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="team"
+      aria-label="Our Team section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="contact"
+      aria-label="Contact section"
+    ></section>
+
+    <section
+      class="section-placeholder"
+      id="inquiry"
+      aria-label="Tour inquiry section"
+    ></section>
 
   </main>
 
