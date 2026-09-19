@@ -1851,3 +1851,534 @@ button:focus-visible {
     transform: none;
   }
 }
+
+/* =========================================================
+   DISCOVER ARMENIA SECTION
+   ========================================================= */
+
+.armenia-section {
+  position: relative;
+  width: 100%;
+  padding: 110px 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.armenia-container {
+  width: min(1280px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.armenia-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  align-items: end;
+  gap: 70px;
+  margin-bottom: 55px;
+}
+
+.armenia-heading-content {
+  min-width: 0;
+}
+
+.armenia-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 18px;
+  color: #f29a17;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.armenia-eyebrow::before {
+  width: 42px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: #f29a17;
+  content: "";
+}
+
+.armenia-heading h2 {
+  max-width: 680px;
+  margin: 0;
+  color: #063557;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 5vw, 74px);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.armenia-introduction {
+  max-width: 490px;
+  margin: 0 0 7px;
+  color: #526475;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   DESTINATION GRID
+   ========================================================= */
+
+.armenia-destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: 280px;
+  gap: 18px;
+}
+
+.armenia-destination-card {
+  position: relative;
+  grid-column: span 4;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #063557;
+  color: #ffffff;
+  text-decoration: none;
+  isolation: isolate;
+}
+
+.armenia-card-large {
+  grid-column: span 8;
+  grid-row: span 2;
+}
+
+.armenia-card-wide {
+  grid-column: span 4;
+}
+
+
+/* =========================================================
+   DESTINATION IMAGES
+   ========================================================= */
+
+.armenia-destination-card img {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition:
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+    filter 0.8s ease;
+}
+
+.armenia-destination-card:hover img {
+  transform: scale(1.07);
+  filter: saturate(1.05);
+}
+
+.armenia-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4, 29, 49, 0.05) 15%,
+      rgba(4, 29, 49, 0.2) 48%,
+      rgba(4, 29, 49, 0.88) 100%
+    );
+  transition: background 0.4s ease;
+}
+
+.armenia-destination-card:hover .armenia-card-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4, 29, 49, 0.03) 10%,
+      rgba(4, 29, 49, 0.14) 42%,
+      rgba(4, 29, 49, 0.92) 100%
+    );
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.armenia-card-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 16px;
+  padding: 28px;
+}
+
+.armenia-card-large .armenia-card-content {
+  padding: 38px;
+}
+
+.armenia-card-number {
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.armenia-card-content p {
+  margin: 0 0 6px;
+  color: #f4a11e;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.armenia-card-content h3 {
+  margin: 0;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(27px, 2.5vw, 42px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.armenia-card-large .armenia-card-content h3 {
+  font-size: clamp(38px, 4vw, 64px);
+}
+
+.armenia-card-arrow {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  place-items: center;
+  margin-bottom: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.armenia-destination-card:hover .armenia-card-arrow {
+  border-color: #f4a11e;
+  background-color: #f4a11e;
+  color: #062f50;
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   SECTION BUTTON
+   ========================================================= */
+
+.armenia-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.armenia-button {
+  position: relative;
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 32px;
+  overflow: hidden;
+  border: 2px solid #f4a11e;
+  border-radius: 3px;
+  background-color: #f4a11e;
+  color: #062f50;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.armenia-button:hover {
+  border-color: #063557;
+  background-color: #063557;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(6, 53, 87, 0.18);
+}
+
+
+/* =========================================================
+   KEYBOARD ACCESSIBILITY
+   ========================================================= */
+
+.armenia-destination-card:focus-visible,
+.armenia-button:focus-visible {
+  outline: 3px solid #f4a11e;
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1100px) {
+
+  .armenia-section {
+    padding: 90px 0;
+  }
+
+  .armenia-container {
+    width: min(100% - 48px, 1000px);
+  }
+
+  .armenia-heading {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 45px;
+  }
+
+  .armenia-destinations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 340px;
+  }
+
+  .armenia-destination-card {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .armenia-card-large {
+    grid-column: span 2;
+    grid-row: span 1;
+    min-height: 460px;
+  }
+
+  .armenia-card-wide {
+    grid-column: span 2;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 800px) {
+
+  .armenia-section {
+    padding: 78px 0;
+  }
+
+  .armenia-container {
+    width: min(100% - 36px, 720px);
+  }
+
+  .armenia-heading {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .armenia-heading h2 {
+    font-size: clamp(39px, 8vw, 58px);
+  }
+
+  .armenia-introduction {
+    max-width: 620px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .armenia-destinations-grid {
+    grid-auto-rows: 310px;
+    gap: 14px;
+  }
+
+  .armenia-card-large {
+    min-height: 420px;
+  }
+
+  .armenia-card-content,
+  .armenia-card-large .armenia-card-content {
+    padding: 25px;
+  }
+
+  .armenia-card-content h3,
+  .armenia-card-large .armenia-card-content h3 {
+    font-size: 34px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+  .armenia-section {
+    padding: 68px 0;
+  }
+
+  .armenia-container {
+    width: calc(100% - 28px);
+  }
+
+  .armenia-heading {
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .armenia-eyebrow {
+    gap: 11px;
+    margin-bottom: 14px;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+  }
+
+  .armenia-eyebrow::before {
+    width: 30px;
+  }
+
+  .armenia-heading h2 {
+    font-size: clamp(36px, 11vw, 48px);
+    line-height: 1.08;
+  }
+
+  .armenia-introduction {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .armenia-destinations-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 12px;
+  }
+
+  .armenia-destination-card,
+  .armenia-card-large,
+  .armenia-card-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+    min-height: 390px;
+  }
+
+  .armenia-card-content,
+  .armenia-card-large .armenia-card-content {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 14px;
+    padding: 23px 20px;
+  }
+
+  .armenia-card-number {
+    display: none;
+  }
+
+  .armenia-card-content p {
+    margin-bottom: 5px;
+    font-size: 10px;
+    letter-spacing: 0.13em;
+  }
+
+  .armenia-card-content h3,
+  .armenia-card-large .armenia-card-content h3 {
+    font-size: 33px;
+  }
+
+  .armenia-card-arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .armenia-action {
+    margin-top: 34px;
+  }
+
+  .armenia-button {
+    width: 100%;
+    min-height: 55px;
+    padding: 14px 22px;
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 390px) {
+
+  .armenia-container {
+    width: calc(100% - 22px);
+  }
+
+  .armenia-heading h2 {
+    font-size: 35px;
+  }
+
+  .armenia-destination-card,
+  .armenia-card-large,
+  .armenia-card-wide {
+    min-height: 350px;
+  }
+
+  .armenia-card-content,
+  .armenia-card-large .armenia-card-content {
+    padding: 20px 17px;
+  }
+
+  .armenia-card-content h3,
+  .armenia-card-large .armenia-card-content h3 {
+    font-size: 29px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .armenia-destination-card img,
+  .armenia-card-arrow,
+  .armenia-button {
+    transition: none;
+  }
+
+  .armenia-destination-card:hover img {
+    transform: none;
+  }
+
+}
