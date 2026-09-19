@@ -933,7 +933,7 @@ section {
 /* Orange italic heading */
 
 .about-title span:last-child {
-  color: var(--orange);
+  color: var(--primary-blue);
   font-style: italic;
 }
 
