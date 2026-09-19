@@ -21,7 +21,7 @@ const translations = {
     navTeam: "Our Team",
     navContact: "Contact",
 
-    /* Destinations */
+    /* Other destinations */
     destinationGeorgia: "Georgia",
     destinationCaucasus: "Combined Caucasus",
     destinationEgypt: "Egypt",
@@ -65,14 +65,17 @@ const translations = {
     aboutBenefitOneText: "Creating memorable journeys",
 
     aboutBenefitTwoTitle: "Local Expertise",
+
     aboutBenefitTwoText:
       "Designed by people who know Armenia",
 
     aboutBenefitThreeTitle: "Tailor-Made",
+
     aboutBenefitThreeText:
       "Every journey shaped around the traveller",
 
     aboutBenefitFourTitle: "Multilingual Service",
+
     aboutBenefitFourText:
       "Professional support for international guests",
 
@@ -116,7 +119,55 @@ const translations = {
       "Accommodation & Transportation",
 
     serviceSixText:
-      "Carefully selected hotels, comfortable transportation, professional guides and complete ground support."
+      "Carefully selected hotels, comfortable transportation, professional guides and complete ground support.",
+
+    /* Discover Armenia section */
+    armeniaEyebrow: "Discover Armenia",
+
+    armeniaTitle:
+      "A country of timeless beauty",
+
+    armeniaIntroduction:
+      "Explore ancient heritage, dramatic landscapes, vibrant cities and authentic experiences that make every journey through Armenia unforgettable.",
+
+    armeniaCardYerevanSubtitle:
+      "The Pink City",
+
+    armeniaCardYerevanTitle:
+      "Yerevan",
+
+    armeniaCardGarniSubtitle:
+      "Ancient Heritage",
+
+    armeniaCardGarniTitle:
+      "Garni",
+
+    armeniaCardSevanSubtitle:
+      "The Blue Pearl",
+
+    armeniaCardSevanTitle:
+      "Lake Sevan",
+
+    armeniaCardDilijanSubtitle:
+      "Forests & Monasteries",
+
+    armeniaCardDilijanTitle:
+      "Dilijan",
+
+    armeniaCardTatevSubtitle:
+      "Southern Armenia",
+
+    armeniaCardTatevTitle:
+      "Tatev",
+
+    armeniaCardWineSubtitle:
+      "Flavours & Traditions",
+
+    armeniaCardWineTitle:
+      "Wine Region",
+
+    armeniaButton:
+      "Start Exploring Armenia"
   },
 
   hy: {
@@ -129,7 +180,7 @@ const translations = {
     navTeam: "Մեր թիմը",
     navContact: "Կապ",
 
-    /* Destinations */
+    /* Other destinations */
     destinationGeorgia: "Վրաստան",
     destinationCaucasus: "Համակցված Կովկաս",
     destinationEgypt: "Եգիպտոս",
@@ -153,10 +204,12 @@ const translations = {
     heroDescription:
       "Անհատականացված ճանապարհորդություններ, իսկական փորձառություններ և անմոռանալի պահեր՝ ստեղծված տեղացի մասնագետների կողմից։",
 
-    sideLabel: "2011 թվականից · Երևան, Հայաստան",
+    sideLabel:
+      "2011 թվականից · Երևան, Հայաստան",
 
     /* About section */
-    aboutEyebrow: "Liberty Incentive-ի մասին",
+    aboutEyebrow:
+      "Liberty Incentive-ի մասին",
 
     aboutTitleFirst:
       "Ավելին, քան պարզապես ճանապարհորդություն։",
@@ -175,30 +228,36 @@ const translations = {
     aboutSinceText:
       "Ստեղծում ենք հիշարժան ճանապարհորդություններ",
 
-    aboutBenefitOneTitle: "2011 թվականից",
+    aboutBenefitOneTitle:
+      "2011 թվականից",
 
     aboutBenefitOneText:
       "Ստեղծում ենք հիշարժան ճանապարհորդություններ",
 
-    aboutBenefitTwoTitle: "Տեղական փորձ",
+    aboutBenefitTwoTitle:
+      "Տեղական փորձ",
 
     aboutBenefitTwoText:
       "Ծրագրեր՝ մշակված Հայաստանը ճանաչող մասնագետների կողմից",
 
-    aboutBenefitThreeTitle: "Անհատական մոտեցում",
+    aboutBenefitThreeTitle:
+      "Անհատական մոտեցում",
 
     aboutBenefitThreeText:
       "Յուրաքանչյուր ճանապարհորդություն՝ ստեղծված հյուրի ցանկություններին համապատասխան",
 
-    aboutBenefitFourTitle: "Բազմալեզու սպասարկում",
+    aboutBenefitFourTitle:
+      "Բազմալեզու սպասարկում",
 
     aboutBenefitFourText:
       "Մասնագիտական աջակցություն միջազգային հյուրերին",
 
-    aboutButton: "Բացահայտեք մեր պատմությունը",
+    aboutButton:
+      "Բացահայտեք մեր պատմությունը",
 
     /* Services section */
-    servicesEyebrow: "Մեր ծառայությունները",
+    servicesEyebrow:
+      "Մեր ծառայությունները",
 
     servicesTitle:
       "Ամեն ինչ՝ Ձեր կատարյալ ճանապարհորդության համար",
@@ -212,7 +271,8 @@ const translations = {
     serviceOneText:
       "Ճամփորդական ծրագրեր՝ մշակված յուրաքանչյուր ճանապարհորդի հետաքրքրությունների, ժամանակացույցի և բյուջեի համաձայն։",
 
-    serviceTwoTitle: "Խմբային տուրեր",
+    serviceTwoTitle:
+      "Խմբային տուրեր",
 
     serviceTwoText:
       "Մշակութային, ժամանցային և հատուկ հետաքրքրություններին համապատասխան ծրագրեր՝ տարբեր մեծության խմբերի համար։",
@@ -239,7 +299,56 @@ const translations = {
       "Կացություն և տրանսպորտային ծառայություններ",
 
     serviceSixText:
-      "Խնամքով ընտրված հյուրանոցներ, հարմարավետ տրանսպորտ, մասնագիտական զբոսավարներ և ամբողջական սպասարկում։"
+      "Խնամքով ընտրված հյուրանոցներ, հարմարավետ տրանսպորտ, մասնագիտական զբոսավարներ և ամբողջական սպասարկում։",
+
+    /* Discover Armenia section */
+    armeniaEyebrow:
+      "Բացահայտեք Հայաստանը",
+
+    armeniaTitle:
+      "Հավերժական գեղեցկության երկիր",
+
+    armeniaIntroduction:
+      "Բացահայտեք հնագույն ժառանգությունը, տպավորիչ բնապատկերները, կենսունակ քաղաքներն ու իսկական փորձառությունները, որոնք անմոռանալի են դարձնում յուրաքանչյուր ճանապարհորդություն Հայաստանում։",
+
+    armeniaCardYerevanSubtitle:
+      "Վարդագույն քաղաք",
+
+    armeniaCardYerevanTitle:
+      "Երևան",
+
+    armeniaCardGarniSubtitle:
+      "Հնագույն ժառանգություն",
+
+    armeniaCardGarniTitle:
+      "Գառնի",
+
+    armeniaCardSevanSubtitle:
+      "Կապույտ մարգարիտ",
+
+    armeniaCardSevanTitle:
+      "Սևանա լիճ",
+
+    armeniaCardDilijanSubtitle:
+      "Անտառներ և վանքեր",
+
+    armeniaCardDilijanTitle:
+      "Դիլիջան",
+
+    armeniaCardTatevSubtitle:
+      "Հարավային Հայաստան",
+
+    armeniaCardTatevTitle:
+      "Տաթև",
+
+    armeniaCardWineSubtitle:
+      "Համեր և ավանդույթներ",
+
+    armeniaCardWineTitle:
+      "Գինու տարածաշրջան",
+
+    armeniaButton:
+      "Սկսեք բացահայտել Հայաստանը"
   }
 };
 
@@ -293,6 +402,9 @@ const aboutSection =
 
 const servicesSection =
   document.querySelector(".services-section");
+
+const armeniaSection =
+  document.querySelector(".armenia-section");
 
 const heroVideo =
   document.querySelector(".hero-video");
@@ -674,7 +786,8 @@ updateHeaderOnScroll();
 
 const animatedSections = [
   aboutSection,
-  servicesSection
+  servicesSection,
+  armeniaSection
 ].filter(Boolean);
 
 if (
