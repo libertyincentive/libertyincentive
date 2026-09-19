@@ -167,7 +167,83 @@ const translations = {
       "Wine Region",
 
     armeniaButton:
-      "Plan Your Armenia Journey"
+      "Plan Your Armenia Journey",
+
+    /* Best-selling Armenia tours */
+    toursEyebrow: "Best-Selling Armenia Tours",
+    toursTitle: "Choose your journey through Armenia.",
+    toursIntroduction:
+      "Carefully designed private journeys combining Armenia's culture, landscapes, traditions and warm hospitality.",
+    viewItinerary: "View Itinerary",
+    requestThisTour: "Request This Tour",
+
+    tourOneDuration: "3 Nights / 4 Days",
+    tourOneLabel: "Essential Armenia",
+    tourOneTitle: "Armenia Discovery",
+    tourOneSummary:
+      "Discover Yerevan, Tsaghkadzor and Lake Sevan on a compact introduction to Armenia.",
+    tourOneDayOne:
+      "Day 1: Arrival and transfer to the hotel. Overnight in Yerevan.",
+    tourOneDayTwo:
+      "Day 2: Yerevan city tour, GUM Market and Vernissage. Overnight in Yerevan.",
+    tourOneDayThree:
+      "Day 3: Yerevan – Tsaghkadzor – Lake Sevan – Sevanavank – Yerevan. Overnight in Yerevan.",
+    tourOneDayFour:
+      "Day 4: Transfer to the airport.",
+
+    tourTwoDuration: "4 Nights / 5 Days",
+    tourTwoLabel: "Culture & Nature",
+    tourTwoTitle: "Classic Armenia",
+    tourTwoSummary:
+      "Explore Armenia's capital, mountain landscapes, Lake Sevan, Garni and the rock-carved Geghard Monastery.",
+    tourTwoDayOne:
+      "Day 1: Arrival and transfer to the hotel. Overnight in Yerevan.",
+    tourTwoDayTwo:
+      "Day 2: Yerevan city tour, GUM Market and Vernissage. Overnight in Yerevan.",
+    tourTwoDayThree:
+      "Day 3: Yerevan – Tsaghkadzor – Lake Sevan – Sevanavank – Yerevan. Overnight in Yerevan.",
+    tourTwoDayFour:
+      "Day 4: Yerevan – Charents Arch – Garni – Geghard – Symphony of Stones – Yerevan. Overnight in Yerevan.",
+    tourTwoDayFive:
+      "Day 5: Transfer to the airport.",
+
+    tourThreeDuration: "5 Nights / 6 Days",
+    tourThreeLabel: "Heritage & Wine",
+    tourThreeTitle: "Armenian Highlights",
+    tourThreeSummary:
+      "Experience Armenia's celebrated monasteries, natural wonders, spa town and ancient winemaking heritage.",
+    tourThreeDayOne:
+      "Day 1: Arrival and transfer to the hotel. Overnight in Yerevan.",
+    tourThreeDayTwo:
+      "Day 2: Yerevan city tour, GUM Market and Vernissage. Overnight in Yerevan.",
+    tourThreeDayThree:
+      "Day 3: Yerevan – Tsaghkadzor – Lake Sevan – Sevanavank – Yerevan. Overnight in Yerevan.",
+    tourThreeDayFour:
+      "Day 4: Yerevan – Khor Virap – Areni Cave – Jermuk Mineral Water Gallery – Jermuk Waterfall – Areni Winery – Yerevan. Overnight in Yerevan.",
+    tourThreeDayFive:
+      "Day 5: Yerevan – Charents Arch – Garni – Geghard – Symphony of Stones – Yerevan. Overnight in Yerevan.",
+    tourThreeDaySix:
+      "Day 6: Transfer to the airport.",
+
+    tourFourDuration: "6 Nights / 7 Days",
+    tourFourLabel: "The Complete Journey",
+    tourFourTitle: "Complete Armenia",
+    tourFourSummary:
+      "A complete journey through Armenia's history, landscapes, sacred landmarks, traditions and local hospitality.",
+    tourFourDayOne:
+      "Day 1: Arrival and transfer to the hotel. Overnight in Yerevan.",
+    tourFourDayTwo:
+      "Day 2: Yerevan city tour, GUM Market and Vernissage. Overnight in Yerevan.",
+    tourFourDayThree:
+      "Day 3: Yerevan – Tsaghkadzor – Lake Sevan – Sevanavank – Yerevan. Overnight in Yerevan.",
+    tourFourDayFour:
+      "Day 4: Yerevan – Khor Virap – Areni Cave – Jermuk Mineral Water Gallery – Jermuk Waterfall – Areni Winery – Yerevan. Overnight in Yerevan.",
+    tourFourDayFive:
+      "Day 5: Yerevan – Charents Arch – Garni – Geghard – Symphony of Stones – Yerevan. Overnight in Yerevan.",
+    tourFourDaySix:
+      "Day 6: Yerevan – Etchmiadzin – Zvartnots – Machanents Guest House – Yerevan. Overnight in Yerevan.",
+    tourFourDaySeven:
+      "Day 7: Transfer to the airport."
   },
 
   hy: {
@@ -348,7 +424,83 @@ const translations = {
       "Գինու տարածաշրջան",
 
     armeniaButton:
-      "Պլանավորեք Ձեր ճանապարհորդությունը Հայաստանում"
+      "Պլանավորեք Ձեր ճանապարհորդությունը Հայաստանում",
+
+    /* Best-selling Armenia tours */
+    toursEyebrow: "Հայաստանի ամենապահանջված տուրերը",
+    toursTitle: "Ընտրեք Ձեր ճանապարհորդությունը Հայաստանում։",
+    toursIntroduction:
+      "Խնամքով մշակված անհատական ծրագրեր, որոնք միավորում են Հայաստանի մշակույթը, բնությունը, ավանդույթներն ու ջերմ հյուրընկալությունը։",
+    viewItinerary: "Դիտել ծրագիրը",
+    requestThisTour: "Հարցում ուղարկել",
+
+    tourOneDuration: "3 գիշեր / 4 օր",
+    tourOneLabel: "Հայաստանի հիմնական տեսարժան վայրերը",
+    tourOneTitle: "Բացահայտեք Հայաստանը",
+    tourOneSummary:
+      "Բացահայտեք Երևանը, Ծաղկաձորը և Սևանա լիճը՝ Հայաստանի հետ կարճ, բայց հագեցած ծանոթության ընթացքում։",
+    tourOneDayOne:
+      "Օր 1․ Ժամանում և տեղափոխում հյուրանոց։ Գիշերակաց Երևանում։",
+    tourOneDayTwo:
+      "Օր 2․ Երևանի տեսարժան վայրեր, ԳՈՒՄ շուկա և Վերնիսաժ։ Գիշերակաց Երևանում։",
+    tourOneDayThree:
+      "Օր 3․ Երևան – Ծաղկաձոր – Սևանա լիճ – Սևանավանք – Երևան։ Գիշերակաց Երևանում։",
+    tourOneDayFour:
+      "Օր 4․ Տեղափոխում օդանավակայան։",
+
+    tourTwoDuration: "4 գիշեր / 5 օր",
+    tourTwoLabel: "Մշակույթ և բնություն",
+    tourTwoTitle: "Դասական Հայաստան",
+    tourTwoSummary:
+      "Բացահայտեք Հայաստանի մայրաքաղաքը, լեռնային բնապատկերները, Սևանա լիճը, Գառնին և ժայռափոր Գեղարդի վանքը։",
+    tourTwoDayOne:
+      "Օր 1․ Ժամանում և տեղափոխում հյուրանոց։ Գիշերակաց Երևանում։",
+    tourTwoDayTwo:
+      "Օր 2․ Երևանի տեսարժան վայրեր, ԳՈՒՄ շուկա և Վերնիսաժ։ Գիշերակաց Երևանում։",
+    tourTwoDayThree:
+      "Օր 3․ Երևան – Ծաղկաձոր – Սևանա լիճ – Սևանավանք – Երևան։ Գիշերակաց Երևանում։",
+    tourTwoDayFour:
+      "Օր 4․ Երևան – Չարենցի կամար – Գառնի – Գեղարդ – Քարերի սիմֆոնիա – Երևան։ Գիշերակաց Երևանում։",
+    tourTwoDayFive:
+      "Օր 5․ Տեղափոխում օդանավակայան։",
+
+    tourThreeDuration: "5 գիշեր / 6 օր",
+    tourThreeLabel: "Ժառանգություն և գինի",
+    tourThreeTitle: "Հայաստանի լավագույնը",
+    tourThreeSummary:
+      "Բացահայտեք Հայաստանի հայտնի վանքերը, բնության հրաշքները, առողջարանային քաղաքն ու գինեգործական հնագույն ժառանգությունը։",
+    tourThreeDayOne:
+      "Օր 1․ Ժամանում և տեղափոխում հյուրանոց։ Գիշերակաց Երևանում։",
+    tourThreeDayTwo:
+      "Օր 2․ Երևանի տեսարժան վայրեր, ԳՈՒՄ շուկա և Վերնիսաժ։ Գիշերակաց Երևանում։",
+    tourThreeDayThree:
+      "Օր 3․ Երևան – Ծաղկաձոր – Սևանա լիճ – Սևանավանք – Երևան։ Գիշերակաց Երևանում։",
+    tourThreeDayFour:
+      "Օր 4․ Երևան – Խոր Վիրապ – Արենիի քարանձավ – Ջերմուկի հանքային ջրերի սրահ – Ջերմուկի ջրվեժ – Արենիի գինու գործարան – Երևան։ Գիշերակաց Երևանում։",
+    tourThreeDayFive:
+      "Օր 5․ Երևան – Չարենցի կամար – Գառնի – Գեղարդ – Քարերի սիմֆոնիա – Երևան։ Գիշերակաց Երևանում։",
+    tourThreeDaySix:
+      "Օր 6․ Տեղափոխում օդանավակայան։",
+
+    tourFourDuration: "6 գիշեր / 7 օր",
+    tourFourLabel: "Ամբողջական ճանապարհորդություն",
+    tourFourTitle: "Ամբողջական Հայաստան",
+    tourFourSummary:
+      "Ամբողջական ճանապարհորդություն Հայաստանի պատմության, բնության, սրբավայրերի, ավանդույթների և տեղական հյուրընկալության աշխարհում։",
+    tourFourDayOne:
+      "Օր 1․ Ժամանում և տեղափոխում հյուրանոց։ Գիշերակաց Երևանում։",
+    tourFourDayTwo:
+      "Օր 2․ Երևանի տեսարժան վայրեր, ԳՈՒՄ շուկա և Վերնիսաժ։ Գիշերակաց Երևանում։",
+    tourFourDayThree:
+      "Օր 3․ Երևան – Ծաղկաձոր – Սևանա լիճ – Սևանավանք – Երևան։ Գիշերակաց Երևանում։",
+    tourFourDayFour:
+      "Օր 4․ Երևան – Խոր Վիրապ – Արենիի քարանձավ – Ջերմուկի հանքային ջրերի սրահ – Ջերմուկի ջրվեժ – Արենիի գինու գործարան – Երևան։ Գիշերակաց Երևանում։",
+    tourFourDayFive:
+      "Օր 5․ Երևան – Չարենցի կամար – Գառնի – Գեղարդ – Քարերի սիմֆոնիա – Երևան։ Գիշերակաց Երևանում։",
+    tourFourDaySix:
+      "Օր 6․ Երևան – Էջմիածին – Զվարթնոց – Մաչանենց հյուրատուն – Երևան։ Գիշերակաց Երևանում։",
+    tourFourDaySeven:
+      "Օր 7․ Տեղափոխում օդանավակայան։"
   }
 };
 
@@ -405,6 +557,18 @@ const servicesSection =
 
 const armeniaSection =
   document.querySelector(".armenia-section");
+
+const toursSection =
+  document.querySelector(".tours-section");
+
+const tourOpenButtons =
+  document.querySelectorAll("[data-tour-open]");
+
+const tourCloseButtons =
+  document.querySelectorAll("[data-tour-close]");
+
+const tourModals =
+  document.querySelectorAll(".tour-modal");
 
 const heroVideo =
   document.querySelector(".hero-video");
@@ -751,12 +915,130 @@ document.addEventListener("keydown", (event) => {
     closeLanguageMenu();
     closeDesktopDropdown();
     closeMobileMenu();
+    closeTourModal();
   }
 });
 
 
 /* ==================================================
-   9. HEADER SCROLL EFFECT
+   9. TOUR ITINERARY MODALS
+   ================================================== */
+
+let activeTourModal = null;
+let lastTourTrigger = null;
+
+function openTourModal(modalId, trigger) {
+  const modal = document.getElementById(modalId);
+
+  if (!modal || !modal.classList.contains("tour-modal")) {
+    return;
+  }
+
+  closeTourModal(false);
+
+  activeTourModal = modal;
+  lastTourTrigger = trigger || null;
+
+  modal.classList.add("is-open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("tour-modal-open");
+
+  const closeButton =
+    modal.querySelector(".tour-modal-close");
+
+  if (closeButton) {
+    window.setTimeout(() => {
+      closeButton.focus();
+    }, 50);
+  }
+}
+
+function closeTourModal(restoreFocus = true) {
+  if (!activeTourModal) {
+    return;
+  }
+
+  activeTourModal.classList.remove("is-open");
+  activeTourModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("tour-modal-open");
+
+  const triggerToRestore = lastTourTrigger;
+
+  activeTourModal = null;
+  lastTourTrigger = null;
+
+  if (
+    restoreFocus &&
+    triggerToRestore &&
+    typeof triggerToRestore.focus === "function"
+  ) {
+    triggerToRestore.focus();
+  }
+}
+
+tourOpenButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    openTourModal(
+      button.dataset.tourOpen,
+      button
+    );
+  });
+});
+
+tourCloseButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    closeTourModal();
+  });
+});
+
+tourModals.forEach((modal) => {
+  const inquiryLink =
+    modal.querySelector(".tour-modal-inquiry");
+
+  if (inquiryLink) {
+    inquiryLink.addEventListener("click", () => {
+      closeTourModal(false);
+    });
+  }
+
+  modal.addEventListener("keydown", (event) => {
+    if (event.key !== "Tab") {
+      return;
+    }
+
+    const focusableElements = Array.from(
+      modal.querySelectorAll(
+        'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])'
+      )
+    );
+
+    if (focusableElements.length === 0) {
+      return;
+    }
+
+    const firstElement = focusableElements[0];
+    const lastElement =
+      focusableElements[focusableElements.length - 1];
+
+    if (
+      event.shiftKey &&
+      document.activeElement === firstElement
+    ) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (
+      !event.shiftKey &&
+      document.activeElement === lastElement
+    ) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  });
+});
+
+
+/* ==================================================
+   10. HEADER SCROLL EFFECT
    ================================================== */
 
 function updateHeaderOnScroll() {
@@ -781,13 +1063,14 @@ updateHeaderOnScroll();
 
 
 /* ==================================================
-   10. SECTION ANIMATIONS
+   11. SECTION ANIMATIONS
    ================================================== */
 
 const animatedSections = [
   aboutSection,
   servicesSection,
-  armeniaSection
+  armeniaSection,
+  toursSection
 ].filter(Boolean);
 
 if (
@@ -825,7 +1108,7 @@ if (
 
 
 /* ==================================================
-   11. HERO VIDEO
+   12. HERO VIDEO
    ================================================== */
 
 if (heroVideo) {
@@ -861,7 +1144,7 @@ if (heroVideo) {
 
 
 /* ==================================================
-   12. WINDOW RESIZE
+   13. WINDOW RESIZE
    ================================================== */
 
 window.addEventListener("resize", () => {
@@ -872,7 +1155,7 @@ window.addEventListener("resize", () => {
 
 
 /* ==================================================
-   13. INITIAL LANGUAGE
+   14. INITIAL LANGUAGE
    ================================================== */
 
 const savedLanguage =
