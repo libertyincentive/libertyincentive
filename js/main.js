@@ -167,7 +167,7 @@ const translations = {
       "Wine Region",
 
     armeniaButton:
-      "Start Exploring Armenia"
+      "Plan Your Armenia Journey"
   },
 
   hy: {
@@ -348,7 +348,7 @@ const translations = {
       "Գինու տարածաշրջան",
 
     armeniaButton:
-      "Սկսեք բացահայտել Հայաստանը"
+      "Պլանավորեք Ձեր ճանապարհորդությունը Հայաստանում"
   }
 };
 
