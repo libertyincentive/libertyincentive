@@ -31,17 +31,20 @@ const translations = {
     destinationTunisia: "Tunisia",
     destinationUAE: "UAE",
 
-    /* General buttons */
+    /* General */
     planTrip: "Plan Your Trip",
     discoverArmenia: "Discover Armenia",
     explore: "Explore",
+    learnMore: "Learn More",
 
     /* Hero */
     heroEyebrow: "Welcome to Armenia",
     heroTitleMain: "Armenia",
     heroTitleOutline: "Beyond the Ordinary",
+
     heroDescription:
       "Tailor-made journeys, authentic experiences and unforgettable moments created by local experts.",
+
     sideLabel: "Since 2011 · Yerevan, Armenia",
 
     /* About section */
@@ -62,7 +65,8 @@ const translations = {
     aboutBenefitOneText: "Creating memorable journeys",
 
     aboutBenefitTwoTitle: "Local Expertise",
-    aboutBenefitTwoText: "Designed by people who know Armenia",
+    aboutBenefitTwoText:
+      "Designed by people who know Armenia",
 
     aboutBenefitThreeTitle: "Tailor-Made",
     aboutBenefitThreeText:
@@ -72,7 +76,47 @@ const translations = {
     aboutBenefitFourText:
       "Professional support for international guests",
 
-    aboutButton: "Discover Our Story"
+    aboutButton: "Discover Our Story",
+
+    /* Services section */
+    servicesEyebrow: "What We Offer",
+
+    servicesTitle:
+      "Everything for your perfect journey",
+
+    servicesIntroduction:
+      "From the first idea to the final farewell, our team carefully manages every detail of your journey.",
+
+    serviceOneTitle: "Tailor-Made Journeys",
+
+    serviceOneText:
+      "Personalized itineraries designed around each traveller’s interests, schedule and budget.",
+
+    serviceTwoTitle: "Group Tours",
+
+    serviceTwoText:
+      "Carefully organized cultural, leisure and special-interest programs for groups of every size.",
+
+    serviceThreeTitle: "MICE & Incentives",
+
+    serviceThreeText:
+      "Professional solutions for meetings, conferences, incentive trips and corporate events.",
+
+    serviceFourTitle: "Cultural Experiences",
+
+    serviceFourText:
+      "Authentic encounters with Armenia’s heritage, traditions, cuisine and local communities.",
+
+    serviceFiveTitle: "Adventure & Active Travel",
+
+    serviceFiveText:
+      "Hiking, cycling, jeep tours, winter activities and outdoor experiences across Armenia.",
+
+    serviceSixTitle:
+      "Accommodation & Transportation",
+
+    serviceSixText:
+      "Carefully selected hotels, comfortable transportation, professional guides and complete ground support."
   },
 
   hy: {
@@ -95,23 +139,30 @@ const translations = {
     destinationTunisia: "Թունիս",
     destinationUAE: "ԱՄԷ",
 
-    /* General buttons */
+    /* General */
     planTrip: "Պլանավորեք ուղևորությունը",
     discoverArmenia: "Բացահայտեք Հայաստանը",
     explore: "Բացահայտել",
+    learnMore: "Իմանալ ավելին",
 
     /* Hero */
     heroEyebrow: "Բարի գալուստ Հայաստան",
     heroTitleMain: "Հայաստան",
     heroTitleOutline: "Սովորականից այն կողմ",
+
     heroDescription:
       "Անհատականացված ճանապարհորդություններ, իսկական փորձառություններ և անմոռանալի պահեր՝ ստեղծված տեղացի մասնագետների կողմից։",
+
     sideLabel: "2011 թվականից · Երևան, Հայաստան",
 
     /* About section */
     aboutEyebrow: "Liberty Incentive-ի մասին",
-    aboutTitleFirst: "Ավելին, քան պարզապես ճանապարհորդություն։",
-    aboutTitleSecond: "Ձեզ համար ստեղծված փորձառություն։",
+
+    aboutTitleFirst:
+      "Ավելին, քան պարզապես ճանապարհորդություն։",
+
+    aboutTitleSecond:
+      "Ձեզ համար ստեղծված փորձառություն։",
 
     aboutDescriptionFirst:
       "2011 թվականին հիմնադրված Liberty Incentive-ը հայկական փորձառու տուրօպերատոր է, որն առաջարկում է անհատականացված ճանապարհորդություններ և մասնագիտական զբոսաշրջային ծառայություններ Հայաստանում ու տարածաշրջանում։",
@@ -120,25 +171,75 @@ const translations = {
       "Տեղական փորձի, վստահելի գործընկերների և հոգատար սպասարկման շնորհիվ մենք ճանապարհորդներին ներկայացնում ենք Հայաստանի հնագույն ժառանգությունը, տպավորիչ բնությունը, ավանդույթներն ու անկեղծ հյուրընկալությունը։",
 
     aboutSinceYear: "2011",
-    aboutSinceText: "Ստեղծում ենք հիշարժան ճանապարհորդություններ",
+
+    aboutSinceText:
+      "Ստեղծում ենք հիշարժան ճանապարհորդություններ",
 
     aboutBenefitOneTitle: "2011 թվականից",
+
     aboutBenefitOneText:
       "Ստեղծում ենք հիշարժան ճանապարհորդություններ",
 
     aboutBenefitTwoTitle: "Տեղական փորձ",
+
     aboutBenefitTwoText:
       "Ծրագրեր՝ մշակված Հայաստանը ճանաչող մասնագետների կողմից",
 
     aboutBenefitThreeTitle: "Անհատական մոտեցում",
+
     aboutBenefitThreeText:
       "Յուրաքանչյուր ճանապարհորդություն՝ ստեղծված հյուրի ցանկություններին համապատասխան",
 
     aboutBenefitFourTitle: "Բազմալեզու սպասարկում",
+
     aboutBenefitFourText:
       "Մասնագիտական աջակցություն միջազգային հյուրերին",
 
-    aboutButton: "Բացահայտեք մեր պատմությունը"
+    aboutButton: "Բացահայտեք մեր պատմությունը",
+
+    /* Services section */
+    servicesEyebrow: "Մեր ծառայությունները",
+
+    servicesTitle:
+      "Ամեն ինչ՝ Ձեր կատարյալ ճանապարհորդության համար",
+
+    servicesIntroduction:
+      "Առաջին գաղափարից մինչև հրաժեշտի պահը մեր թիմը հոգատարությամբ կազմակերպում է Ձեր ճանապարհորդության յուրաքանչյուր մանրուք։",
+
+    serviceOneTitle:
+      "Անհատականացված ճանապարհորդություններ",
+
+    serviceOneText:
+      "Ճամփորդական ծրագրեր՝ մշակված յուրաքանչյուր ճանապարհորդի հետաքրքրությունների, ժամանակացույցի և բյուջեի համաձայն։",
+
+    serviceTwoTitle: "Խմբային տուրեր",
+
+    serviceTwoText:
+      "Մշակութային, ժամանցային և հատուկ հետաքրքրություններին համապատասխան ծրագրեր՝ տարբեր մեծության խմբերի համար։",
+
+    serviceThreeTitle:
+      "MICE և խրախուսական ուղևորություններ",
+
+    serviceThreeText:
+      "Մասնագիտական լուծումներ հանդիպումների, համաժողովների, խրախուսական ուղևորությունների և կորպորատիվ միջոցառումների համար։",
+
+    serviceFourTitle:
+      "Մշակութային փորձառություններ",
+
+    serviceFourText:
+      "Անմիջական ծանոթություն Հայաստանի ժառանգությանը, ավանդույթներին, խոհանոցին և տեղական համայնքներին։",
+
+    serviceFiveTitle:
+      "Արկածային և ակտիվ տուրիզմ",
+
+    serviceFiveText:
+      "Արշավներ, հեծանվային և ջիպ տուրեր, ձմեռային ակտիվություններ և բացօթյա փորձառություններ Հայաստանում։",
+
+    serviceSixTitle:
+      "Կացություն և տրանսպորտային ծառայություններ",
+
+    serviceSixText:
+      "Խնամքով ընտրված հյուրանոցներ, հարմարավետ տրանսպորտ, մասնագիտական զբոսավարներ և ամբողջական սպասարկում։"
   }
 };
 
@@ -147,39 +248,51 @@ const translations = {
    2. ELEMENTS
    ================================================== */
 
-const siteHeader = document.getElementById("site-header");
+const siteHeader =
+  document.getElementById("site-header");
 
-const languageSelector = document.querySelector(".language-selector");
-const languageButton = document.getElementById("language-button");
-const languageMenu = document.getElementById("language-menu");
+const languageSelector =
+  document.querySelector(".language-selector");
+
+const languageButton =
+  document.getElementById("language-button");
+
 const currentLanguageElement =
   document.getElementById("current-language");
-const languageOptions = document.querySelectorAll(
-  "[data-language]"
-);
+
+const languageOptions =
+  document.querySelectorAll("[data-language]");
 
 const mobileMenuButton =
   document.getElementById("mobile-menu-button");
+
 const mobileNavigation =
   document.getElementById("mobile-navigation");
 
 const mobileDestinations =
   document.querySelector(".mobile-destinations");
+
 const mobileDestinationsButton =
-  document.getElementById("mobile-destinations-button");
-const mobileDestinationsMenu =
-  document.getElementById("mobile-destinations-menu");
+  document.getElementById(
+    "mobile-destinations-button"
+  );
 
 const desktopDropdown =
   document.querySelector(".navigation-dropdown");
+
 const desktopDropdownButton =
   document.querySelector(".dropdown-button");
 
 const mobileNavigationLinks =
-  document.querySelectorAll(".mobile-navigation a");
+  document.querySelectorAll(
+    ".mobile-navigation a"
+  );
 
 const aboutSection =
   document.querySelector(".about-section");
+
+const servicesSection =
+  document.querySelector(".services-section");
 
 const heroVideo =
   document.querySelector(".hero-video");
@@ -190,21 +303,26 @@ const heroVideo =
    ================================================== */
 
 function updateLanguage(language) {
-  const selectedTranslations = translations[language];
+  const selectedTranslations =
+    translations[language];
 
   if (!selectedTranslations) {
     return;
   }
 
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const translationKey = element.dataset.i18n;
-    const translatedText =
-      selectedTranslations[translationKey];
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach((element) => {
+      const translationKey =
+        element.dataset.i18n;
 
-    if (translatedText !== undefined) {
-      element.textContent = translatedText;
-    }
-  });
+      const translatedText =
+        selectedTranslations[translationKey];
+
+      if (translatedText !== undefined) {
+        element.textContent = translatedText;
+      }
+    });
 
   document.documentElement.lang =
     language === "hy" ? "hy" : "en";
@@ -218,7 +336,11 @@ function updateLanguage(language) {
     const isActive =
       option.dataset.language === language;
 
-    option.classList.toggle("active", isActive);
+    option.classList.toggle(
+      "active",
+      isActive
+    );
+
     option.setAttribute(
       "aria-pressed",
       isActive ? "true" : "false"
@@ -244,7 +366,11 @@ function openLanguageMenu() {
   }
 
   languageSelector.classList.add("is-open");
-  languageButton.setAttribute("aria-expanded", "true");
+
+  languageButton.setAttribute(
+    "aria-expanded",
+    "true"
+  );
 }
 
 function closeLanguageMenu() {
@@ -253,7 +379,11 @@ function closeLanguageMenu() {
   }
 
   languageSelector.classList.remove("is-open");
-  languageButton.setAttribute("aria-expanded", "false");
+
+  languageButton.setAttribute(
+    "aria-expanded",
+    "false"
+  );
 }
 
 function toggleLanguageMenu() {
@@ -262,7 +392,9 @@ function toggleLanguageMenu() {
   }
 
   const isOpen =
-    languageSelector.classList.contains("is-open");
+    languageSelector.classList.contains(
+      "is-open"
+    );
 
   if (isOpen) {
     closeLanguageMenu();
@@ -302,12 +434,15 @@ function openMobileMenu() {
 
   mobileNavigation.classList.add("is-open");
   mobileMenuButton.classList.add("is-active");
+
   mobileMenuButton.setAttribute(
     "aria-expanded",
     "true"
   );
 
-  document.body.classList.add("mobile-menu-open");
+  document.body.classList.add(
+    "mobile-menu-open"
+  );
 }
 
 function closeMobileMenu() {
@@ -317,12 +452,15 @@ function closeMobileMenu() {
 
   mobileNavigation.classList.remove("is-open");
   mobileMenuButton.classList.remove("is-active");
+
   mobileMenuButton.setAttribute(
     "aria-expanded",
     "false"
   );
 
-  document.body.classList.remove("mobile-menu-open");
+  document.body.classList.remove(
+    "mobile-menu-open"
+  );
 
   closeMobileDestinations();
 }
@@ -333,7 +471,9 @@ function toggleMobileMenu() {
   }
 
   const isOpen =
-    mobileNavigation.classList.contains("is-open");
+    mobileNavigation.classList.contains(
+      "is-open"
+    );
 
   if (isOpen) {
     closeMobileMenu();
@@ -361,7 +501,7 @@ mobileNavigationLinks.forEach((link) => {
 
 
 /* ==================================================
-   6. MOBILE DESTINATIONS DROPDOWN
+   6. MOBILE DESTINATIONS
    ================================================== */
 
 function openMobileDestinations() {
@@ -388,7 +528,9 @@ function closeMobileDestinations() {
     return;
   }
 
-  mobileDestinations.classList.remove("is-open");
+  mobileDestinations.classList.remove(
+    "is-open"
+  );
 
   mobileDestinationsButton.setAttribute(
     "aria-expanded",
@@ -402,7 +544,9 @@ function toggleMobileDestinations() {
   }
 
   const isOpen =
-    mobileDestinations.classList.contains("is-open");
+    mobileDestinations.classList.contains(
+      "is-open"
+    );
 
   if (isOpen) {
     closeMobileDestinations();
@@ -423,11 +567,14 @@ if (mobileDestinationsButton) {
 
 
 /* ==================================================
-   7. DESKTOP DESTINATIONS DROPDOWN
+   7. DESKTOP DESTINATIONS
    ================================================== */
 
 function closeDesktopDropdown() {
-  if (!desktopDropdown || !desktopDropdownButton) {
+  if (
+    !desktopDropdown ||
+    !desktopDropdownButton
+  ) {
     return;
   }
 
@@ -446,12 +593,16 @@ if (desktopDropdownButton) {
       event.stopPropagation();
 
       const isOpen =
-        desktopDropdown.classList.contains("is-open");
+        desktopDropdown.classList.contains(
+          "is-open"
+        );
 
       if (isOpen) {
         closeDesktopDropdown();
       } else {
-        desktopDropdown.classList.add("is-open");
+        desktopDropdown.classList.add(
+          "is-open"
+        );
 
         desktopDropdownButton.setAttribute(
           "aria-expanded",
@@ -464,7 +615,7 @@ if (desktopDropdownButton) {
 
 
 /* ==================================================
-   8. CLOSE MENUS WHEN CLICKING OUTSIDE
+   8. CLOSE MENUS
    ================================================== */
 
 document.addEventListener("click", (event) => {
@@ -483,11 +634,6 @@ document.addEventListener("click", (event) => {
   }
 });
 
-
-/* ==================================================
-   9. CLOSE MENUS WITH ESCAPE KEY
-   ================================================== */
-
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeLanguageMenu();
@@ -498,7 +644,7 @@ document.addEventListener("keydown", (event) => {
 
 
 /* ==================================================
-   10. HEADER SCROLL EFFECT
+   9. HEADER SCROLL EFFECT
    ================================================== */
 
 function updateHeaderOnScroll() {
@@ -523,11 +669,19 @@ updateHeaderOnScroll();
 
 
 /* ==================================================
-   11. ABOUT SECTION ANIMATION
+   10. SECTION ANIMATIONS
    ================================================== */
 
-if (aboutSection) {
-  const aboutObserver =
+const animatedSections = [
+  aboutSection,
+  servicesSection
+].filter(Boolean);
+
+if (
+  "IntersectionObserver" in window &&
+  animatedSections.length > 0
+) {
+  const sectionObserver =
     new IntersectionObserver(
       (entries, observer) => {
         entries.forEach((entry) => {
@@ -536,21 +690,29 @@ if (aboutSection) {
               "is-visible"
             );
 
-            observer.unobserve(entry.target);
+            observer.unobserve(
+              entry.target
+            );
           }
         });
       },
       {
-        threshold: 0.16
+        threshold: 0.14
       }
     );
 
-  aboutObserver.observe(aboutSection);
+  animatedSections.forEach((section) => {
+    sectionObserver.observe(section);
+  });
+} else {
+  animatedSections.forEach((section) => {
+    section.classList.add("is-visible");
+  });
 }
 
 
 /* ==================================================
-   12. HERO VIDEO
+   11. HERO VIDEO
    ================================================== */
 
 if (heroVideo) {
@@ -566,8 +728,8 @@ if (heroVideo) {
     ) {
       playPromise.catch(() => {
         /*
-          If autoplay is blocked, the poster image
-          remains visible as the hero background.
+          If autoplay is blocked, the poster
+          remains visible.
         */
       });
     }
@@ -586,7 +748,7 @@ if (heroVideo) {
 
 
 /* ==================================================
-   13. WINDOW RESIZE
+   12. WINDOW RESIZE
    ================================================== */
 
 window.addEventListener("resize", () => {
@@ -597,7 +759,7 @@ window.addEventListener("resize", () => {
 
 
 /* ==================================================
-   14. INITIAL LANGUAGE
+   13. INITIAL LANGUAGE
    ================================================== */
 
 const savedLanguage =
