@@ -2,11 +2,6 @@
    LIBERTY INCENTIVE — MAIN STYLESHEET
    ================================================== */
 
-
-/* ==================================================
-   1. VARIABLES
-   ================================================== */
-
 :root {
   --primary-blue: #0295ce;
   --primary-blue-dark: #007eb1;
@@ -26,13 +21,12 @@
 
   --serif-font: Georgia, "Times New Roman", serif;
   --body-font: Arial, Helvetica, sans-serif;
-
   --transition: 0.3s ease;
 }
 
 
 /* ==================================================
-   2. RESET AND GLOBAL STYLES
+   RESET AND GLOBAL STYLES
    ================================================== */
 
 * {
@@ -87,7 +81,7 @@ section {
 
 
 /* ==================================================
-   3. HEADER
+   HEADER
    ================================================== */
 
 .site-header {
@@ -190,7 +184,7 @@ section {
 }
 
 
-/* Desktop destinations dropdown */
+/* Desktop dropdown */
 
 .navigation-dropdown {
   position: relative;
@@ -435,7 +429,7 @@ section {
 
 
 /* ==================================================
-   4. MOBILE NAVIGATION
+   MOBILE NAVIGATION
    ================================================== */
 
 .mobile-navigation {
@@ -545,7 +539,7 @@ section {
 
 
 /* ==================================================
-   5. HERO SECTION
+   HERO SECTION
    ================================================== */
 
 .hero-section {
@@ -693,9 +687,6 @@ section {
     box-shadow var(--transition);
 }
 
-
-/* Orange primary hero button */
-
 .primary-button {
   background-color: var(--orange);
   border: 1px solid var(--orange);
@@ -710,9 +701,6 @@ section {
   box-shadow: 0 12px 28px rgba(2, 149, 206, 0.24);
   transform: translateY(-2px);
 }
-
-
-/* Secondary hero button */
 
 .secondary-button {
   background-color: rgba(255, 255, 255, 0.08);
@@ -791,7 +779,7 @@ section {
 
 
 /* ==================================================
-   6. ABOUT / VISION SECTION
+   ABOUT / VISION SECTION
    ================================================== */
 
 .about-section {
@@ -861,9 +849,6 @@ section {
   border-radius: 0 0 30px 0;
 }
 
-
-/* Orange experience card */
-
 .about-experience-card {
   position: absolute;
   right: -35px;
@@ -904,9 +889,6 @@ section {
   position: relative;
 }
 
-
-/* Orange About Liberty Incentive label */
-
 .about-content .section-eyebrow {
   margin-bottom: 18px;
   color: var(--orange);
@@ -928,9 +910,6 @@ section {
 .about-title span {
   display: block;
 }
-
-
-/* Orange italic heading */
 
 .about-title span:last-child {
   color: var(--primary-blue);
@@ -1004,9 +983,6 @@ section {
   line-height: 1.55;
 }
 
-
-/* Orange About button */
-
 .about-button {
   position: relative;
   min-height: 52px;
@@ -1027,7 +1003,7 @@ section {
 
 
 /* ==================================================
-   7. FUTURE SECTION PLACEHOLDERS
+   FUTURE SECTION PLACEHOLDERS
    ================================================== */
 
 .section-placeholder {
@@ -1036,7 +1012,7 @@ section {
 
 
 /* ==================================================
-   8. ABOUT SECTION ANIMATIONS
+   ABOUT ANIMATIONS
    ================================================== */
 
 .about-image-column,
@@ -1066,7 +1042,7 @@ section {
 
 
 /* ==================================================
-   9. TABLET RESPONSIVE STYLES
+   TABLET
    ================================================== */
 
 @media (max-width: 1160px) {
@@ -1162,7 +1138,7 @@ section {
 
 
 /* ==================================================
-   10. MOBILE RESPONSIVE STYLES
+   MOBILE
    ================================================== */
 
 @media (max-width: 760px) {
@@ -1188,9 +1164,6 @@ section {
     width: 41px;
     height: 41px;
   }
-
-
-  /* Mobile hero */
 
   .hero-section {
     min-height: 100svh;
@@ -1270,9 +1243,6 @@ section {
   .scroll-indicator {
     display: none;
   }
-
-
-  /* Mobile About section */
 
   .about-section {
     padding: 78px 0;
@@ -1413,7 +1383,7 @@ section {
 
 
 /* ==================================================
-   11. ARMENIAN LANGUAGE ADJUSTMENTS
+   ARMENIAN LANGUAGE ADJUSTMENTS
    ================================================== */
 
 html[lang="hy"] body {
@@ -1439,8 +1409,32 @@ html[lang="hy"] .about-title {
 }
 
 
+/* Armenian header spacing adjustment */
+
+html[lang="hy"] .desktop-navigation {
+  gap: 17px;
+}
+
+html[lang="hy"] .desktop-navigation > a,
+html[lang="hy"] .dropdown-button {
+  font-size: 11px;
+}
+
+html[lang="hy"] .header-inquiry-button {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+
+html[lang="hy"] .mobile-navigation .mobile-inquiry-button {
+  font-size: 11px;
+  letter-spacing: 0.03em;
+}
+
+
 /* ==================================================
-   12. ACCESSIBILITY AND REDUCED MOTION
+   ACCESSIBILITY AND REDUCED MOTION
    ================================================== */
 
 a:focus-visible,
