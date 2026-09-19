@@ -15,10 +15,8 @@
   --light-grey: #e6edf1;
   --medium-grey: #72808b;
   --dark-text: #10283b;
-
   --header-height: 88px;
   --container-width: 1240px;
-
   --serif-font: Georgia, "Times New Roman", serif;
   --body-font: Arial, Helvetica, sans-serif;
   --transition: 0.3s ease;
@@ -866,6 +864,7 @@ section {
 }
 
 .about-experience-card strong {
+  flex-shrink: 0;
   padding-right: 15px;
   border-right: 1px solid rgba(8, 40, 68, 0.25);
   font-family: var(--serif-font);
@@ -875,10 +874,12 @@ section {
 }
 
 .about-experience-card span {
+  min-width: 0;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1.45;
+  overflow-wrap: anywhere;
   text-transform: uppercase;
 }
 
@@ -1409,7 +1410,7 @@ html[lang="hy"] .about-title {
 }
 
 
-/* Armenian header spacing adjustment */
+/* Armenian header */
 
 html[lang="hy"] .desktop-navigation {
   gap: 17px;
@@ -1430,6 +1431,47 @@ html[lang="hy"] .header-inquiry-button {
 html[lang="hy"] .mobile-navigation .mobile-inquiry-button {
   font-size: 11px;
   letter-spacing: 0.03em;
+}
+
+
+/* Armenian orange About card */
+
+html[lang="hy"] .about-experience-card {
+  right: -25px;
+  max-width: 330px;
+  gap: 12px;
+  padding: 18px 20px;
+}
+
+html[lang="hy"] .about-experience-card strong {
+  flex-shrink: 0;
+  padding-right: 12px;
+  font-size: 27px;
+}
+
+html[lang="hy"] .about-experience-card span {
+  min-width: 0;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  text-transform: none;
+}
+
+
+/* Armenian orange card on mobile */
+
+@media (max-width: 760px) {
+  html[lang="hy"] .about-experience-card {
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    padding: 16px;
+  }
+
+  html[lang="hy"] .about-experience-card span {
+    font-size: 9px;
+  }
 }
 
 
