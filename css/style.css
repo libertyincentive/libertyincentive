@@ -4500,10 +4500,7 @@ body.tour-modal-open {
 }
 
 .team-section-heading {
-  display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
-  gap: 60px;
-  align-items: end;
+  text-align: center;
   margin-bottom: 46px;
 }
 
@@ -4570,8 +4567,12 @@ body.tour-modal-open {
 }
 
 .team-card-content {
-  min-height: 118px;
+  display: flex;
+  min-height: 105px;
   padding: 25px 26px 28px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-top: 3px solid #0295ce;
 }
 
@@ -4626,7 +4627,6 @@ body.tour-modal-open {
 }
 
 @media screen and (max-width: 900px) {
-  .team-section-heading,
   .team-values-grid {
     grid-template-columns: 1fr;
     gap: 22px;
