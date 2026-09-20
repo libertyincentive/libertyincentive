@@ -305,44 +305,91 @@ const translations = {
     readArticle: "Read Article",
     backToInspiration: "← Back to Travel Inspiration",
 
-    balloonMeta: "October in Armenia",
+    copyright: "© Liberty Incentive",
+
+    balloonPageTitle: "Armenia International Balloon Festival | Liberty Incentive",
+    autumnPageTitle: "Autumn in Armenia | Liberty Incentive",
+    winterPageTitle: "Winter in Armenia | Liberty Incentive",
+    balloonMeta: "October 6–11, 2026",
     balloonTitle: "Armenia International Balloon Festival",
     balloonExcerpt:
       "Watch Armenia's skies come alive with colorful hot-air balloons and discover how to include this spectacular experience in your journey.",
     balloonArticleOne:
-      "Each autumn, colorful hot-air balloons bring a remarkable new perspective to Armenia's landscapes and city skyline. The festival creates memorable opportunities to watch balloon flights, photograph the celebrations and experience Armenia from above.",
+      "From October 6 to 11, 2026, the Discover Armenia from the Sky festival will bring balloon pilots, colorful aircraft and visitors together for one of the country's most photogenic autumn events. Flights and displays reveal Yerevan and Armenia's landscapes from an unforgettable new perspective.",
+    balloonDatesTitle: "Festival dates and experience",
+    balloonDatesText:
+      "The 2026 festival is scheduled for October 6–11. Visitors may see mass balloon launches, meet international pilots, photograph the balloons at sunrise or sunset and, when passenger places are officially available, book a flight for a panoramic view from above.",
+    balloonWeatherTitle: "Weather, timing and photography",
     balloonArticleTwo:
-      "October generally offers pleasant daytime weather, while mornings and evenings can feel cool. Visitors should bring comfortable footwear and layered clothing, especially for early-morning balloon activities.",
+      "October in Yerevan is often mild during the day, but sunrise activities can be distinctly cool. Ballooning depends on calm wind and safe visibility, so launch times and locations can change at short notice. Early morning and late afternoon usually provide the softest light for photography.",
+    balloonPlanningTitle: "How to plan your visit",
     balloonArticleThree:
-      "Festival schedules, flight locations and passenger experiences depend on official announcements and weather conditions. Liberty Incentive can help travelers include the available festival experiences in a tailor-made Armenian itinerary.",
-    balloonWeatherTitle: "What to expect in October",
-    balloonPlanningTitle: "Planning your festival experience",
+      "Bring warm layers, closed comfortable shoes, water and a charged phone or camera. Keep the festival day flexible because weather may delay a flight. The event can be combined with Yerevan sightseeing, Republic Square, the Cascade, Garni, Geghard or an autumn wine-country excursion.",
+    balloonSafetyNote:
+      "Important: exact launch sites, passenger-flight availability and daily schedules must be confirmed through the official organizers. All balloon operations are subject to weather and safety decisions.",
 
     autumnMeta: "September – November",
     autumnTitle: "Autumn in Armenia: Colors, Weather & Travel Tips",
     autumnExcerpt:
       "Explore Armenia during its most colorful season, from lively Yerevan to the golden forests and monasteries of Dilijan.",
     autumnArticleOne:
-      "Autumn is one of the most atmospheric seasons for discovering Armenia. Yerevan remains lively with open-air cafés, cultural events and relaxed city walks, while forests around Dilijan turn vivid shades of gold, orange and red.",
+      "Autumn is one of the most atmospheric seasons for discovering Armenia. Yerevan stays lively with café terraces and cultural events, vineyards enter harvest season, and the forests of Dilijan and Lori turn gold, copper and deep red.",
+    autumnWeatherTitle: "Typical autumn temperatures",
+    autumnWeatherIntro: "Temperatures vary by year and elevation, but these approximate Yerevan ranges are useful for planning:",
+    septemberLabel: "September",
+    septemberTemp: "Days 20–28°C · Nights 10–16°C",
+    septemberText: "Warm, sunny and ideal for city walks, Lake Sevan and outdoor dining.",
+    octoberLabel: "October",
+    octoberTemp: "Days 13–21°C · Nights 5–11°C",
+    octoberText: "Cooler, richly colored and excellent for photography, wine experiences and hiking.",
+    novemberLabel: "November",
+    novemberTemp: "Days 6–13°C · Nights 0–5°C",
+    novemberText: "Crisp and quieter, with colder evenings and the possibility of early mountain snow.",
+    autumnHighlightsTitle: "Festivals and seasonal experiences",
     autumnArticleTwo:
-      "September is usually warm and comfortable, October becomes cooler and more colorful, and November brings crisp weather. Layered clothing, a light waterproof jacket and comfortable walking shoes are recommended.",
+      "Autumn brings grape harvesting, winery visits and seasonal food experiences in Vayots Dzor. Yerevan hosts concerts, exhibitions and city celebrations; in 2026, Erebuni–Yerevan celebrations are expected around October 11. Event programs should always be checked closer to travel.",
+    autumnPlacesTitle: "Best places to visit in autumn",
+    autumnPlacesOne: "Yerevan — café culture, museums, markets, parks and evening walks around Republic Square and the Cascade.",
+    autumnPlacesTwo: "Dilijan and Haghartsin — forest roads, monastery views and some of Armenia's most vivid autumn colors.",
+    autumnPlacesThree: "Areni and Vayots Dzor — vineyards, wine tastings, harvest flavors, Noravank and dramatic red-rock scenery.",
+    autumnPlacesFour: "Lake Sevan — wide blue views and Sevanavank with fewer visitors; bring a warm layer because it is cooler by the lake.",
+    autumnPlacesFive: "Lori, Haghpat and Sanahin — green valleys, UNESCO-listed monasteries and beautiful northern landscapes.",
+    autumnPlacesSix: "Garni and Geghard — ancient heritage, gorge scenery and an easy cultural day trip from Yerevan.",
+    autumnPackingTitle: "What to pack",
     autumnArticleThree:
-      "Seasonal highlights can include city festivals, wine and gastronomic experiences, visits to Haghartsin and Lake Sevan, countryside walks and cultural day trips from Yerevan.",
-    autumnWeatherTitle: "Weather and what to pack",
-    autumnHighlightsTitle: "Seasonal highlights",
+      "Pack layers, a light waterproof jacket, sun protection and comfortable walking shoes. From mid-October onward, add a warmer coat for evenings and mountain regions. Build some flexibility into long drives, as daylight becomes shorter later in the season.",
 
     winterMeta: "December – March",
     winterTitle: "Winter in Armenia: Snow, Mountains & Adventure",
     winterExcerpt:
       "Discover skiing, ropeway rides, snowy landscapes, festive Yerevan and memorable mountain escapes across Armenia.",
     winterArticleOne:
-      "Winter reveals a different side of Armenia, combining snowy mountain scenery with festive city life. Yerevan glows with seasonal decorations, welcoming restaurants and cultural attractions throughout the colder months.",
+      "Winter reveals a quieter and more dramatic Armenia: snow-covered mountains, warm restaurants, festive city lights and uncrowded cultural sites. A good itinerary combines outdoor adventure with museums, cuisine and comfortable evenings indoors.",
+    winterWeatherTitle: "Typical winter temperatures",
+    winterWeatherIntro: "These approximate Yerevan ranges are a guide; mountain resorts are colder and commonly remain below freezing:",
+    decemberLabel: "December",
+    decemberTemp: "Days 0–8°C · Nights -5–0°C",
+    decemberText: "Festive lights and early snow, with colder conditions in the mountains.",
+    januaryLabel: "January",
+    januaryTemp: "Days -2–4°C · Nights -8–-3°C",
+    januaryText: "Usually the coldest month and a strong period for snow-based activities.",
+    februaryLabel: "February",
+    februaryTemp: "Days 0–7°C · Nights -6–-1°C",
+    februaryText: "Winter sports continue, while daylight gradually increases.",
+    winterActivitiesTitle: "What to do in winter",
+    winterActivityOne: "Ski or snowboard in Tsaghkadzor, and ride the ropeway for wide mountain views.",
+    winterActivityTwo: "Try snowshoeing, snowmobile excursions or snowkiting where guided programs and conditions allow.",
+    winterActivityThree: "Explore festive Yerevan, museums, the GUM Market, Vernissage, cafés and Armenian restaurants.",
+    winterActivityFour: "Visit Gyumri for historic architecture, creative culture and hearty Shirak cuisine.",
+    winterActivityFive: "See Lake Sevan's stark winter landscape or relax in Jermuk, subject to road and weather conditions.",
+    winterActivitySix: "Combine monasteries and cultural sites with cooking classes, wine tastings or craft experiences indoors.",
+    winterPlanningTitle: "Planning a comfortable winter journey",
     winterArticleTwo:
-      "Tsaghkadzor is the country's best-known winter resort, offering skiing, snowboarding and scenic ropeway rides. Depending on weather and local availability, travelers can also enjoy snowmobile rides and other mountain activities.",
+      "Snow quality and resort operations vary through the season, so check conditions before committing to ski days. Road journeys can take longer after snowfall, and some mountain visits may need to be adjusted for safety.",
+    winterPackingTitle: "What to wear",
     winterArticleThree:
-      "Warm layers, waterproof footwear, gloves and a winter jacket are essential. A well-planned program can combine mountain adventures with Yerevan, Lake Sevan, Armenian cuisine and relaxing evenings in comfortable hotels.",
-    winterActivitiesTitle: "Winter activities in Armenia",
-    winterPackingTitle: "What to wear and how to prepare"
+      "Bring thermal base layers, an insulated waterproof jacket, gloves, a hat and waterproof shoes with good grip. Sunglasses and sunscreen are useful in bright mountain snow. A flexible program and private transport make winter travel more comfortable.",
+    weatherDisclaimer: "Temperatures are typical planning ranges, not a weather forecast; actual conditions vary by location, elevation and year."
   },
 
   hy: {
@@ -661,44 +708,91 @@ const translations = {
     readArticle: "Կարդալ հոդվածը",
     backToInspiration: "← Վերադառնալ ճանապարհորդական գաղափարներին",
 
-    balloonMeta: "Հոկտեմբերը Հայաստանում",
+    copyright: "© Liberty Incentive",
+
+    balloonPageTitle: "Հայաստանի օդապարիկների միջազգային փառատոն | Liberty Incentive",
+    autumnPageTitle: "Աշունը Հայաստանում | Liberty Incentive",
+    winterPageTitle: "Ձմեռը Հայաստանում | Liberty Incentive",
+    balloonMeta: "2026 թ․ հոկտեմբերի 6–11",
     balloonTitle: "Հայաստանի օդապարիկների միջազգային փառատոն",
     balloonExcerpt:
       "Տեսեք, թե ինչպես են գունավոր օդապարիկները լցնում Հայաստանի երկինքը, և բացահայտեք՝ ինչպես ներառել այս տպավորիչ փորձառությունը Ձեր ճանապարհորդության մեջ։",
     balloonArticleOne:
-      "Յուրաքանչյուր աշուն գունավոր օդապարիկները Հայաստանի բնապատկերներն ու քաղաքային համայնապատկերը ներկայացնում են նոր տեսանկյունից։ Փառատոնը բացառիկ հնարավորություն է տալիս հետևելու օդապարիկների թռիչքներին, լուսանկարելու տոնական պահերը և Հայաստանը տեսնելու բարձրությունից։",
+      "2026 թվականի հոկտեմբերի 6-ից 11-ը «Բացահայտիր Հայաստանը երկնքից» փառատոնը կմիավորի օդապարիկների օդաչուների, գունավոր օդանավերի և այցելուների՝ դառնալով երկրի ամենատպավորիչ աշնանային միջոցառումներից մեկը։ Թռիչքներն ու ցուցադրությունները Երևանն ու Հայաստանի բնապատկերները ներկայացնում են անմոռանալի նոր տեսանկյունից։",
+    balloonDatesTitle: "Փառատոնի օրերը և փորձառությունը",
+    balloonDatesText:
+      "2026 թվականի փառատոնը նախատեսված է հոկտեմբերի 6–11-ը։ Այցելուները կարող են դիտել օդապարիկների խմբային թռիչքները, հանդիպել միջազգային օդաչուների, լուսանկարել օդապարիկները արևածագին կամ մայրամուտին և, պաշտոնապես հասանելի լինելու դեպքում, ամրագրել ուղևորային թռիչք։",
+    balloonWeatherTitle: "Եղանակ, ժամեր և լուսանկարչություն",
     balloonArticleTwo:
-      "Հոկտեմբերին ցերեկները սովորաբար հաճելի են, իսկ առավոտներն ու երեկոները կարող են զով լինել։ Խորհուրդ է տրվում ունենալ հարմարավետ կոշիկ և հագուստի մի քանի շերտ, հատկապես վաղ առավոտյան միջոցառումներին մասնակցելու դեպքում։",
+      "Հոկտեմբերին Երևանում ցերեկները հաճախ մեղմ են, սակայն արևածագի ժամերին կարող է բավական զով լինել։ Օդապարիկների թռիչքը պահանջում է թույլ քամի և լավ տեսանելիություն, ուստի մեկնարկի ժամը և վայրը կարող են փոխվել կարճ ժամանակում։ Վաղ առավոտը և ուշ կեսօրը սովորաբար ապահովում են լավագույն լույսը լուսանկարների համար։",
+    balloonPlanningTitle: "Ինչպես պլանավորել այցելությունը",
     balloonArticleThree:
-      "Փառատոնի ժամանակացույցը, թռիչքների վայրերը և ուղևորների համար նախատեսված ծրագրերը կախված են պաշտոնական հայտարարություններից և եղանակային պայմաններից։ Liberty Incentive-ը կարող է օգնել հասանելի փառատոնային փորձառությունները ներառել Հայաստանում Ձեր անհատական ճանապարհորդական ծրագրում։",
-    balloonWeatherTitle: "Ինչ սպասել հոկտեմբերին",
-    balloonPlanningTitle: "Փառատոնային այցելության պլանավորում",
+      "Վերցրեք տաք շերտավոր հագուստ, փակ հարմարավետ կոշիկ, ջուր և լիցքավորված հեռախոս կամ տեսախցիկ։ Փառատոնի օրը թողեք ճկուն, քանի որ եղանակը կարող է հետաձգել թռիչքը։ Միջոցառումը կարելի է համադրել Երևանի տեսարժան վայրերի, Հանրապետության հրապարակի, Կասկադի, Գառնիի, Գեղարդի կամ գինու տարածաշրջան այցելության հետ։",
+    balloonSafetyNote:
+      "Կարևոր է․ թռիչքների ճշգրիտ վայրերը, ուղևորային թռիչքների հասանելիությունը և ամենօրյա ժամանակացույցը պետք է ճշտել պաշտոնական կազմակերպիչներից։ Բոլոր թռիչքները կախված են եղանակից և անվտանգության որոշումներից։",
 
     autumnMeta: "Սեպտեմբեր – նոյեմբեր",
     autumnTitle: "Աշունը Հայաստանում․ գույներ, եղանակ և ճանապարհորդական խորհուրդներ",
     autumnExcerpt:
       "Բացահայտեք Հայաստանը տարվա ամենագունեղ եղանակին՝ աշխույժ Երևանից մինչև Դիլիջանի ոսկեգույն անտառներն ու վանքերը։",
     autumnArticleOne:
-      "Աշունը Հայաստանը բացահայտելու ամենագեղեցիկ եղանակներից մեկն է։ Երևանը շարունակում է ապրել իր բացօթյա սրճարաններով, մշակութային միջոցառումներով և հանգիստ զբոսանքներով, իսկ Դիլիջանի անտառները ներկվում են ոսկեգույն, նարնջագույն և կարմիր երանգներով։",
+      "Աշունը Հայաստանը բացահայտելու ամենամթնոլորտային եղանակներից մեկն է։ Երևանը շարունակում է ապրել սրճարանների բացօթյա հատվածներով և մշակութային միջոցառումներով, խաղողի այգիներում սկսվում է բերքահավաքը, իսկ Դիլիջանի ու Լոռու անտառները ներկվում են ոսկեգույն, պղնձագույն և մուգ կարմիր երանգներով։",
+    autumnWeatherTitle: "Աշնան բնորոշ ջերմաստիճանները",
+    autumnWeatherIntro: "Ջերմաստիճանը տարբերվում է ըստ տարվա և բարձրության, սակայն Երևանի այս մոտավոր միջակայքերը օգտակար են պլանավորման համար․",
+    septemberLabel: "Սեպտեմբեր",
+    septemberTemp: "Ցերեկը՝ 20–28°C · գիշերը՝ 10–16°C",
+    septemberText: "Տաք և արևոտ շրջան՝ քաղաքային զբոսանքների, Սևանա լճի և բացօթյա ընթրիքների համար։",
+    octoberLabel: "Հոկտեմբեր",
+    octoberTemp: "Ցերեկը՝ 13–21°C · գիշերը՝ 5–11°C",
+    octoberText: "Ավելի զով ու գունեղ՝ հարմար լուսանկարչության, գինու փորձառությունների և քայլարշավների համար։",
+    novemberLabel: "Նոյեմբեր",
+    novemberTemp: "Ցերեկը՝ 6–13°C · գիշերը՝ 0–5°C",
+    novemberText: "Թարմ և ավելի հանգիստ շրջան՝ ցուրտ երեկոներով ու լեռներում վաղ ձյան հնարավորությամբ։",
+    autumnHighlightsTitle: "Փառատոններ և սեզոնային փորձառություններ",
     autumnArticleTwo:
-      "Սեպտեմբերը սովորաբար տաք և հարմարավետ է, հոկտեմբերին եղանակը զովանում է և բնությունն ավելի գունեղ է դառնում, իսկ նոյեմբերը բերում է ավելի սառը օրեր։ Խորհուրդ է տրվում ունենալ շերտավոր հագուստ, թեթև անջրանցիկ բաճկոն և հարմարավետ կոշիկ։",
+      "Աշունը բերում է խաղողի բերքահավաք, գինեգործարանների այցելություններ և սեզոնային խոհանոցային փորձառություններ Վայոց ձորում։ Երևանում անցկացվում են համերգներ, ցուցահանդեսներ ու քաղաքի տոնական միջոցառումներ․ 2026 թվականին Էրեբունի–Երևանի տոնակատարությունները սպասվում են հոկտեմբերի 11-ի շրջանում։ Ծրագիրը պետք է ճշտել ճանապարհորդությանը մոտ։",
+    autumnPlacesTitle: "Աշնանը այցելելու լավագույն վայրերը",
+    autumnPlacesOne: "Երևան — սրճարաններ, թանգարաններ, շուկաներ, այգիներ և երեկոյան զբոսանքներ Հանրապետության հրապարակում ու Կասկադում։",
+    autumnPlacesTwo: "Դիլիջան և Հաղարծին — անտառային ճանապարհներ, վանական տեսարաններ և Հայաստանի ամենավառ աշնանային գույները։",
+    autumnPlacesThree: "Արենի և Վայոց ձոր — խաղողի այգիներ, գինու համտեսներ, բերքահավաքի համեր, Նորավանք և կարմիր ժայռեր։",
+    autumnPlacesFour: "Սևանա լիճ — կապույտ համայնապատկեր և Սևանավանք՝ ավելի քիչ այցելուներով․ լճի մոտ ավելի զով է, ուստի վերցրեք տաք հագուստ։",
+    autumnPlacesFive: "Լոռի, Հաղպատ և Սանահին — կանաչ հովիտներ, ՅՈՒՆԵՍԿՕ-ի վանքեր և հյուսիսային գեղեցիկ բնապատկերներ։",
+    autumnPlacesSix: "Գառնի և Գեղարդ — հնագույն ժառանգություն, կիրճի տեսարաններ և հարմար մեկօրյա մշակութային ուղևորություն Երևանից։",
+    autumnPackingTitle: "Ինչ վերցնել Ձեզ հետ",
     autumnArticleThree:
-      "Սեզոնային կարևոր փորձառություններից են քաղաքային փառատոնները, գինու և գաստրոնոմիական ծրագրերը, Հաղարծին և Սևանա լիճ այցելությունները, բնության գրկում զբոսանքներն ու Երևանից մշակութային մեկօրյա ուղևորությունները։",
-    autumnWeatherTitle: "Եղանակը և անհրաժեշտ հագուստը",
-    autumnHighlightsTitle: "Սեզոնային կարևոր փորձառություններ",
+      "Վերցրեք շերտավոր հագուստ, թեթև անջրանցիկ բաճկոն, արևապաշտպան միջոցներ և հարմարավետ քայլքի կոշիկ։ Հոկտեմբերի կեսից հետո երեկոների ու լեռնային շրջանների համար անհրաժեշտ է ավելի տաք վերարկու։ Ուշ աշնանը երկար ճանապարհները պլանավորելիս հաշվի առեք կարճացող լուսային օրը։",
 
     winterMeta: "Դեկտեմբեր – մարտ",
     winterTitle: "Ձմեռը Հայաստանում․ ձյուն, լեռներ և արկածներ",
     winterExcerpt:
       "Բացահայտեք դահուկավազքը, ճոպանուղիները, ձյունապատ բնապատկերները, տոնական Երևանը և անմոռանալի հանգիստը լեռներում։",
     winterArticleOne:
-      "Ձմեռը բացահայտում է Հայաստանի մեկ այլ կողմը՝ համադրելով ձյունածածկ լեռներն ու տոնական քաղաքային կյանքը։ Ցուրտ ամիսներին Երևանը զարդարվում է տոնական լույսերով և հյուրերին դիմավորում հարմարավետ ռեստորաններով ու մշակութային վայրերով։",
+      "Ձմեռը բացահայտում է ավելի հանգիստ ու դրամատիկ Հայաստան՝ ձյունածածկ լեռներով, ջերմ ռեստորաններով, տոնական քաղաքային լույսերով և քիչ այցելուներով մշակութային վայրերով։ Լավ ծրագիրը համատեղում է բացօթյա արկածները թանգարանների, խոհանոցի և հարմարավետ երեկոների հետ։",
+    winterWeatherTitle: "Ձմռան բնորոշ ջերմաստիճանները",
+    winterWeatherIntro: "Սրանք Երևանի մոտավոր միջակայքերն են․ լեռնային հանգստավայրերում ավելի ցուրտ է և ջերմաստիճանը հաճախ զրոյից ցածր է․",
+    decemberLabel: "Դեկտեմբեր",
+    decemberTemp: "Ցերեկը՝ 0–8°C · գիշերը՝ -5–0°C",
+    decemberText: "Տոնական լույսեր և առաջին ձյունը, իսկ լեռներում՝ ավելի ցուրտ պայմաններ։",
+    januaryLabel: "Հունվար",
+    januaryTemp: "Ցերեկը՝ -2–4°C · գիշերը՝ -8–-3°C",
+    januaryText: "Սովորաբար ամենացուրտ ամիսն է և հարմար շրջան ձմեռային ակտիվությունների համար։",
+    februaryLabel: "Փետրվար",
+    februaryTemp: "Ցերեկը՝ 0–7°C · գիշերը՝ -6–-1°C",
+    februaryText: "Ձմեռային սպորտը շարունակվում է, իսկ լուսային օրը աստիճանաբար երկարում է։",
+    winterActivitiesTitle: "Ինչ անել ձմռանը",
+    winterActivityOne: "Դահուկ կամ սնոուբորդ Ծաղկաձորում և ճոպանուղի՝ լեռնային լայն համայնապատկերը վայելելու համար։",
+    winterActivityTwo: "Ձյունակոշիկներով քայլարշավ, ձնագնաց կամ սնոուքայթինգ՝ ուղեկցվող ծրագրերի և համապատասխան պայմանների դեպքում։",
+    winterActivityThree: "Տոնական Երևան, թանգարաններ, ԳՈՒՄ շուկա, Վերնիսաժ, սրճարաններ և հայկական ռեստորաններ։",
+    winterActivityFour: "Գյումրի՝ պատմական ճարտարապետության, ստեղծագործ մշակույթի և Շիրակի հարուստ խոհանոցի համար։",
+    winterActivityFive: "Սևանա լճի խիստ ձմեռային տեսարաններ կամ հանգիստ Ջերմուկում՝ ճանապարհային և եղանակային պայմաններից կախված։",
+    winterActivitySix: "Վանքերի և մշակութային վայրերի այցելությունները համադրեք խոհարարական դասերի, գինու համտեսների կամ արհեստների հետ։",
+    winterPlanningTitle: "Հարմարավետ ձմեռային ուղևորության պլանավորում",
     winterArticleTwo:
-      "Ծաղկաձորը Հայաստանի ամենահայտնի ձմեռային հանգստավայրն է, որտեղ կարելի է զբաղվել դահուկավազքով, սնոուբորդով և վայելել ճոպանուղուց բացվող տեսարանները։ Եղանակային պայմաններից և հասանելիությունից կախված՝ հնարավոր են նաև ձնագնացով զբոսանքներ և այլ լեռնային ակտիվություններ։",
+      "Ձյան որակը և հանգստավայրերի աշխատանքը տարբերվում են սեզոնի ընթացքում, ուստի դահուկային օրերը ամրագրելուց առաջ ստուգեք պայմանները։ Ձյունից հետո ճանապարհը կարող է ավելի երկար տևել, իսկ որոշ լեռնային այցելություններ անվտանգության համար կարող են փոփոխվել։",
+    winterPackingTitle: "Ինչ հագնել",
     winterArticleThree:
-      "Անհրաժեշտ են տաք շերտավոր հագուստ, անջրանցիկ կոշիկ, ձեռնոցներ և ձմեռային բաճկոն։ Ճիշտ պլանավորված ծրագիրը կարող է համատեղել լեռնային արկածները Երևանի, Սևանա լճի, հայկական խոհանոցի և հարմարավետ հյուրանոցներում հանգստի հետ։",
-    winterActivitiesTitle: "Ձմեռային ակտիվություններ Հայաստանում",
-    winterPackingTitle: "Ինչ հագնել և ինչպես պատրաստվել"
+      "Վերցրեք ջերմապահպան ներքնաշերտ, մեկուսացված անջրանցիկ բաճկոն, ձեռնոցներ, գլխարկ և լավ կպչունությամբ անջրանցիկ կոշիկ։ Լեռներում արևային ակնոցն ու արևապաշտպան քսուքը նույնպես օգտակար են։ Ճկուն ծրագիրն ու անհատական տրանսպորտը ձմեռային ուղևորությունն ավելի հարմարավետ են դարձնում։",
+    weatherDisclaimer: "Ջերմաստիճանները պլանավորման համար բնորոշ միջակայքեր են, ոչ թե եղանակի կանխատեսում․ իրական պայմանները տարբերվում են ըստ վայրի, բարձրության և տարվա։"
   }
 };
 
