@@ -141,9 +141,9 @@ const translations = {
     aboutStoryTwo:
       "Over the years, we have developed a trusted international network and a strong local team. We create journeys for individual travelers, leisure groups, corporate clients, incentive programs and travel partners from around the world.",
     aboutVisionLabel: "Our Vision",
-    aboutVisionTitle: "Travel should feel personal, seamless and memorable.",
+    aboutVisionTitle: "To represent Armenia with authenticity and creativity.",
     aboutVisionText:
-      "We believe the best journeys go beyond famous landmarks. They create authentic connections with local people, traditions, landscapes, cuisine and stories—while every practical detail is handled with care.",
+      "Our vision is to introduce Armenia to the world through its unique culture, ancient history, living customs, unspoiled nature, original architecture and colorful arts—while continually developing in response to the interests of modern travelers.",
     aboutApproachTitle: "Our approach",
     aboutApproachOneTitle: "Local Knowledge",
     aboutApproachOneText: "Programs created by specialists who live in Armenia and understand every region.",
@@ -157,12 +157,14 @@ const translations = {
     aboutExpertiseText:
       "From cultural journeys and active adventures to MICE, incentive travel and special events, we combine creativity with operational experience to deliver programs that work beautifully in practice.",
     aboutMissionLabel: "Our Mission",
-    aboutMissionTitle: "To reveal the Armenia that stays with you.",
+    aboutMissionTitle: "To make every journey comfortable, meaningful and unforgettable.",
     aboutMissionText:
-      "Our mission is to share Armenia's ancient heritage, remarkable landscapes, living traditions and genuine hospitality while making every journey comfortable, enriching and unforgettable.",
+      "Our mission is to help travelers feel the Armenian spirit through our nature, cultural heritage and unique hospitality, while providing excellent travel conditions and responding carefully to every individual requirement.",
     aboutCtaTitle: "Let us create your Armenian story.",
     aboutNewHeroTitle: "Armenia, thoughtfully designed for you.",
     aboutNewHeroText: "An established Armenian tour operator combining local expertise, creative thinking and reliable service since 2011.",
+    aboutCompanyLabel: "About Our Company",
+    aboutCompanyTitle: "A reliable Armenian partner since 2011.",
     aboutNewIntroTitle: "Experience, renewed with every journey.",
     aboutNewIntroOne: "Liberty Incentive, an Armenian incoming tour operator, was established in 2011 and has earned its place in the tourism industry. Our company continues to evolve by strengthening a broad network of reliable partners worldwide.",
     aboutNewIntroTwo: "We provide services of a high professional standard. Our flexible and efficient solutions help our partners save time, control costs and use their resources more effectively.",
@@ -610,9 +612,9 @@ const translations = {
     aboutStoryTwo:
       "Տարիների ընթացքում մենք ձևավորել ենք վստահելի միջազգային գործընկերային ցանց և ուժեղ տեղական թիմ։ Մենք ծրագրեր ենք ստեղծում անհատ ճանապարհորդների, հանգստի խմբերի, կորպորատիվ հաճախորդների, խրախուսական ծրագրերի և աշխարհի տարբեր երկրների զբոսաշրջային գործընկերների համար։",
     aboutVisionLabel: "Մեր տեսլականը",
-    aboutVisionTitle: "Ճանապարհորդությունը պետք է լինի անհատական, անխափան և հիշարժան։",
+    aboutVisionTitle: "Հայաստանը ներկայացնել իսկական և ստեղծագործ կերպով։",
     aboutVisionText:
-      "Մենք հավատում ենք, որ լավագույն ճանապարհորդությունները չեն սահմանափակվում հայտնի տեսարժան վայրերով։ Դրանք իրական կապ են ստեղծում մարդկանց, ավանդույթների, բնության, խոհանոցի և պատմությունների հետ՝ միաժամանակ ապահովելով յուրաքանչյուր գործնական մանրուքի հոգատար կազմակերպումը։",
+      "Մեր տեսլականն է Հայաստանն աշխարհին ներկայացնել իր յուրահատուկ մշակույթով, հնագույն պատմությամբ, կենդանի սովորույթներով, անաղարտ բնությամբ, ինքնատիպ ճարտարապետությամբ և գունեղ արվեստով՝ շարունակաբար զարգանալով ժամանակակից ճանապարհորդների հետաքրքրություններին համապատասխան։",
     aboutApproachTitle: "Մեր մոտեցումը",
     aboutApproachOneTitle: "Տեղական գիտելիք",
     aboutApproachOneText: "Ծրագրեր՝ ստեղծված Հայաստանում ապրող և երկրի յուրաքանչյուր շրջանը ճանաչող մասնագետների կողմից։",
@@ -626,12 +628,14 @@ const translations = {
     aboutExpertiseText:
       "Մշակութային ճանապարհորդություններից և ակտիվ արկածներից մինչև MICE, խրախուսական ուղևորություններ և հատուկ միջոցառումներ՝ մենք համադրում ենք ստեղծագործ մոտեցումն ու գործառնական փորձը՝ իրականում անթերի աշխատող ծրագրեր ապահովելու համար։",
     aboutMissionLabel: "Մեր առաքելությունը",
-    aboutMissionTitle: "Բացահայտել այն Հայաստանը, որը կմնա Ձեր հիշողության մեջ։",
+    aboutMissionTitle: "Յուրաքանչյուր ճանապարհորդություն դարձնել հարմարավետ, բովանդակալից և անմոռանալի։",
     aboutMissionText:
-      "Մեր առաքելությունն է ներկայացնել Հայաստանի հնագույն ժառանգությունը, տպավորիչ բնությունը, կենդանի ավանդույթներն ու անկեղծ հյուրընկալությունը՝ յուրաքանչյուր ճանապարհորդություն դարձնելով հարմարավետ, բովանդակալից և անմոռանալի։",
+      "Մեր առաքելությունն է օգնել ճանապարհորդներին զգալ հայկական ոգին՝ մեր բնության, մշակութային ժառանգության և յուրահատուկ հյուրընկալության միջոցով՝ միաժամանակ ապահովելով լավագույն պայմանները և հոգատարորեն արձագանքելով յուրաքանչյուր անհատական պահանջի։",
     aboutCtaTitle: "Եկեք միասին ստեղծենք Ձեր հայկական պատմությունը։",
     aboutNewHeroTitle: "Հայաստան՝ մտածված և ստեղծված Ձեզ համար։",
     aboutNewHeroText: "Փորձառու հայկական տուրօպերատոր, որը 2011 թվականից համադրում է տեղական գիտելիքը, ստեղծագործ մտածողությունն ու վստահելի սպասարկումը։",
+    aboutCompanyLabel: "Մեր ընկերության մասին",
+    aboutCompanyTitle: "Վստահելի հայկական գործընկեր՝ 2011 թվականից։",
     aboutNewIntroTitle: "Փորձ, որը նորանում է յուրաքանչյուր ճանապարհորդության հետ։",
     aboutNewIntroOne: "Հայկական ներգնա տուրօպերատոր Liberty Incentive-ը հիմնադրվել է 2011 թվականին և արժանի տեղ է զբաղեցրել զբոսաշրջության ոլորտում։ Ընկերությունը շարունակաբար զարգանում է՝ ամրապնդելով վստահելի գործընկերների լայն ցանցն ամբողջ աշխարհում։",
     aboutNewIntroTwo: "Մենք մատուցում ենք բարձր մասնագիտական չափանիշներին համապատասխան ծառայություններ։ Մեր ճկուն և արդյունավետ լուծումները գործընկերներին օգնում են խնայել ժամանակը, վերահսկել ծախսերը և առավել նպատակային օգտագործել ռեսուրսները։",
