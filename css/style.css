@@ -2010,6 +2010,96 @@ button:focus-visible {
   .about-closing-section { padding: 76px 16px; }
 }
 
+/* Light classic About page */
+.about-classic-hero { position: relative; display: flex; min-height: 620px; align-items: flex-end; overflow: hidden; background: #edf7fb; }
+.about-classic-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.about-classic-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.8) 42%, rgba(255,255,255,.12) 76%), linear-gradient(0deg, rgba(255,255,255,.55), transparent 60%); }
+.about-classic-hero-content { position: relative; z-index: 1; width: min(100% - 48px, 1120px); margin: 0 auto; padding: 90px 0 72px; }
+.about-classic-hero-content > p:first-child { margin-bottom: 16px; color: #e98f10; font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+.about-classic-hero h1 { max-width: 680px; color: #16465d; font-family: var(--serif-font); font-size: clamp(48px, 6vw, 78px); font-weight: 500; line-height: 1.04; letter-spacing: -.045em; }
+.about-classic-hero-content > p:nth-of-type(2) { max-width: 610px; margin-top: 24px; color: #405d6b; font-size: 17px; line-height: 1.8; }
+.about-classic-year { display: flex; align-items: center; gap: 18px; margin-top: 30px; }
+.about-classic-year strong { color: #0295ce; font-family: var(--serif-font); font-size: 38px; }
+.about-classic-year span { max-width: 170px; color: #627b87; font-size: 12px; font-weight: 700; line-height: 1.5; text-transform: uppercase; }
+
+.about-company-section { padding: 105px 0; background: #fff; }
+.about-company-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 88px; }
+.about-company-grid h2, .about-purpose-grid h2, .about-classic-armenia h2, .about-classic-tours h2, .about-classic-details h2, .about-classic-closing h2 { color: #16465d; font-family: var(--serif-font); font-size: clamp(37px, 4.7vw, 60px); font-weight: 500; line-height: 1.1; letter-spacing: -.035em; }
+.about-company-copy p, .about-purpose-grid article > p:last-child, .about-classic-armenia-grid > div:last-child > p:not(.about-page-kicker), .about-classic-tours-heading > p, .about-classic-details p { margin-bottom: 22px; color: #526a76; font-size: 17px; line-height: 1.85; }
+
+.about-classic-edge { padding: 0 0 100px; background: #fff; }
+.about-classic-edge-grid { display: grid; grid-template-columns: 170px 1fr; gap: 45px; padding: 52px 58px; border-left: 5px solid #f4a11e; background: linear-gradient(135deg, #eaf7fc, #f8fcfe); box-shadow: 0 16px 45px rgba(2,149,206,.08); }
+.about-classic-edge-grid > p { color: #0295ce; font-size: 12px; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+.about-classic-edge-grid blockquote { color: #16465d; font-family: var(--serif-font); font-size: clamp(27px, 3vw, 40px); line-height: 1.4; }
+
+.about-purpose-section { padding: 104px 0; background: #f6fafc; }
+.about-purpose-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.about-purpose-grid article { padding: 48px; border-top: 4px solid #0295ce; background: #fff; box-shadow: 0 14px 40px rgba(24,70,93,.07); }
+.about-purpose-grid article:nth-child(2) { border-top-color: #f4a11e; }
+.about-purpose-grid article > span { display: block; margin-bottom: 38px; color: #0295ce; font-size: 12px; font-weight: 900; }
+.about-purpose-grid h2 { margin-bottom: 24px; font-size: clamp(32px, 3.8vw, 48px); }
+
+.about-classic-armenia { padding: 110px 0; background: #fff; }
+.about-classic-armenia-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 78px; align-items: center; }
+.about-classic-armenia-image { min-height: 570px; overflow: hidden; border-radius: 3px 70px 3px 3px; }
+.about-classic-armenia-image img { width: 100%; height: 100%; min-height: 570px; object-fit: cover; }
+.about-classic-armenia h2 { margin-bottom: 28px; }
+
+.about-classic-goals { padding: 104px 0; background: #edf8fc; }
+.about-classic-goals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
+.about-classic-goals-grid article { min-height: 245px; padding: 32px; border: 1px solid rgba(2,149,206,.18); background: #fff; }
+.about-classic-goals-grid span { color: #0295ce; font-size: 12px; font-weight: 900; }
+.about-classic-goals-grid p { margin-top: 62px; color: #16465d; font-family: var(--serif-font); font-size: 23px; line-height: 1.5; }
+
+.about-classic-tours { padding: 110px 0; background: #fff; }
+.about-classic-tours-heading { display: grid; grid-template-columns: 1fr .75fr; gap: 70px; align-items: end; margin-bottom: 48px; }
+.about-classic-tours-heading > p { margin: 0; padding-left: 24px; border-left: 3px solid #f4a11e; }
+.about-classic-tour-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.about-classic-tour-grid article { min-height: 155px; padding: 25px; background: #f6fafc; transition: transform .25s ease, box-shadow .25s ease; }
+.about-classic-tour-grid article:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(2,149,206,.1); }
+.about-classic-tour-grid span { color: #f4a11e; font-size: 11px; font-weight: 900; }
+.about-classic-tour-grid p { margin-top: 32px; color: #16465d; font-size: 15px; font-weight: 750; line-height: 1.6; }
+
+.about-classic-details { padding: 104px 0; background: #f5fafc; }
+.about-classic-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.about-classic-details article { padding: 45px; background: #fff; box-shadow: 0 16px 40px rgba(24,70,93,.06); }
+.about-detail-icon { display: grid; width: 52px; height: 52px; margin-bottom: 38px; place-items: center; border-radius: 50%; background: #e7f6fc; color: #0295ce; font-size: 23px; }
+.about-classic-details h2 { margin-bottom: 24px; font-size: clamp(31px, 3.4vw, 44px); }
+
+.about-classic-options { padding: 110px 0; background: #fff; }
+.about-classic-options-grid { display: grid; grid-template-columns: 1.12fr .88fr; gap: 80px; align-items: center; }
+.about-classic-options blockquote { color: #16465d; font-family: var(--serif-font); font-size: clamp(30px, 4vw, 50px); line-height: 1.3; }
+.about-classic-options ul { margin: 0; padding: 0; list-style: none; }
+.about-classic-options li { padding: 18px 0; border-bottom: 1px solid #dce8ed; color: #46616e; font-size: 16px; font-weight: 700; }
+.about-classic-options li::before { margin-right: 14px; color: #f4a11e; content: "✓"; }
+
+.about-classic-closing { padding: 105px 24px; background: linear-gradient(135deg, #dff3fb, #fff); text-align: center; }
+.about-classic-closing .about-page-container { max-width: 850px; }
+.about-classic-closing h2 { margin-bottom: 23px; }
+.about-classic-closing p { max-width: 700px; margin: 0 auto 35px; color: #526a76; font-size: 17px; line-height: 1.8; }
+
+@media screen and (max-width: 900px) {
+  .about-company-grid, .about-classic-armenia-grid, .about-classic-tours-heading, .about-classic-options-grid { grid-template-columns: 1fr; gap: 42px; }
+  .about-purpose-grid, .about-classic-details-grid { grid-template-columns: 1fr; }
+  .about-classic-goals-grid { grid-template-columns: 1fr; }
+  .about-classic-tour-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-classic-armenia-image, .about-classic-armenia-image img { min-height: 450px; }
+}
+
+@media screen and (max-width: 600px) {
+  .about-classic-hero { min-height: 560px; }
+  .about-classic-overlay { background: linear-gradient(90deg, rgba(255,255,255,.94), rgba(255,255,255,.64)); }
+  .about-classic-hero-content { width: calc(100% - 32px); padding: 58px 0 48px; }
+  .about-classic-hero h1 { font-size: 44px; }
+  .about-company-section, .about-purpose-section, .about-classic-armenia, .about-classic-goals, .about-classic-tours, .about-classic-details, .about-classic-options { padding: 72px 0; }
+  .about-classic-edge { padding-bottom: 72px; }
+  .about-classic-edge-grid { grid-template-columns: 1fr; gap: 18px; padding: 34px 25px; }
+  .about-purpose-grid article, .about-classic-details article { padding: 32px 25px; }
+  .about-classic-tour-grid { grid-template-columns: 1fr; }
+  .about-classic-armenia-image, .about-classic-armenia-image img { min-height: 340px; }
+  .about-classic-closing { padding: 76px 16px; }
+}
+
 .article-page-main {
   padding-top: var(--header-height);
   background-color: var(--white);
