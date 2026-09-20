@@ -291,7 +291,50 @@ const translations = {
     tourFourDaySix:
       "Day 6: Yerevan – Etchmiadzin – Zvartnots – Machanents Guest House – Yerevan. Overnight in Yerevan.",
     tourFourDaySeven:
-      "Day 7: Transfer to the airport."
+      "Day 7: Transfer to the airport.",
+
+    /* Travel inspiration */
+    inspirationEyebrow: "Travel Inspiration",
+    inspirationTitle: "Discover the best time to experience Armenia.",
+    inspirationIntroduction:
+      "Seasonal guides, inspiring experiences and practical ideas to help you plan an unforgettable journey through Armenia.",
+    inspirationCategoryEvent: "Event",
+    inspirationCategoryGuide: "Seasonal Guide",
+    inspirationCategoryAdventure: "Winter Adventure",
+    readArticle: "Read Article",
+
+    balloonMeta: "October in Armenia",
+    balloonTitle: "Armenia International Balloon Festival",
+    balloonExcerpt:
+      "Watch Armenia's skies come alive with colorful hot-air balloons and discover how to include this spectacular experience in your journey.",
+    balloonArticleOne:
+      "Each autumn, colorful hot-air balloons bring a remarkable new perspective to Armenia's landscapes and city skyline. The festival creates memorable opportunities to watch balloon flights, photograph the celebrations and experience Armenia from above.",
+    balloonArticleTwo:
+      "October generally offers pleasant daytime weather, while mornings and evenings can feel cool. Visitors should bring comfortable footwear and layered clothing, especially for early-morning balloon activities.",
+    balloonArticleThree:
+      "Festival schedules, flight locations and passenger experiences depend on official announcements and weather conditions. Liberty Incentive can help travelers include the available festival experiences in a tailor-made Armenian itinerary.",
+
+    autumnMeta: "September – November",
+    autumnTitle: "Autumn in Armenia: Colors, Weather & Travel Tips",
+    autumnExcerpt:
+      "Explore Armenia during its most colorful season, from lively Yerevan to the golden forests and monasteries of Dilijan.",
+    autumnArticleOne:
+      "Autumn is one of the most atmospheric seasons for discovering Armenia. Yerevan remains lively with open-air cafés, cultural events and relaxed city walks, while forests around Dilijan turn vivid shades of gold, orange and red.",
+    autumnArticleTwo:
+      "September is usually warm and comfortable, October becomes cooler and more colorful, and November brings crisp weather. Layered clothing, a light waterproof jacket and comfortable walking shoes are recommended.",
+    autumnArticleThree:
+      "Seasonal highlights can include city festivals, wine and gastronomic experiences, visits to Haghartsin and Lake Sevan, countryside walks and cultural day trips from Yerevan.",
+
+    winterMeta: "December – March",
+    winterTitle: "Winter in Armenia: Snow, Mountains & Adventure",
+    winterExcerpt:
+      "Discover skiing, ropeway rides, snowy landscapes, festive Yerevan and memorable mountain escapes across Armenia.",
+    winterArticleOne:
+      "Winter reveals a different side of Armenia, combining snowy mountain scenery with festive city life. Yerevan glows with seasonal decorations, welcoming restaurants and cultural attractions throughout the colder months.",
+    winterArticleTwo:
+      "Tsaghkadzor is the country's best-known winter resort, offering skiing, snowboarding and scenic ropeway rides. Depending on weather and local availability, travelers can also enjoy snowmobile rides and other mountain activities.",
+    winterArticleThree:
+      "Warm layers, waterproof footwear, gloves and a winter jacket are essential. A well-planned program can combine mountain adventures with Yerevan, Lake Sevan, Armenian cuisine and relaxing evenings in comfortable hotels."
   },
 
   hy: {
@@ -596,7 +639,50 @@ const translations = {
     tourFourDaySix:
       "Օր 6․ Երևան – Էջմիածին – Զվարթնոց – Մաչանենց հյուրատուն – Երևան։ Գիշերակաց Երևանում։",
     tourFourDaySeven:
-      "Օր 7․ Տեղափոխում օդանավակայան։"
+      "Օր 7․ Տեղափոխում օդանավակայան։",
+
+    /* Travel inspiration */
+    inspirationEyebrow: "Ճանապարհորդական գաղափարներ",
+    inspirationTitle: "Բացահայտեք Հայաստանը այցելելու լավագույն ժամանակը։",
+    inspirationIntroduction:
+      "Սեզոնային ուղեցույցներ, ոգեշնչող փորձառություններ և գործնական խորհուրդներ՝ Հայաստանում անմոռանալի ճանապարհորդություն պլանավորելու համար։",
+    inspirationCategoryEvent: "Միջոցառում",
+    inspirationCategoryGuide: "Սեզոնային ուղեցույց",
+    inspirationCategoryAdventure: "Ձմեռային արկածներ",
+    readArticle: "Կարդալ հոդվածը",
+
+    balloonMeta: "Հոկտեմբերը Հայաստանում",
+    balloonTitle: "Հայաստանի օդապարիկների միջազգային փառատոն",
+    balloonExcerpt:
+      "Տեսեք, թե ինչպես են գունավոր օդապարիկները լցնում Հայաստանի երկինքը, և բացահայտեք՝ ինչպես ներառել այս տպավորիչ փորձառությունը Ձեր ճանապարհորդության մեջ։",
+    balloonArticleOne:
+      "Յուրաքանչյուր աշուն գունավոր օդապարիկները Հայաստանի բնապատկերներն ու քաղաքային համայնապատկերը ներկայացնում են նոր տեսանկյունից։ Փառատոնը բացառիկ հնարավորություն է տալիս հետևելու օդապարիկների թռիչքներին, լուսանկարելու տոնական պահերը և Հայաստանը տեսնելու բարձրությունից։",
+    balloonArticleTwo:
+      "Հոկտեմբերին ցերեկները սովորաբար հաճելի են, իսկ առավոտներն ու երեկոները կարող են զով լինել։ Խորհուրդ է տրվում ունենալ հարմարավետ կոշիկ և հագուստի մի քանի շերտ, հատկապես վաղ առավոտյան միջոցառումներին մասնակցելու դեպքում։",
+    balloonArticleThree:
+      "Փառատոնի ժամանակացույցը, թռիչքների վայրերը և ուղևորների համար նախատեսված ծրագրերը կախված են պաշտոնական հայտարարություններից և եղանակային պայմաններից։ Liberty Incentive-ը կարող է օգնել հասանելի փառատոնային փորձառությունները ներառել Հայաստանում Ձեր անհատական ճանապարհորդական ծրագրում։",
+
+    autumnMeta: "Սեպտեմբեր – նոյեմբեր",
+    autumnTitle: "Աշունը Հայաստանում․ գույներ, եղանակ և ճանապարհորդական խորհուրդներ",
+    autumnExcerpt:
+      "Բացահայտեք Հայաստանը տարվա ամենագունեղ եղանակին՝ աշխույժ Երևանից մինչև Դիլիջանի ոսկեգույն անտառներն ու վանքերը։",
+    autumnArticleOne:
+      "Աշունը Հայաստանը բացահայտելու ամենագեղեցիկ եղանակներից մեկն է։ Երևանը շարունակում է ապրել իր բացօթյա սրճարաններով, մշակութային միջոցառումներով և հանգիստ զբոսանքներով, իսկ Դիլիջանի անտառները ներկվում են ոսկեգույն, նարնջագույն և կարմիր երանգներով։",
+    autumnArticleTwo:
+      "Սեպտեմբերը սովորաբար տաք և հարմարավետ է, հոկտեմբերին եղանակը զովանում է և բնությունն ավելի գունեղ է դառնում, իսկ նոյեմբերը բերում է ավելի սառը օրեր։ Խորհուրդ է տրվում ունենալ շերտավոր հագուստ, թեթև անջրանցիկ բաճկոն և հարմարավետ կոշիկ։",
+    autumnArticleThree:
+      "Սեզոնային կարևոր փորձառություններից են քաղաքային փառատոնները, գինու և գաստրոնոմիական ծրագրերը, Հաղարծին և Սևանա լիճ այցելությունները, բնության գրկում զբոսանքներն ու Երևանից մշակութային մեկօրյա ուղևորությունները։",
+
+    winterMeta: "Դեկտեմբեր – մարտ",
+    winterTitle: "Ձմեռը Հայաստանում․ ձյուն, լեռներ և արկածներ",
+    winterExcerpt:
+      "Բացահայտեք դահուկավազքը, ճոպանուղիները, ձյունապատ բնապատկերները, տոնական Երևանը և անմոռանալի հանգիստը լեռներում։",
+    winterArticleOne:
+      "Ձմեռը բացահայտում է Հայաստանի մեկ այլ կողմը՝ համադրելով ձյունածածկ լեռներն ու տոնական քաղաքային կյանքը։ Ցուրտ ամիսներին Երևանը զարդարվում է տոնական լույսերով և հյուրերին դիմավորում հարմարավետ ռեստորաններով ու մշակութային վայրերով։",
+    winterArticleTwo:
+      "Ծաղկաձորը Հայաստանի ամենահայտնի ձմեռային հանգստավայրն է, որտեղ կարելի է զբաղվել դահուկավազքով, սնոուբորդով և վայելել ճոպանուղուց բացվող տեսարանները։ Եղանակային պայմաններից և հասանելիությունից կախված՝ հնարավոր են նաև ձնագնացով զբոսանքներ և այլ լեռնային ակտիվություններ։",
+    winterArticleThree:
+      "Անհրաժեշտ են տաք շերտավոր հագուստ, անջրանցիկ կոշիկ, ձեռնոցներ և ձմեռային բաճկոն։ Ճիշտ պլանավորված ծրագիրը կարող է համատեղել լեռնային արկածները Երևանի, Սևանա լճի, հայկական խոհանոցի և հարմարավետ հյուրանոցներում հանգստի հետ։"
   }
 };
 
@@ -665,6 +751,18 @@ const tourCloseButtons =
 
 const tourModals =
   document.querySelectorAll(".tour-modal");
+
+const travelInspirationSection =
+  document.querySelector(".travel-inspiration-section");
+
+const articleOpenButtons =
+  document.querySelectorAll("[data-article]");
+
+const articleCloseButtons =
+  document.querySelectorAll("[data-close-article]");
+
+const articleModals =
+  document.querySelectorAll(".article-modal");
 
 const heroVideo =
   document.querySelector(".hero-video");
@@ -1059,6 +1157,7 @@ document.addEventListener("keydown", (event) => {
     closeDesktopDropdown();
     closeMobileMenu();
     closeTourModal();
+    closeArticleModal();
   }
 });
 
@@ -1190,7 +1289,125 @@ tourModals.forEach((modal) => {
 
 
 /* ==================================================
-   10. INQUIRY FORM
+   10. TRAVEL INSPIRATION ARTICLE MODALS
+   ================================================== */
+
+let activeArticleModal = null;
+let lastArticleTrigger = null;
+
+function openArticleModal(modalId, trigger) {
+  const modal = document.getElementById(modalId);
+
+  if (!modal || !modal.classList.contains("article-modal")) {
+    return;
+  }
+
+  closeArticleModal(false);
+  closeTourModal(false);
+
+  activeArticleModal = modal;
+  lastArticleTrigger = trigger || null;
+
+  modal.hidden = false;
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("article-modal-open");
+
+  const closeButton =
+    modal.querySelector(".article-modal-close");
+
+  if (closeButton) {
+    window.setTimeout(() => {
+      closeButton.focus();
+    }, 50);
+  }
+}
+
+function closeArticleModal(restoreFocus = true) {
+  if (!activeArticleModal) {
+    return;
+  }
+
+  activeArticleModal.hidden = true;
+  activeArticleModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("article-modal-open");
+
+  const triggerToRestore = lastArticleTrigger;
+
+  activeArticleModal = null;
+  lastArticleTrigger = null;
+
+  if (
+    restoreFocus &&
+    triggerToRestore &&
+    typeof triggerToRestore.focus === "function"
+  ) {
+    triggerToRestore.focus();
+  }
+}
+
+articleOpenButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    openArticleModal(
+      button.dataset.article,
+      button
+    );
+  });
+});
+
+articleCloseButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    closeArticleModal();
+  });
+});
+
+articleModals.forEach((modal) => {
+  const inquiryLink =
+    modal.querySelector(".article-inquiry-button");
+
+  if (inquiryLink) {
+    inquiryLink.addEventListener("click", () => {
+      closeArticleModal(false);
+    });
+  }
+
+  modal.addEventListener("keydown", (event) => {
+    if (event.key !== "Tab") {
+      return;
+    }
+
+    const focusableElements = Array.from(
+      modal.querySelectorAll(
+        'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])'
+      )
+    ).filter((element) => !element.hidden);
+
+    if (focusableElements.length === 0) {
+      return;
+    }
+
+    const firstElement = focusableElements[0];
+    const lastElement =
+      focusableElements[focusableElements.length - 1];
+
+    if (
+      event.shiftKey &&
+      document.activeElement === firstElement
+    ) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (
+      !event.shiftKey &&
+      document.activeElement === lastElement
+    ) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  });
+});
+
+
+/* ==================================================
+   11. INQUIRY FORM
    ================================================== */
 
 function renderChildrenAgeFields() {
@@ -1391,7 +1608,8 @@ const animatedSections = [
   aboutSection,
   servicesSection,
   armeniaSection,
-  toursSection
+  toursSection,
+  travelInspirationSection
 ].filter(Boolean);
 
 if (
