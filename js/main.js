@@ -36,6 +36,7 @@ const translations = {
     discoverArmenia: "Discover Armenia",
     explore: "Explore",
     learnMore: "Learn More",
+    toursMenu: "Tours",
 
     /* Inquiry form */
     inquiryEyebrow: "Plan Your Trip",
@@ -302,6 +303,7 @@ const translations = {
     inspirationCategoryGuide: "Seasonal Guide",
     inspirationCategoryAdventure: "Winter Adventure",
     readArticle: "Read Article",
+    backToInspiration: "← Back to Travel Inspiration",
 
     balloonMeta: "October in Armenia",
     balloonTitle: "Armenia International Balloon Festival",
@@ -313,6 +315,8 @@ const translations = {
       "October generally offers pleasant daytime weather, while mornings and evenings can feel cool. Visitors should bring comfortable footwear and layered clothing, especially for early-morning balloon activities.",
     balloonArticleThree:
       "Festival schedules, flight locations and passenger experiences depend on official announcements and weather conditions. Liberty Incentive can help travelers include the available festival experiences in a tailor-made Armenian itinerary.",
+    balloonWeatherTitle: "What to expect in October",
+    balloonPlanningTitle: "Planning your festival experience",
 
     autumnMeta: "September – November",
     autumnTitle: "Autumn in Armenia: Colors, Weather & Travel Tips",
@@ -324,6 +328,8 @@ const translations = {
       "September is usually warm and comfortable, October becomes cooler and more colorful, and November brings crisp weather. Layered clothing, a light waterproof jacket and comfortable walking shoes are recommended.",
     autumnArticleThree:
       "Seasonal highlights can include city festivals, wine and gastronomic experiences, visits to Haghartsin and Lake Sevan, countryside walks and cultural day trips from Yerevan.",
+    autumnWeatherTitle: "Weather and what to pack",
+    autumnHighlightsTitle: "Seasonal highlights",
 
     winterMeta: "December – March",
     winterTitle: "Winter in Armenia: Snow, Mountains & Adventure",
@@ -334,7 +340,9 @@ const translations = {
     winterArticleTwo:
       "Tsaghkadzor is the country's best-known winter resort, offering skiing, snowboarding and scenic ropeway rides. Depending on weather and local availability, travelers can also enjoy snowmobile rides and other mountain activities.",
     winterArticleThree:
-      "Warm layers, waterproof footwear, gloves and a winter jacket are essential. A well-planned program can combine mountain adventures with Yerevan, Lake Sevan, Armenian cuisine and relaxing evenings in comfortable hotels."
+      "Warm layers, waterproof footwear, gloves and a winter jacket are essential. A well-planned program can combine mountain adventures with Yerevan, Lake Sevan, Armenian cuisine and relaxing evenings in comfortable hotels.",
+    winterActivitiesTitle: "Winter activities in Armenia",
+    winterPackingTitle: "What to wear and how to prepare"
   },
 
   hy: {
@@ -362,6 +370,7 @@ const translations = {
     discoverArmenia: "Բացահայտեք Հայաստանը",
     explore: "Բացահայտել",
     learnMore: "Իմանալ ավելին",
+    toursMenu: "Տուրեր",
 
     /* Inquiry form */
     inquiryEyebrow: "Պլանավորեք Ձեր ուղևորությունը",
@@ -650,6 +659,7 @@ const translations = {
     inspirationCategoryGuide: "Սեզոնային ուղեցույց",
     inspirationCategoryAdventure: "Ձմեռային արկածներ",
     readArticle: "Կարդալ հոդվածը",
+    backToInspiration: "← Վերադառնալ ճանապարհորդական գաղափարներին",
 
     balloonMeta: "Հոկտեմբերը Հայաստանում",
     balloonTitle: "Հայաստանի օդապարիկների միջազգային փառատոն",
@@ -661,6 +671,8 @@ const translations = {
       "Հոկտեմբերին ցերեկները սովորաբար հաճելի են, իսկ առավոտներն ու երեկոները կարող են զով լինել։ Խորհուրդ է տրվում ունենալ հարմարավետ կոշիկ և հագուստի մի քանի շերտ, հատկապես վաղ առավոտյան միջոցառումներին մասնակցելու դեպքում։",
     balloonArticleThree:
       "Փառատոնի ժամանակացույցը, թռիչքների վայրերը և ուղևորների համար նախատեսված ծրագրերը կախված են պաշտոնական հայտարարություններից և եղանակային պայմաններից։ Liberty Incentive-ը կարող է օգնել հասանելի փառատոնային փորձառությունները ներառել Հայաստանում Ձեր անհատական ճանապարհորդական ծրագրում։",
+    balloonWeatherTitle: "Ինչ սպասել հոկտեմբերին",
+    balloonPlanningTitle: "Փառատոնային այցելության պլանավորում",
 
     autumnMeta: "Սեպտեմբեր – նոյեմբեր",
     autumnTitle: "Աշունը Հայաստանում․ գույներ, եղանակ և ճանապարհորդական խորհուրդներ",
@@ -672,6 +684,8 @@ const translations = {
       "Սեպտեմբերը սովորաբար տաք և հարմարավետ է, հոկտեմբերին եղանակը զովանում է և բնությունն ավելի գունեղ է դառնում, իսկ նոյեմբերը բերում է ավելի սառը օրեր։ Խորհուրդ է տրվում ունենալ շերտավոր հագուստ, թեթև անջրանցիկ բաճկոն և հարմարավետ կոշիկ։",
     autumnArticleThree:
       "Սեզոնային կարևոր փորձառություններից են քաղաքային փառատոնները, գինու և գաստրոնոմիական ծրագրերը, Հաղարծին և Սևանա լիճ այցելությունները, բնության գրկում զբոսանքներն ու Երևանից մշակութային մեկօրյա ուղևորությունները։",
+    autumnWeatherTitle: "Եղանակը և անհրաժեշտ հագուստը",
+    autumnHighlightsTitle: "Սեզոնային կարևոր փորձառություններ",
 
     winterMeta: "Դեկտեմբեր – մարտ",
     winterTitle: "Ձմեռը Հայաստանում․ ձյուն, լեռներ և արկածներ",
@@ -682,7 +696,9 @@ const translations = {
     winterArticleTwo:
       "Ծաղկաձորը Հայաստանի ամենահայտնի ձմեռային հանգստավայրն է, որտեղ կարելի է զբաղվել դահուկավազքով, սնոուբորդով և վայելել ճոպանուղուց բացվող տեսարանները։ Եղանակային պայմաններից և հասանելիությունից կախված՝ հնարավոր են նաև ձնագնացով զբոսանքներ և այլ լեռնային ակտիվություններ։",
     winterArticleThree:
-      "Անհրաժեշտ են տաք շերտավոր հագուստ, անջրանցիկ կոշիկ, ձեռնոցներ և ձմեռային բաճկոն։ Ճիշտ պլանավորված ծրագիրը կարող է համատեղել լեռնային արկածները Երևանի, Սևանա լճի, հայկական խոհանոցի և հարմարավետ հյուրանոցներում հանգստի հետ։"
+      "Անհրաժեշտ են տաք շերտավոր հագուստ, անջրանցիկ կոշիկ, ձեռնոցներ և ձմեռային բաճկոն։ Ճիշտ պլանավորված ծրագիրը կարող է համատեղել լեռնային արկածները Երևանի, Սևանա լճի, հայկական խոհանոցի և հարմարավետ հյուրանոցներում հանգստի հետ։",
+    winterActivitiesTitle: "Ձմեռային ակտիվություններ Հայաստանում",
+    winterPackingTitle: "Ինչ հագնել և ինչպես պատրաստվել"
   }
 };
 
