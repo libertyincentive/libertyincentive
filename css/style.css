@@ -1924,6 +1924,92 @@ button:focus-visible {
   .about-mission-section { padding: 78px 16px; }
 }
 
+/* Redesigned editorial About page */
+.about-editorial-hero { display: grid; grid-template-columns: minmax(0, .88fr) minmax(480px, 1.12fr); min-height: 650px; background: #f7fafb; }
+.about-editorial-copy { display: flex; flex-direction: column; justify-content: center; padding: 76px clamp(34px, 6vw, 96px); }
+.about-editorial-copy h1 { max-width: 620px; color: var(--navy); font-family: var(--serif-font); font-size: clamp(50px, 5.6vw, 78px); font-weight: 500; line-height: 1.02; letter-spacing: -.05em; }
+.about-editorial-lead { max-width: 570px; margin-top: 28px; color: #516675; font-size: 17px; line-height: 1.8; }
+.about-editorial-signature { display: flex; align-items: center; gap: 18px; margin-top: 38px; padding-top: 26px; border-top: 1px solid #dce7ec; }
+.about-editorial-signature strong { color: var(--primary-blue); font-family: var(--serif-font); font-size: 38px; }
+.about-editorial-signature span { max-width: 170px; color: #697d8a; font-size: 12px; font-weight: 700; line-height: 1.5; text-transform: uppercase; }
+.about-editorial-image { min-height: 650px; overflow: hidden; }
+.about-editorial-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.about-new-intro { padding: 110px 0; }
+.about-new-intro-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 90px; }
+.about-new-intro h2, .about-armenia-copy h2, .about-tours-heading h2, .about-capabilities-grid h2, .about-closing-section h2 { color: var(--navy); font-family: var(--serif-font); font-size: clamp(38px, 4.7vw, 61px); font-weight: 500; line-height: 1.1; letter-spacing: -.035em; }
+.about-new-intro-grid p, .about-armenia-copy > p:not(.about-page-kicker), .about-tours-heading > p, .about-capabilities-grid p { margin-bottom: 22px; color: #4f6372; font-size: 17px; line-height: 1.85; }
+
+.about-edge-section { padding: 0 0 110px; }
+.about-edge-card { position: relative; padding: 54px 64px 58px 154px; overflow: hidden; background: var(--navy); color: var(--white); }
+.about-edge-card::before { position: absolute; top: 16px; left: 44px; color: rgba(2,149,206,.35); content: "“"; font-family: var(--serif-font); font-size: 170px; line-height: 1; }
+.about-edge-card > p { margin-bottom: 15px; color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+.about-edge-card blockquote { max-width: 850px; font-family: var(--serif-font); font-size: clamp(27px, 3.2vw, 42px); line-height: 1.4; }
+
+.about-armenia-section { padding: 110px 0; background: var(--off-white); }
+.about-armenia-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; }
+.about-armenia-image { min-height: 620px; overflow: hidden; border-radius: 2px 90px 2px 2px; }
+.about-armenia-image img { width: 100%; height: 100%; min-height: 620px; object-fit: cover; }
+.about-armenia-copy h2 { margin-bottom: 28px; }
+
+.about-goals-section { padding: 104px 0; background: #063557; color: var(--white); }
+.about-goals-section .about-page-kicker { color: var(--orange); }
+.about-goals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 34px; }
+.about-goals-grid article { min-height: 270px; padding: 32px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05); }
+.about-goals-grid span { color: var(--orange); font-size: 12px; font-weight: 800; }
+.about-goals-grid p { margin-top: 76px; font-family: var(--serif-font); font-size: 24px; line-height: 1.5; }
+
+.about-tours-section { padding: 110px 0; }
+.about-tours-heading { display: grid; grid-template-columns: 1fr .8fr; gap: 70px; align-items: end; margin-bottom: 48px; }
+.about-tours-heading > p { margin: 0; padding-left: 24px; border-left: 3px solid var(--orange); }
+.about-tour-categories { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid #dce6eb; }
+.about-tour-categories p { position: relative; padding: 24px 22px 24px 50px; border-right: 1px solid #dce6eb; border-bottom: 1px solid #dce6eb; color: var(--navy); font-size: 15px; font-weight: 700; line-height: 1.6; }
+.about-tour-categories p::before { position: absolute; left: 20px; color: var(--primary-blue); content: "✦"; }
+
+.about-capabilities-section { padding: 104px 0; background: #f2f8fb; }
+.about-capabilities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.about-capabilities-grid article { padding: 48px; background: var(--white); box-shadow: 0 16px 45px rgba(6,53,87,.07); }
+.about-capabilities-grid span { display: block; margin-bottom: 44px; color: var(--orange-dark); font-size: 12px; font-weight: 800; }
+.about-capabilities-grid h2 { margin-bottom: 24px; font-size: clamp(32px, 3.5vw, 45px); }
+
+.about-options-section { padding: 110px 0; }
+.about-options-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: center; }
+.about-options-grid blockquote { color: var(--navy); font-family: var(--serif-font); font-size: clamp(31px, 4vw, 51px); line-height: 1.3; }
+.about-options-grid ul { margin: 0; padding: 0; list-style: none; }
+.about-options-grid li { padding: 19px 0; border-bottom: 1px solid #dce6eb; color: #405969; font-size: 16px; font-weight: 700; }
+.about-options-grid li::before { margin-right: 15px; color: var(--orange); content: "✓"; }
+
+.about-closing-section { padding: 108px 24px; background: linear-gradient(135deg, #eaf6fb, #ffffff); text-align: center; }
+.about-closing-section .about-page-container { max-width: 850px; }
+.about-closing-section h2 { margin-bottom: 24px; }
+.about-closing-section p { max-width: 690px; margin: 0 auto 36px; color: #4f6372; font-size: 17px; line-height: 1.8; }
+
+@media screen and (max-width: 900px) {
+  .about-editorial-hero { grid-template-columns: 1fr; }
+  .about-editorial-image { min-height: 460px; order: -1; }
+  .about-editorial-copy { padding: 64px 36px; }
+  .about-new-intro-grid, .about-armenia-grid, .about-tours-heading, .about-options-grid { grid-template-columns: 1fr; gap: 42px; }
+  .about-goals-grid { grid-template-columns: 1fr; }
+  .about-goals-grid article { min-height: 210px; }
+  .about-goals-grid p { margin-top: 46px; }
+  .about-armenia-image, .about-armenia-image img { min-height: 470px; }
+}
+
+@media screen and (max-width: 600px) {
+  .about-editorial-image { min-height: 320px; }
+  .about-editorial-copy { padding: 50px 20px; }
+  .about-editorial-copy h1 { font-size: 44px; }
+  .about-new-intro, .about-armenia-section, .about-goals-section, .about-tours-section, .about-capabilities-section, .about-options-section { padding: 72px 0; }
+  .about-edge-section { padding-bottom: 72px; }
+  .about-edge-card { width: calc(100% - 28px); padding: 42px 24px; }
+  .about-edge-card::before { display: none; }
+  .about-tour-categories, .about-capabilities-grid { grid-template-columns: 1fr; }
+  .about-tour-categories p { border-right: 0; }
+  .about-capabilities-grid article { padding: 34px 26px; }
+  .about-armenia-image, .about-armenia-image img { min-height: 350px; }
+  .about-closing-section { padding: 76px 16px; }
+}
+
 .article-page-main {
   padding-top: var(--header-height);
   background-color: var(--white);
