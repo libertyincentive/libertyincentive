@@ -295,6 +295,10 @@ const translations = {
       "Day 7: Transfer to the airport.",
 
     /* Travel inspiration */
+    blogPageTitle: "Travel Inspiration | Liberty Incentive",
+    blogHeroLabel: "The Liberty Journal",
+    blogHeroTitle: "Stories and practical ideas for your Armenian journey.",
+    blogHeroText: "Discover seasonal guides, special events and thoughtful travel advice created by local experts.",
     inspirationEyebrow: "Travel Inspiration",
     inspirationTitle: "Discover the best time to experience Armenia.",
     inspirationIntroduction:
@@ -698,6 +702,10 @@ const translations = {
       "Օր 7․ Տեղափոխում օդանավակայան։",
 
     /* Travel inspiration */
+    blogPageTitle: "Ճանապարհորդական գաղափարներ | Liberty Incentive",
+    blogHeroLabel: "Liberty-ի ճամփորդական օրագիր",
+    blogHeroTitle: "Պատմություններ և գործնական գաղափարներ Ձեր հայկական ճանապարհորդության համար։",
+    blogHeroText: "Բացահայտեք տեղացի մասնագետների պատրաստած սեզոնային ուղեցույցները, հատուկ միջոցառումներն ու օգտակար ճանապարհորդական խորհուրդները։",
     inspirationEyebrow: "Ճանապարհորդական գաղափարներ",
     inspirationTitle: "Բացահայտեք Հայաստանը այցելելու լավագույն ժամանակը։",
     inspirationIntroduction:
