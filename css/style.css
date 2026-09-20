@@ -2108,6 +2108,71 @@ button:focus-visible {
    TRAVEL INSPIRATION / BLOG
    ================================================== */
 
+.blog-page-main {
+  padding-top: var(--header-height);
+  background-color: var(--off-white);
+}
+
+.blog-page-hero {
+  padding: 112px 24px 96px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(2, 149, 206, 0.28), transparent 32%),
+    linear-gradient(135deg, #063557 0%, #0b4f73 100%);
+  color: var(--white);
+  text-align: center;
+}
+
+.blog-page-hero-inner {
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+.blog-page-label {
+  margin-bottom: 18px;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.blog-page-hero h1 {
+  margin-bottom: 24px;
+  font-family: var(--serif-font);
+  font-size: clamp(44px, 7vw, 78px);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.blog-page-hero p:last-child {
+  max-width: 680px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.blog-page-main .travel-inspiration-section {
+  padding-top: 92px;
+}
+
+.blog-page-main .travel-inspiration-heading {
+  display: none;
+}
+
+.desktop-navigation a[aria-current="page"],
+.mobile-navigation a[aria-current="page"] {
+  color: var(--primary-blue);
+}
+
+@media screen and (max-width: 760px) {
+  .blog-page-hero { padding: 82px 20px 72px; }
+  .blog-page-hero h1 { font-size: clamp(40px, 12vw, 58px); }
+  .blog-page-hero p:last-child { font-size: 16px; }
+  .blog-page-main .travel-inspiration-section { padding-top: 68px; }
+}
+
 .travel-inspiration-section {
   padding: 112px 0;
   background:
