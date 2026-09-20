@@ -1018,6 +1018,19 @@ const translations = {
   }
 };
 
+/* Add translations supplied by an individual destination page. */
+if (window.destinationTranslations) {
+  Object.assign(
+    translations.en,
+    window.destinationTranslations.en || {}
+  );
+
+  Object.assign(
+    translations.hy,
+    window.destinationTranslations.hy || {}
+  );
+}
+
 
 /* ==================================================
    2. ELEMENTS
