@@ -1854,6 +1854,439 @@ button:focus-visible {
 
 
 /* =========================================================
+   PLAN YOUR TRIP / INQUIRY FORM
+   ========================================================= */
+
+.inquiry-section {
+  padding: 112px 0;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.inquiry-container {
+  display: grid;
+  width: min(var(--container-width), calc(100% - 48px));
+  margin: 0 auto;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: clamp(52px, 7vw, 100px);
+}
+
+.inquiry-introduction {
+  position: sticky;
+  top: calc(var(--header-height) + 35px);
+}
+
+.inquiry-eyebrow {
+  display: flex;
+  margin-bottom: 18px;
+  align-items: center;
+  gap: 14px;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.inquiry-eyebrow::before {
+  width: 42px;
+  height: 2px;
+  background: var(--orange);
+  content: "";
+}
+
+.inquiry-introduction h2 {
+  max-width: 520px;
+  margin-bottom: 25px;
+  font-family: var(--serif-font);
+  font-size: clamp(45px, 5vw, 70px);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.inquiry-introduction > p:not(.inquiry-eyebrow) {
+  max-width: 470px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.inquiry-contact-note {
+  display: flex;
+  margin-top: 45px;
+  padding-top: 27px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.inquiry-contact-note span {
+  margin-bottom: 7px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.inquiry-contact-note a {
+  color: var(--white);
+  font-size: 16px;
+  transition: color var(--transition);
+}
+
+.inquiry-contact-note a:hover {
+  color: var(--orange);
+}
+
+.inquiry-form {
+  position: relative;
+  padding: clamp(28px, 4vw, 52px);
+  background: var(--white);
+  color: var(--dark-text);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+}
+
+.inquiry-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-section-heading {
+  display: flex;
+  margin-bottom: 27px;
+  align-items: center;
+  gap: 14px;
+}
+
+.form-section-heading-contact {
+  margin-top: 45px;
+}
+
+.form-section-heading > span {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  place-items: center;
+  background: var(--light-blue);
+  border-radius: 50%;
+  color: var(--primary-blue-dark);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.form-section-heading h3 {
+  color: var(--navy);
+  font-family: var(--serif-font);
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.form-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field-full {
+  grid-column: 1 / -1;
+}
+
+.form-field label,
+.form-field legend {
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea,
+.child-age-field input {
+  width: 100%;
+  min-height: 52px;
+  padding: 13px 14px;
+  background: var(--off-white);
+  border: 1px solid #d8e2e8;
+  border-radius: 0;
+  color: var(--dark-text);
+  outline: none;
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+.form-field textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus,
+.child-age-field input:focus {
+  background: var(--white);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(2, 149, 206, 0.12);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #93a0a9;
+}
+
+.interests-fieldset {
+  padding: 0;
+  border: 0;
+}
+
+.interests-fieldset legend {
+  margin-bottom: 11px;
+}
+
+.interest-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.interest-options label {
+  position: relative;
+  cursor: pointer;
+}
+
+.interest-options input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.interest-options span {
+  display: inline-flex;
+  min-height: 40px;
+  padding: 9px 13px;
+  align-items: center;
+  background: var(--off-white);
+  border: 1px solid #d8e2e8;
+  color: #51626e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.interest-options input:checked + span {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.interest-options input:focus-visible + span {
+  outline: 3px solid rgba(2, 149, 206, 0.25);
+  outline-offset: 2px;
+}
+
+.children-ages:not(:empty) {
+  display: grid;
+  padding: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  background: var(--light-blue);
+}
+
+.child-age-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.child-age-field label {
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.child-age-field input {
+  min-height: 46px;
+  background: var(--white);
+}
+
+.privacy-consent {
+  display: flex;
+  margin: 28px 0 23px;
+  align-items: flex-start;
+  gap: 11px;
+  color: var(--medium-grey);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.privacy-consent input {
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  flex: 0 0 17px;
+  accent-color: var(--primary-blue);
+}
+
+.inquiry-submit-button {
+  display: inline-flex;
+  min-width: 190px;
+  min-height: 54px;
+  padding: 14px 23px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: var(--orange);
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  transition:
+    background var(--transition),
+    color var(--transition),
+    transform var(--transition),
+    opacity var(--transition);
+}
+
+.inquiry-submit-button:hover:not(:disabled) {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.inquiry-submit-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.form-status {
+  display: none;
+  margin-top: 18px;
+  padding: 13px 15px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.form-status.is-visible {
+  display: block;
+}
+
+.form-status.is-success {
+  background: #e5f7ec;
+  color: #176838;
+}
+
+.form-status.is-error {
+  background: #fff0ee;
+  color: #a23227;
+}
+
+@media screen and (max-width: 900px) {
+
+  .inquiry-section {
+    padding: 82px 0;
+  }
+
+  .inquiry-container {
+    width: min(100% - 36px, var(--container-width));
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .inquiry-introduction {
+    position: static;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .inquiry-section {
+    padding: 68px 0;
+  }
+
+  .inquiry-container {
+    width: calc(100% - 28px);
+    gap: 34px;
+  }
+
+  .inquiry-introduction h2 {
+    font-size: clamp(38px, 11vw, 49px);
+  }
+
+  .inquiry-introduction > p:not(.inquiry-eyebrow) {
+    font-size: 15px;
+  }
+
+  .inquiry-contact-note {
+    margin-top: 30px;
+  }
+
+  .inquiry-form {
+    padding: 27px 19px;
+  }
+
+  .form-grid,
+  .children-ages:not(:empty) {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    gap: 18px;
+  }
+
+  .form-section-heading-contact {
+    margin-top: 38px;
+  }
+
+  .form-section-heading h3 {
+    font-size: 26px;
+  }
+
+  .interest-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .interest-options span {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .inquiry-submit-button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
    BEST-SELLING ARMENIA TOURS
    ========================================================= */
 
