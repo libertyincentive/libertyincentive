@@ -4459,22 +4459,55 @@ body.tour-modal-open {
 }
 
 .team-hero {
-  padding: 150px 0 78px;
-  background: linear-gradient(135deg, #ffffff 0%, #eef8fc 100%);
+  padding: 132px 0 66px;
+  background: #f7f9fb;
   border-bottom: 1px solid rgba(2, 149, 206, 0.16);
 }
 
 .team-hero-inner {
-  max-width: 830px;
+  position: relative;
+  max-width: 900px;
+  padding: 54px 68px 58px;
+  overflow: hidden;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(11, 49, 80, 0.09);
+  border-radius: 22px;
+  box-shadow: 0 18px 50px rgba(11, 49, 80, 0.08);
+}
+
+.team-hero-inner::before {
+  display: block;
+  width: 54px;
+  height: 4px;
+  margin: 0 auto 25px;
+  content: "";
+  background: #ef9f16;
+  border-radius: 999px;
+}
+
+.team-hero-inner::after {
+  position: absolute;
+  right: -65px;
+  bottom: -80px;
+  width: 190px;
+  height: 190px;
+  content: "";
+  border: 1px solid rgba(2, 149, 206, 0.14);
+  border-radius: 50%;
 }
 
 .team-eyebrow {
-  margin: 0 0 18px;
-  color: #ef9f16;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #0b3150;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-transform: none;
 }
 
 .team-hero h1 {
@@ -4488,8 +4521,10 @@ body.tour-modal-open {
 }
 
 .team-hero-description {
-  max-width: 680px;
-  margin: 28px 0 0;
+  position: relative;
+  z-index: 1;
+  max-width: 690px;
+  margin: 23px auto 0;
   color: #456276;
   font-size: 17px;
   line-height: 1.8;
@@ -4647,7 +4682,12 @@ body.tour-modal-open {
   }
 
   .team-hero {
-    padding: 122px 0 58px;
+    padding: 112px 0 46px;
+  }
+
+  .team-hero-inner {
+    padding: 40px 24px 42px;
+    border-radius: 16px;
   }
 
   .team-hero-description {
