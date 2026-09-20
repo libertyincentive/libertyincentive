@@ -2100,6 +2100,40 @@ button:focus-visible {
   .about-classic-closing { padding: 76px 16px; }
 }
 
+/* Compact About page layout */
+.about-page-main .about-page-container { width: min(100% - 48px, 980px); }
+.about-company-section { padding: 78px 0 72px; }
+.about-company-grid { grid-template-columns: .85fr 1.15fr; gap: 60px; }
+.about-company-grid h2, .about-purpose-grid h2, .about-classic-armenia h2, .about-classic-tours h2 { font-size: clamp(34px, 4.1vw, 52px); }
+.about-company-copy p, .about-purpose-grid article > p:last-child, .about-classic-armenia-grid > div:last-child > p:not(.about-page-kicker), .about-classic-tours-heading > p { font-size: 16px; line-height: 1.75; }
+.about-classic-armenia { padding: 78px 0; background: #f7fbfd; }
+.about-classic-armenia-grid { grid-template-columns: .92fr 1.08fr; gap: 56px; }
+.about-classic-armenia-image, .about-classic-armenia-image img { min-height: 430px; }
+.about-purpose-section { padding: 78px 0; }
+.about-purpose-grid article { padding: 38px; }
+.about-purpose-grid article > span { margin-bottom: 28px; }
+.about-classic-goals { padding: 78px 0; }
+.about-classic-goals-grid article { min-height: 210px; padding: 28px; }
+.about-classic-goals-grid p { margin-top: 44px; font-size: 21px; }
+.about-classic-tours { padding: 80px 0; }
+.about-classic-tours-heading { gap: 50px; margin-bottom: 38px; }
+.about-classic-tour-grid article { min-height: 135px; padding: 22px; }
+.about-classic-tour-grid p { margin-top: 24px; }
+.about-classic-options { padding: 82px 0; background: #f7fbfd; }
+.about-classic-options-grid { gap: 58px; }
+.about-classic-options blockquote { font-size: clamp(28px, 3.6vw, 43px); }
+
+@media screen and (max-width: 900px) {
+  .about-page-main .about-page-container { width: min(100% - 40px, 760px); }
+  .about-company-grid, .about-classic-armenia-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+
+@media screen and (max-width: 600px) {
+  .about-page-main .about-page-container { width: calc(100% - 28px); }
+  .about-company-section, .about-classic-armenia, .about-purpose-section, .about-classic-goals, .about-classic-tours, .about-classic-options { padding: 58px 0; }
+  .about-classic-armenia-image, .about-classic-armenia-image img { min-height: 300px; }
+}
+
 .article-page-main {
   padding-top: var(--header-height);
   background-color: var(--white);
