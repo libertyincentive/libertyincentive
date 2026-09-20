@@ -1853,6 +1853,481 @@ button:focus-visible {
 }
 
 
+/* ==================================================
+   TRAVEL INSPIRATION / BLOG
+   ================================================== */
+
+.travel-inspiration-section {
+  padding: 112px 0;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(2, 149, 206, 0.08), transparent 28%),
+    linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
+}
+
+.travel-inspiration-container {
+  width: min(100% - 48px, var(--container-width));
+  margin: 0 auto;
+}
+
+.travel-inspiration-heading {
+  max-width: 760px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.travel-inspiration-heading .section-eyebrow {
+  justify-content: center;
+}
+
+.travel-inspiration-heading .section-eyebrow::before {
+  display: none;
+}
+
+.travel-inspiration-heading h2 {
+  margin: 13px 0 18px;
+  color: var(--navy);
+  font-family: var(--serif-font);
+  font-size: clamp(38px, 4.2vw, 60px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.travel-inspiration-heading > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--medium-grey);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.inspiration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.inspiration-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--white);
+  border: 1px solid rgba(8, 40, 68, 0.09);
+  border-radius: 22px;
+  box-shadow: 0 18px 50px rgba(8, 40, 68, 0.09);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.inspiration-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(2, 149, 206, 0.24);
+  box-shadow: 0 26px 65px rgba(8, 40, 68, 0.15);
+}
+
+.inspiration-image-wrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: var(--light-grey);
+}
+
+.inspiration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.inspiration-card:hover .inspiration-image {
+  transform: scale(1.055);
+}
+
+.inspiration-category {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 8px 13px;
+  background-color: rgba(255, 255, 255, 0.94);
+  color: var(--primary-blue-dark);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(8, 40, 68, 0.14);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.inspiration-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 29px 28px 30px;
+}
+
+.inspiration-meta {
+  margin-bottom: 10px;
+  color: var(--orange-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.inspiration-card-content h3 {
+  margin-bottom: 14px;
+  color: var(--navy);
+  font-family: var(--serif-font);
+  font-size: clamp(24px, 2.05vw, 31px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.inspiration-card-content > p:not(.inspiration-meta) {
+  margin-bottom: 25px;
+  color: var(--medium-grey);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.read-article-button,
+.article-inquiry-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: auto;
+  padding: 13px 21px;
+  background-color: var(--orange);
+  color: var(--navy);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.read-article-button::after {
+  margin-left: 10px;
+  content: "→";
+  font-size: 17px;
+  line-height: 1;
+  transition: transform var(--transition);
+}
+
+.read-article-button:hover,
+.read-article-button:focus-visible,
+.article-inquiry-button:hover,
+.article-inquiry-button:focus-visible {
+  background-color: var(--orange-dark);
+  box-shadow: 0 10px 25px rgba(223, 143, 8, 0.28);
+  transform: translateY(-2px);
+}
+
+.read-article-button:hover::after,
+.read-article-button:focus-visible::after {
+  transform: translateX(4px);
+}
+
+.read-article-button:focus-visible,
+.article-inquiry-button:focus-visible,
+.article-modal-close:focus-visible {
+  outline: 3px solid rgba(2, 149, 206, 0.35);
+  outline-offset: 3px;
+}
+
+
+/* Article popups */
+
+body.article-modal-open {
+  overflow: hidden;
+}
+
+.article-modal[hidden] {
+  display: none;
+}
+
+.article-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2500;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.article-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(5, 28, 47, 0.82);
+  backdrop-filter: blur(6px);
+}
+
+.article-modal-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.84fr) minmax(420px, 1.16fr);
+  width: min(100%, 1080px);
+  max-height: min(86vh, 780px);
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.32);
+  animation: articleModalEnter 0.32s ease both;
+}
+
+.article-modal-image {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+}
+
+.article-modal-body {
+  overflow-y: auto;
+  padding: 58px 52px 50px;
+  scrollbar-color: var(--primary-blue) var(--light-grey);
+  scrollbar-width: thin;
+}
+
+.article-modal-category {
+  margin-bottom: 12px;
+  color: var(--orange-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.article-modal-body h2 {
+  margin-bottom: 24px;
+  padding-right: 25px;
+  color: var(--navy);
+  font-family: var(--serif-font);
+  font-size: clamp(32px, 3.3vw, 48px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.article-modal-body > p:not(.article-modal-category) {
+  margin-bottom: 18px;
+  color: #4f6372;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.article-inquiry-button {
+  margin-top: 12px;
+}
+
+.article-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 3;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  background-color: var(--navy);
+  color: var(--white);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(8, 40, 68, 0.22);
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+  transition:
+    background-color var(--transition),
+    transform var(--transition);
+}
+
+.article-modal-close:hover,
+.article-modal-close:focus-visible {
+  background-color: var(--primary-blue);
+  transform: rotate(5deg);
+}
+
+@keyframes articleModalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* Travel inspiration — responsive */
+
+@media screen and (max-width: 1050px) {
+  .inspiration-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inspiration-card:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 14px);
+    justify-self: center;
+  }
+
+  .article-modal-content {
+    grid-template-columns: minmax(260px, 0.72fr) minmax(390px, 1.28fr);
+  }
+
+  .article-modal-body {
+    padding: 54px 38px 42px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .travel-inspiration-section {
+    padding: 80px 0;
+  }
+
+  .travel-inspiration-container {
+    width: min(100% - 32px, var(--container-width));
+  }
+
+  .travel-inspiration-heading {
+    margin-bottom: 34px;
+    text-align: left;
+  }
+
+  .travel-inspiration-heading .section-eyebrow {
+    justify-content: flex-start;
+  }
+
+  .travel-inspiration-heading h2 {
+    font-size: clamp(34px, 10.5vw, 47px);
+  }
+
+  .travel-inspiration-heading > p:last-child {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .inspiration-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .inspiration-card:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .inspiration-image-wrapper {
+    aspect-ratio: 16 / 11;
+  }
+
+  .inspiration-card-content {
+    padding: 25px 23px 27px;
+  }
+
+  .inspiration-card-content h3 {
+    font-size: 27px;
+  }
+
+  .article-modal {
+    align-items: end;
+    padding: 14px;
+  }
+
+  .article-modal-content {
+    display: block;
+    max-height: calc(100dvh - 28px);
+    overflow-y: auto;
+    border-radius: 20px;
+  }
+
+  .article-modal-image {
+    height: 260px;
+    min-height: 0;
+  }
+
+  .article-modal-body {
+    overflow: visible;
+    padding: 34px 24px 32px;
+  }
+
+  .article-modal-body h2 {
+    padding-right: 0;
+    font-size: 34px;
+  }
+
+  .article-modal-close {
+    position: sticky;
+    top: 12px;
+    float: right;
+    margin: 12px 12px -56px 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .travel-inspiration-container {
+    width: min(100% - 24px, var(--container-width));
+  }
+
+  .inspiration-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .inspiration-category {
+    top: 14px;
+    left: 14px;
+  }
+
+  .article-modal {
+    padding: 8px;
+  }
+
+  .article-modal-content {
+    max-height: calc(100dvh - 16px);
+  }
+
+  .article-modal-image {
+    height: 220px;
+  }
+
+  .article-modal-body {
+    padding: 30px 20px 28px;
+  }
+
+  .article-modal-body h2 {
+    font-size: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inspiration-card,
+  .inspiration-image,
+  .read-article-button,
+  .read-article-button::after,
+  .article-inquiry-button,
+  .article-modal-content,
+  .article-modal-close {
+    animation: none;
+    transition: none;
+  }
+}
+
+
 /* =========================================================
    PLAN YOUR TRIP / INQUIRY FORM
    ========================================================= */
