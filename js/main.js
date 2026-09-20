@@ -130,6 +130,38 @@ const translations = {
 
     aboutButton: "Discover Our Story",
 
+    aboutPageTitle: "About Liberty Incentive | Armenia Travel Experts",
+    aboutPageLabel: "Our Story",
+    aboutPageHeroTitle: "Creating meaningful journeys since 2011.",
+    aboutPageHeroText:
+      "Local knowledge, international standards and genuine Armenian hospitality come together in every journey we design.",
+    aboutStoryTitle: "A trusted partner in Armenia",
+    aboutStoryOne:
+      "Liberty Incentive was established in Yerevan in 2011 with one clear purpose: to introduce travelers to the true spirit of Armenia through thoughtful, professionally organized experiences.",
+    aboutStoryTwo:
+      "Over the years, we have developed a trusted international network and a strong local team. We create journeys for individual travelers, leisure groups, corporate clients, incentive programs and travel partners from around the world.",
+    aboutVisionLabel: "Our Vision",
+    aboutVisionTitle: "Travel should feel personal, seamless and memorable.",
+    aboutVisionText:
+      "We believe the best journeys go beyond famous landmarks. They create authentic connections with local people, traditions, landscapes, cuisine and stories—while every practical detail is handled with care.",
+    aboutApproachTitle: "Our approach",
+    aboutApproachOneTitle: "Local Knowledge",
+    aboutApproachOneText: "Programs created by specialists who live in Armenia and understand every region.",
+    aboutApproachTwoTitle: "Flexible Planning",
+    aboutApproachTwoText: "Each itinerary is adapted to the guest's interests, schedule, comfort and budget.",
+    aboutApproachThreeTitle: "Trusted Service",
+    aboutApproachThreeText: "Carefully selected hotels, guides, transport and experiences supported by reliable partners.",
+    aboutApproachFourTitle: "Complete Support",
+    aboutApproachFourText: "Professional assistance before arrival, throughout the journey and until the final farewell.",
+    aboutExpertiseTitle: "What we create",
+    aboutExpertiseText:
+      "From cultural journeys and active adventures to MICE, incentive travel and special events, we combine creativity with operational experience to deliver programs that work beautifully in practice.",
+    aboutMissionLabel: "Our Mission",
+    aboutMissionTitle: "To reveal the Armenia that stays with you.",
+    aboutMissionText:
+      "Our mission is to share Armenia's ancient heritage, remarkable landscapes, living traditions and genuine hospitality while making every journey comfortable, enriching and unforgettable.",
+    aboutCtaTitle: "Let us create your Armenian story.",
+
     /* Services section */
     servicesEyebrow: "What We Offer",
 
@@ -529,6 +561,38 @@ const translations = {
 
     aboutButton:
       "Բացահայտեք մեր պատմությունը",
+
+    aboutPageTitle: "Liberty Incentive-ի մասին | Հայաստանի ճանապարհորդական մասնագետներ",
+    aboutPageLabel: "Մեր պատմությունը",
+    aboutPageHeroTitle: "Ստեղծում ենք բովանդակալից ճանապարհորդություններ 2011 թվականից։",
+    aboutPageHeroText:
+      "Տեղական գիտելիքը, միջազգային չափանիշները և հայկական անկեղծ հյուրընկալությունը միավորվում են մեր ստեղծած յուրաքանչյուր ճանապարհորդության մեջ։",
+    aboutStoryTitle: "Ձեր վստահելի գործընկերը Հայաստանում",
+    aboutStoryOne:
+      "Liberty Incentive-ը հիմնադրվել է Երևանում 2011 թվականին՝ մեկ հստակ նպատակով․ ներկայացնել ճանապարհորդներին Հայաստանի իրական ոգին՝ մտածված և մասնագիտորեն կազմակերպված փորձառությունների միջոցով։",
+    aboutStoryTwo:
+      "Տարիների ընթացքում մենք ձևավորել ենք վստահելի միջազգային գործընկերային ցանց և ուժեղ տեղական թիմ։ Մենք ծրագրեր ենք ստեղծում անհատ ճանապարհորդների, հանգստի խմբերի, կորպորատիվ հաճախորդների, խրախուսական ծրագրերի և աշխարհի տարբեր երկրների զբոսաշրջային գործընկերների համար։",
+    aboutVisionLabel: "Մեր տեսլականը",
+    aboutVisionTitle: "Ճանապարհորդությունը պետք է լինի անհատական, անխափան և հիշարժան։",
+    aboutVisionText:
+      "Մենք հավատում ենք, որ լավագույն ճանապարհորդությունները չեն սահմանափակվում հայտնի տեսարժան վայրերով։ Դրանք իրական կապ են ստեղծում մարդկանց, ավանդույթների, բնության, խոհանոցի և պատմությունների հետ՝ միաժամանակ ապահովելով յուրաքանչյուր գործնական մանրուքի հոգատար կազմակերպումը։",
+    aboutApproachTitle: "Մեր մոտեցումը",
+    aboutApproachOneTitle: "Տեղական գիտելիք",
+    aboutApproachOneText: "Ծրագրեր՝ ստեղծված Հայաստանում ապրող և երկրի յուրաքանչյուր շրջանը ճանաչող մասնագետների կողմից։",
+    aboutApproachTwoTitle: "Ճկուն պլանավորում",
+    aboutApproachTwoText: "Յուրաքանչյուր երթուղի հարմարեցվում է հյուրի հետաքրքրություններին, ժամանակացույցին, հարմարավետությանն ու բյուջեին։",
+    aboutApproachThreeTitle: "Վստահելի սպասարկում",
+    aboutApproachThreeText: "Խնամքով ընտրված հյուրանոցներ, զբոսավարներ, տրանսպորտ և փորձառություններ՝ վստահելի գործընկերների աջակցությամբ։",
+    aboutApproachFourTitle: "Ամբողջական աջակցություն",
+    aboutApproachFourText: "Մասնագիտական աջակցություն մինչև ժամանումը, ողջ ճանապարհորդության ընթացքում և մինչև վերջին հրաժեշտը։",
+    aboutExpertiseTitle: "Ինչ ենք մենք ստեղծում",
+    aboutExpertiseText:
+      "Մշակութային ճանապարհորդություններից և ակտիվ արկածներից մինչև MICE, խրախուսական ուղևորություններ և հատուկ միջոցառումներ՝ մենք համադրում ենք ստեղծագործ մոտեցումն ու գործառնական փորձը՝ իրականում անթերի աշխատող ծրագրեր ապահովելու համար։",
+    aboutMissionLabel: "Մեր առաքելությունը",
+    aboutMissionTitle: "Բացահայտել այն Հայաստանը, որը կմնա Ձեր հիշողության մեջ։",
+    aboutMissionText:
+      "Մեր առաքելությունն է ներկայացնել Հայաստանի հնագույն ժառանգությունը, տպավորիչ բնությունը, կենդանի ավանդույթներն ու անկեղծ հյուրընկալությունը՝ յուրաքանչյուր ճանապարհորդություն դարձնելով հարմարավետ, բովանդակալից և անմոռանալի։",
+    aboutCtaTitle: "Եկեք միասին ստեղծենք Ձեր հայկական պատմությունը։",
 
     /* Services section */
     servicesEyebrow:
