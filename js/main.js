@@ -37,6 +37,54 @@ const translations = {
     explore: "Explore",
     learnMore: "Learn More",
 
+    /* Inquiry form */
+    inquiryEyebrow: "Plan Your Trip",
+    inquiryTitle: "Tell us about your dream journey.",
+    inquiryIntroduction:
+      "Share your travel plans and our local experts will create a personalized proposal for you.",
+    inquiryContactLabel: "Prefer to contact us directly?",
+    tripDetailsTitle: "Trip Details",
+    contactDetailsTitle: "Contact Details",
+    selectedPackageLabel: "Selected Package",
+    customJourneyOption: "Custom journey / Not decided yet",
+    packageOptionOne: "Armenia Discovery — 3 Nights / 4 Days",
+    packageOptionTwo: "Classic Armenia — 4 Nights / 5 Days",
+    packageOptionThree: "Armenian Highlights — 5 Nights / 6 Days",
+    packageOptionFour: "Complete Armenia — 6 Nights / 7 Days",
+    destinationLabel: "Destination",
+    chooseDestination: "Choose a destination",
+    hotelCategoryLabel: "Hotel Category",
+    hotelFlexible: "Flexible / Not decided",
+    hotelLuxury: "Luxury",
+    arrivalDateLabel: "Arrival Date",
+    departureDateLabel: "Departure Date",
+    adultsLabel: "Adults",
+    childrenLabel: "Children",
+    childAgeLabel: "Child {number} age",
+    interestsLabel: "Travel Interests",
+    interestCulture: "Culture & History",
+    interestNature: "Nature",
+    interestAdventure: "Adventure",
+    interestFoodWine: "Food & Wine",
+    interestMice: "MICE & Events",
+    interestFamily: "Family Travel",
+    fullNameLabel: "Full Name",
+    emailLabel: "Email Address",
+    phoneLabel: "Phone / WhatsApp",
+    messageLabel: "Tell Us More",
+    messagePlaceholder:
+      "Tell us about your preferred experiences, special requirements or questions.",
+    privacyConsent:
+      "I agree that Liberty Incentive may use this information to respond to my travel inquiry.",
+    sendInquiry: "Send Inquiry",
+    sendingInquiry: "Sending...",
+    inquirySuccess:
+      "Thank you! Your inquiry has been sent successfully. Our team will contact you soon.",
+    inquiryError:
+      "We could not send your inquiry. Please try again or contact us by email.",
+    invalidDates:
+      "The departure date must be later than the arrival date.",
+
     /* Hero */
     heroEyebrow: "Welcome to Armenia",
     heroTitleMain: "Armenia",
@@ -271,6 +319,54 @@ const translations = {
     discoverArmenia: "Բացահայտեք Հայաստանը",
     explore: "Բացահայտել",
     learnMore: "Իմանալ ավելին",
+
+    /* Inquiry form */
+    inquiryEyebrow: "Պլանավորեք Ձեր ուղևորությունը",
+    inquiryTitle: "Պատմեք մեզ Ձեր երազանքի ճանապարհորդության մասին։",
+    inquiryIntroduction:
+      "Կիսվեք Ձեր ճանապարհորդական ծրագրերով, և մեր տեղացի մասնագետները Ձեզ համար կմշակեն անհատական առաջարկ։",
+    inquiryContactLabel: "Նախընտրո՞ւմ եք կապվել մեզ հետ անմիջապես։",
+    tripDetailsTitle: "Ուղևորության տվյալներ",
+    contactDetailsTitle: "Կոնտակտային տվյալներ",
+    selectedPackageLabel: "Ընտրված փաթեթ",
+    customJourneyOption: "Անհատական ծրագիր / Դեռ որոշված չէ",
+    packageOptionOne: "Բացահայտեք Հայաստանը — 3 գիշեր / 4 օր",
+    packageOptionTwo: "Դասական Հայաստան — 4 գիշեր / 5 օր",
+    packageOptionThree: "Հայաստանի լավագույնը — 5 գիշեր / 6 օր",
+    packageOptionFour: "Ամբողջական Հայաստան — 6 գիշեր / 7 օր",
+    destinationLabel: "Ուղղություն",
+    chooseDestination: "Ընտրեք ուղղությունը",
+    hotelCategoryLabel: "Հյուրանոցի կարգ",
+    hotelFlexible: "Ճկուն / Դեռ որոշված չէ",
+    hotelLuxury: "Լյուքս",
+    arrivalDateLabel: "Ժամանման ամսաթիվ",
+    departureDateLabel: "Մեկնման ամսաթիվ",
+    adultsLabel: "Մեծահասակներ",
+    childrenLabel: "Երեխաներ",
+    childAgeLabel: "Երեխա {number}-ի տարիքը",
+    interestsLabel: "Ճանապարհորդական հետաքրքրություններ",
+    interestCulture: "Մշակույթ և պատմություն",
+    interestNature: "Բնություն",
+    interestAdventure: "Արկածներ",
+    interestFoodWine: "Խոհանոց և գինի",
+    interestMice: "MICE և միջոցառումներ",
+    interestFamily: "Ընտանեկան ճանապարհորդություն",
+    fullNameLabel: "Անուն, ազգանուն",
+    emailLabel: "Էլ․ հասցե",
+    phoneLabel: "Հեռախոս / WhatsApp",
+    messageLabel: "Լրացուցիչ տեղեկություն",
+    messagePlaceholder:
+      "Պատմեք մեզ Ձեր նախընտրած փորձառությունների, հատուկ պահանջների կամ հարցերի մասին։",
+    privacyConsent:
+      "Համաձայն եմ, որ Liberty Incentive-ն օգտագործի այս տեղեկությունը իմ ճանապարհորդական հարցմանը պատասխանելու համար։",
+    sendInquiry: "Ուղարկել հարցումը",
+    sendingInquiry: "Ուղարկվում է...",
+    inquirySuccess:
+      "Շնորհակալություն։ Ձեր հարցումը հաջողությամբ ուղարկվել է։ Մեր թիմը շուտով կկապվի Ձեզ հետ։",
+    inquiryError:
+      "Չհաջողվեց ուղարկել հարցումը։ Խնդրում ենք կրկին փորձել կամ կապվել մեզ հետ էլեկտրոնային փոստով։",
+    invalidDates:
+      "Մեկնման ամսաթիվը պետք է լինի ժամանման ամսաթվից հետո։",
 
     /* Hero */
     heroEyebrow: "Բարի գալուստ Հայաստան",
@@ -573,6 +669,35 @@ const tourModals =
 const heroVideo =
   document.querySelector(".hero-video");
 
+const inquiryForm =
+  document.getElementById("inquiry-form");
+
+const selectedPackageField =
+  document.getElementById("selected-package");
+
+const destinationField =
+  document.getElementById("destination");
+
+const childrenField =
+  document.getElementById("children");
+
+const childrenAgesContainer =
+  document.getElementById("children-ages");
+
+const arrivalDateField =
+  document.getElementById("arrival-date");
+
+const departureDateField =
+  document.getElementById("departure-date");
+
+const inquirySubmitButton =
+  document.getElementById("inquiry-submit-button");
+
+const formStatus =
+  document.getElementById("form-status");
+
+let activeLanguage = "en";
+
 
 /* ==================================================
    3. LANGUAGE FUNCTIONS
@@ -585,6 +710,8 @@ function updateLanguage(language) {
   if (!selectedTranslations) {
     return;
   }
+
+  activeLanguage = language;
 
   document
     .querySelectorAll("[data-i18n]")
@@ -599,6 +726,22 @@ function updateLanguage(language) {
         element.textContent = translatedText;
       }
     });
+
+  document
+    .querySelectorAll("[data-i18n-placeholder]")
+    .forEach((element) => {
+      const translationKey =
+        element.dataset.i18nPlaceholder;
+
+      const translatedText =
+        selectedTranslations[translationKey];
+
+      if (translatedText !== undefined) {
+        element.placeholder = translatedText;
+      }
+    });
+
+  renderChildrenAgeFields();
 
   document.documentElement.lang =
     language === "hy" ? "hy" : "en";
@@ -997,6 +1140,15 @@ tourModals.forEach((modal) => {
 
   if (inquiryLink) {
     inquiryLink.addEventListener("click", () => {
+      if (selectedPackageField) {
+        selectedPackageField.value =
+          inquiryLink.dataset.package || "";
+      }
+
+      if (destinationField) {
+        destinationField.value = "Armenia";
+      }
+
       closeTourModal(false);
     });
   }
@@ -1038,7 +1190,176 @@ tourModals.forEach((modal) => {
 
 
 /* ==================================================
-   10. HEADER SCROLL EFFECT
+   10. INQUIRY FORM
+   ================================================== */
+
+function renderChildrenAgeFields() {
+  if (!childrenField || !childrenAgesContainer) {
+    return;
+  }
+
+  const existingValues = Array.from(
+    childrenAgesContainer.querySelectorAll("input")
+  ).map((input) => input.value);
+
+  const childrenCount = Math.min(
+    Math.max(Number.parseInt(childrenField.value, 10) || 0, 0),
+    10
+  );
+
+  childrenField.value = childrenCount;
+  childrenAgesContainer.innerHTML = "";
+
+  const labelTemplate =
+    translations[activeLanguage].childAgeLabel;
+
+  for (let index = 0; index < childrenCount; index += 1) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "child-age-field";
+
+    const label = document.createElement("label");
+    const input = document.createElement("input");
+    const inputId = `child-age-${index + 1}`;
+
+    label.htmlFor = inputId;
+    label.textContent = labelTemplate.replace(
+      "{number}",
+      String(index + 1)
+    );
+
+    input.id = inputId;
+    input.name = `child_${index + 1}_age`;
+    input.type = "number";
+    input.min = "0";
+    input.max = "17";
+    input.required = true;
+    input.inputMode = "numeric";
+    input.value = existingValues[index] || "";
+
+    wrapper.append(label, input);
+    childrenAgesContainer.append(wrapper);
+  }
+}
+
+function showFormStatus(type, message) {
+  if (!formStatus) {
+    return;
+  }
+
+  formStatus.textContent = message;
+  formStatus.className = `form-status is-visible is-${type}`;
+}
+
+function clearFormStatus() {
+  if (!formStatus) {
+    return;
+  }
+
+  formStatus.textContent = "";
+  formStatus.className = "form-status";
+}
+
+function setInquiryLoading(isLoading) {
+  if (!inquirySubmitButton) {
+    return;
+  }
+
+  inquirySubmitButton.disabled = isLoading;
+
+  const buttonText =
+    inquirySubmitButton.querySelector("[data-i18n='sendInquiry']");
+
+  if (buttonText) {
+    buttonText.textContent = isLoading
+      ? translations[activeLanguage].sendingInquiry
+      : translations[activeLanguage].sendInquiry;
+  }
+}
+
+if (childrenField) {
+  childrenField.addEventListener(
+    "input",
+    renderChildrenAgeFields
+  );
+}
+
+if (arrivalDateField && departureDateField) {
+  const today = new Date().toISOString().split("T")[0];
+
+  arrivalDateField.min = today;
+  departureDateField.min = today;
+
+  arrivalDateField.addEventListener("change", () => {
+    departureDateField.min = arrivalDateField.value || today;
+
+    if (
+      departureDateField.value &&
+      departureDateField.value <= arrivalDateField.value
+    ) {
+      departureDateField.value = "";
+    }
+  });
+}
+
+if (inquiryForm) {
+  inquiryForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    clearFormStatus();
+
+    if (
+      arrivalDateField &&
+      departureDateField &&
+      arrivalDateField.value &&
+      departureDateField.value &&
+      departureDateField.value <= arrivalDateField.value
+    ) {
+      showFormStatus(
+        "error",
+        translations[activeLanguage].invalidDates
+      );
+      departureDateField.focus();
+      return;
+    }
+
+    if (!inquiryForm.reportValidity()) {
+      return;
+    }
+
+    setInquiryLoading(true);
+
+    try {
+      const response = await fetch(inquiryForm.action, {
+        method: "POST",
+        body: new FormData(inquiryForm),
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      inquiryForm.reset();
+      renderChildrenAgeFields();
+      showFormStatus(
+        "success",
+        translations[activeLanguage].inquirySuccess
+      );
+    } catch (error) {
+      showFormStatus(
+        "error",
+        translations[activeLanguage].inquiryError
+      );
+    } finally {
+      setInquiryLoading(false);
+    }
+  });
+}
+
+
+/* ==================================================
+   11. HEADER SCROLL EFFECT
    ================================================== */
 
 function updateHeaderOnScroll() {
@@ -1063,7 +1384,7 @@ updateHeaderOnScroll();
 
 
 /* ==================================================
-   11. SECTION ANIMATIONS
+   12. SECTION ANIMATIONS
    ================================================== */
 
 const animatedSections = [
@@ -1108,7 +1429,7 @@ if (
 
 
 /* ==================================================
-   12. HERO VIDEO
+   13. HERO VIDEO
    ================================================== */
 
 if (heroVideo) {
@@ -1144,7 +1465,7 @@ if (heroVideo) {
 
 
 /* ==================================================
-   13. WINDOW RESIZE
+   14. WINDOW RESIZE
    ================================================== */
 
 window.addEventListener("resize", () => {
@@ -1155,7 +1476,7 @@ window.addEventListener("resize", () => {
 
 
 /* ==================================================
-   14. INITIAL LANGUAGE
+   15. INITIAL LANGUAGE
    ================================================== */
 
 const savedLanguage =
