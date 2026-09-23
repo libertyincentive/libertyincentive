@@ -93,3 +93,42 @@
         <form class="inquiry-form" id="inquiry-form" action="https://formspree.io/f/maenqjqk" method="POST">
           <input type="hidden" name="subject" value="New Liberty Incentive Tour Inquiry">
           <div class="inquiry-honeypot" aria-hidden="true"><label>Leave this field empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+
+          <div class="form-section-heading"><span>01</span><h3 data-i18n="tripDetailsTitle">Trip Details</h3></div>
+          <div class="form-grid">
+            <div class="form-field form-field-full"><label for="selected-package" data-i18n="selectedPackageLabel">Selected Package</label><select id="selected-package" name="selected_package"><option value="" data-i18n="customJourneyOption">Custom journey / Not decided yet</option><option value="Armenia Discovery — 3 Nights / 4 Days" data-i18n="packageOptionOne">Armenia Discovery — 3 Nights / 4 Days</option><option value="Classic Armenia — 4 Nights / 5 Days" data-i18n="packageOptionTwo">Classic Armenia — 4 Nights / 5 Days</option><option value="Armenian Highlights — 5 Nights / 6 Days" data-i18n="packageOptionThree">Armenian Highlights — 5 Nights / 6 Days</option><option value="Complete Armenia — 6 Nights / 7 Days" data-i18n="packageOptionFour">Complete Armenia — 6 Nights / 7 Days</option></select></div>
+            <div class="form-field"><label for="destination" data-i18n="destinationLabel">Destination</label><select id="destination" name="destination" required><option value="" disabled selected data-i18n="chooseDestination">Choose a destination</option><option value="Armenia" data-i18n="navArmenia">Armenia</option><option value="Georgia" data-i18n="destinationGeorgia">Georgia</option><option value="Combined Caucasus" data-i18n="destinationCaucasus">Combined Caucasus</option><option value="Egypt" data-i18n="destinationEgypt">Egypt</option><option value="Qatar" data-i18n="destinationQatar">Qatar</option><option value="Cyprus" data-i18n="destinationCyprus">Cyprus</option><option value="Albania" data-i18n="destinationAlbania">Albania</option><option value="Tunisia" data-i18n="destinationTunisia">Tunisia</option><option value="UAE" data-i18n="destinationUAE">UAE</option></select></div>
+            <div class="form-field"><label for="hotel-category" data-i18n="hotelCategoryLabel">Hotel Category</label><select id="hotel-category" name="hotel_category"><option value="" data-i18n="hotelFlexible">Flexible / Not decided</option><option value="3 star">3★</option><option value="4 star">4★</option><option value="5 star">5★</option><option value="Luxury" data-i18n="hotelLuxury">Luxury</option></select></div>
+            <div class="form-field"><label for="arrival-date" data-i18n="arrivalDateLabel">Arrival Date</label><input id="arrival-date" name="arrival_date" type="date" required></div>
+            <div class="form-field"><label for="departure-date" data-i18n="departureDateLabel">Departure Date</label><input id="departure-date" name="departure_date" type="date" required></div>
+            <div class="form-field"><label for="adults" data-i18n="adultsLabel">Adults</label><input id="adults" name="adults" type="number" min="1" max="100" value="2" required></div>
+            <div class="form-field"><label for="children" data-i18n="childrenLabel">Children</label><input id="children" name="children" type="number" min="0" max="10" value="0"></div>
+            <div class="children-ages form-field-full" id="children-ages" aria-live="polite"></div>
+            <fieldset class="form-field form-field-full interests-fieldset"><legend data-i18n="interestsLabel">Travel Interests</legend><div class="interest-options"><label><input type="checkbox" name="interests" value="Culture and History"><span data-i18n="interestCulture">Culture &amp; History</span></label><label><input type="checkbox" name="interests" value="Nature"><span data-i18n="interestNature">Nature</span></label><label><input type="checkbox" name="interests" value="Adventure"><span data-i18n="interestAdventure">Adventure</span></label><label><input type="checkbox" name="interests" value="Food and Wine"><span data-i18n="interestFoodWine">Food &amp; Wine</span></label><label><input type="checkbox" name="interests" value="MICE and Events"><span data-i18n="interestMice">MICE &amp; Events</span></label><label><input type="checkbox" name="interests" value="Family Travel"><span data-i18n="interestFamily">Family Travel</span></label></div></fieldset>
+          </div>
+
+          <div class="form-section-heading form-section-heading-contact"><span>02</span><h3 data-i18n="contactDetailsTitle">Contact Details</h3></div>
+          <div class="form-grid">
+            <div class="form-field"><label for="full-name" data-i18n="fullNameLabel">Full Name</label><input id="full-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="form-field"><label for="email" data-i18n="emailLabel">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-field form-field-full"><label for="phone" data-i18n="phoneLabel">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="form-field form-field-full"><label for="message" data-i18n="messageLabel">Tell Us More</label><textarea id="message" name="message" rows="5" data-i18n-placeholder="messagePlaceholder" placeholder="Tell us about your preferred experiences, special requirements or questions."></textarea></div>
+          </div>
+          <label class="privacy-consent"><input type="checkbox" name="privacy_consent" value="Accepted" required><span data-i18n="privacyConsent">I agree that Liberty Incentive may use this information to respond to my travel inquiry.</span></label>
+          <button class="inquiry-submit-button" id="inquiry-submit-button" type="submit"><span data-i18n="sendInquiry">Send Inquiry</span><span aria-hidden="true">→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="article-simple-footer"><p data-i18n="copyright">© Liberty Incentive</p></footer>
+  <script>
+    window.destinationTranslations = {
+      en: { contactPageTitle: "Contact Us | Liberty Incentive", contactHeroLabel: "Start a Conversation", contactHeroTitle: "Let’s create your journey.", contactHeroText: "Tell us where you would like to go, what you would love to experience and how we can help. Our local team will prepare a thoughtful, personalized proposal.", contactEmailLabel: "Email Us", contactPhoneLabel: "Call or WhatsApp", contactOfficeLabel: "Our Office", contactOfficeValue: "Yerevan, Armenia", contactMapTitle: "Find us in Yerevan.", contactMapText: "Open our exact location in Google Maps for directions and navigation.", contactMapButton: "Open Google Maps", contactResponseText: "Your inquiry will be sent directly to our team." },
+      hy: { contactPageTitle: "Կապ մեզ հետ | Liberty Incentive", contactHeroLabel: "Սկսենք զրույցը", contactHeroTitle: "Եկեք ստեղծենք Ձեր ճանապարհորդությունը։", contactHeroText: "Պատմեք մեզ, թե ուր եք ցանկանում գնալ, ինչ կցանկանայիք զգալ և ինչպես կարող ենք օգնել։ Մեր տեղական թիմը կպատրաստի մտածված, անհատական առաջարկ։", contactEmailLabel: "Գրեք մեզ", contactPhoneLabel: "Զանգահարեք կամ WhatsApp", contactOfficeLabel: "Մեր գրասենյակը", contactOfficeValue: "Երևան, Հայաստան", contactMapTitle: "Գտեք մեզ Երևանում։", contactMapText: "Բացեք մեր ճշգրիտ հասցեն Google Maps-ում՝ երթուղի և նավարկություն ստանալու համար։", contactMapButton: "Բացել Google Maps-ը", contactResponseText: "Ձեր հարցումը կուղարկվի անմիջապես մեր թիմին։" }
+    };
+  </script>
+  <script src="js/main.js?v=14"></script>
+</body>
+</html>
