@@ -4982,3 +4982,42 @@ body.tour-modal-open {
     min-height: 300px;
   }
 }
+
+/* ==================================================
+   ARMENIAN HEADING SIZE CORRECTION
+   ================================================== */
+
+html[lang="hy"] .contact-hero-grid > div,
+html[lang="hy"] .inquiry-introduction {
+  min-width: 0;
+}
+
+html[lang="hy"] .contact-hero h1,
+html[lang="hy"] .inquiry-introduction h2 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  letter-spacing: -0.02em;
+}
+
+html[lang="hy"] .contact-hero h1 {
+  font-size: clamp(40px, 4.5vw, 58px);
+  line-height: 1.18;
+}
+
+html[lang="hy"] .inquiry-introduction h2 {
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 600px) {
+  html[lang="hy"] .contact-hero h1 {
+    font-size: 31px;
+    line-height: 1.25;
+  }
+
+  html[lang="hy"] .inquiry-introduction h2 {
+    font-size: 30px;
+    line-height: 1.28;
+  }
+}
