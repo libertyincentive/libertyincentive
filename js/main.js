@@ -1031,6 +1031,98 @@ if (window.destinationTranslations) {
   );
 }
 
+/* Shared footer translations. */
+Object.assign(translations.en, {
+  footerDescription:
+    "Creating thoughtful journeys through Armenia and beyond since 2011.",
+  footerContact: "Contact",
+  footerOffice: "Our Office",
+  footerOfficeValue: "Yerevan, Armenia",
+  footerCtaTitle: "Ready to plan your journey?",
+  footerCtaText:
+    "Share your ideas with us and our team will prepare a personalized proposal.",
+  footerPlanButton: "Plan Your Trip"
+});
+
+Object.assign(translations.hy, {
+  footerDescription:
+    "2011 թվականից ստեղծում ենք մտածված ճանապարհորդություններ Հայաստանում և այլ ուղղություններով։",
+  footerContact: "Կապ",
+  footerOffice: "Մեր գրասենյակը",
+  footerOfficeValue: "Երևան, Հայաստան",
+  footerCtaTitle: "Պատրա՞ստ եք պլանավորել Ձեր ճանապարհորդությունը",
+  footerCtaText:
+    "Կիսվեք մեզ հետ Ձեր գաղափարներով, և մեր թիմը կպատրաստի անհատական առաջարկ։",
+  footerPlanButton: "Պլանավորեք ուղևորությունը"
+});
+
+
+/* ==================================================
+   GLOBAL FOOTER
+   ================================================== */
+
+function createGlobalFooter() {
+  const footer = document.createElement("footer");
+
+  footer.className = "site-footer";
+
+  footer.innerHTML = `
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-column footer-contact">
+          <h2 data-i18n="footerContact">Contact</h2>
+          <a href="mailto:info@libertyincentive.am">info@libertyincentive.am</a>
+          <a href="tel:+37455001489">+374 55 001489</a>
+          <a
+            href="https://maps.app.goo.gl/L1pBAXaA1Eyc1RL1A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="footerOffice">Our Office</span>
+            <strong data-i18n="footerOfficeValue">Yerevan, Armenia</strong>
+          </a>
+        </div>
+
+        <div class="footer-brand">
+          <a class="footer-logo-link" href="index.html" aria-label="Liberty Incentive home">
+            <img class="footer-logo" src="assets/images/liberty-incentive-logo.jpg" alt="Liberty Incentive">
+          </a>
+          <p data-i18n="footerDescription">
+            Creating thoughtful journeys through Armenia and beyond since 2011.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-cta">
+        <div>
+          <h2 data-i18n="footerCtaTitle">Ready to plan your journey?</h2>
+          <p data-i18n="footerCtaText">
+            Share your ideas with us and our team will prepare a personalized proposal.
+          </p>
+        </div>
+        <a class="footer-plan-button" href="plan-your-trip.html" data-i18n="footerPlanButton">
+          Plan Your Trip
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="copyright">© Liberty Incentive</p>
+        <p>Yerevan · Armenia</p>
+      </div>
+    </div>
+  `;
+
+  const existingFooter = document.querySelector("footer");
+
+  if (existingFooter) {
+    existingFooter.replaceWith(footer);
+  } else {
+    document.body.appendChild(footer);
+  }
+}
+
+createGlobalFooter();
+
 
 /* ==================================================
    2. ELEMENTS
