@@ -5088,34 +5088,48 @@ html[lang="hy"] .inquiry-introduction h1 {
 .site-footer {
   color: var(--navy);
   background: var(--white);
-  border-top: 0;
+  border-top: 1px solid rgba(11, 49, 80, 0.14);
 }
 
 .footer-container {
-  width: min(1200px, calc(100% - 48px));
+  width: min(1160px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 32px 0 18px;
+  padding: 38px 0 18px;
 }
 
 .footer-main {
   display: grid;
-  grid-template-columns: 0.85fr 1.05fr 1.35fr 0.85fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: start;
-  gap: clamp(24px, 3vw, 46px);
-  padding: 38px 40px;
-  background: #edf8fc;
-  border: 1px solid rgba(2, 149, 206, 0.12);
-  border-radius: 26px;
+  gap: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.footer-main > * {
+  min-height: 210px;
+  padding: 0 clamp(22px, 3vw, 38px);
+}
+
+.footer-main > *:first-child {
+  padding-left: 0;
+}
+
+.footer-main > *:last-child {
+  padding-right: 0;
+}
+
+.footer-main > * + * {
+  border-left: 1px solid rgba(11, 49, 80, 0.11);
 }
 
 .footer-brand {
   width: 100%;
-  max-width: 240px;
-  min-height: 100%;
-  padding-left: 24px;
+  max-width: none;
   justify-self: end;
   text-align: right;
-  border-left: 3px solid var(--orange);
 }
 
 .footer-logo-link {
@@ -5181,11 +5195,9 @@ html[lang="hy"] .inquiry-introduction h1 {
 }
 
 .footer-contact {
-  padding: 22px;
-  background: var(--white);
-  border: 1px solid rgba(11, 49, 80, 0.08);
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(11, 49, 80, 0.07);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .footer-socials {
@@ -5237,7 +5249,7 @@ html[lang="hy"] .inquiry-introduction h1 {
   justify-content: space-between;
   gap: 20px;
   color: #72808b;
-  border-top: 0;
+  border-top: 1px solid rgba(11, 49, 80, 0.1);
 }
 
 .footer-bottom p {
@@ -5291,11 +5303,21 @@ html[lang="hy"] .footer-brand h2 {
 @media screen and (max-width: 980px) {
   .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 36px 48px;
+    gap: 36px 0;
   }
 
-  .footer-brand {
-    max-width: none;
+  .footer-main > * {
+    min-height: 190px;
+    padding: 0 32px;
+  }
+
+  .footer-main > *:nth-child(odd) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .footer-main > *:nth-child(even) {
+    padding-right: 0;
   }
 }
 
@@ -5308,15 +5330,18 @@ html[lang="hy"] .footer-brand h2 {
   .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 34px 26px;
-    padding: 32px 28px;
-    border-radius: 22px;
+    padding: 0;
   }
 
   .footer-brand {
-    padding-top: 2px;
-    padding-left: 20px;
     justify-self: start;
     text-align: left;
+  }
+
+  .footer-main > * {
+    min-height: 0;
+    padding: 0;
+    border-left: 0;
   }
 
   .footer-socials {
@@ -5334,19 +5359,18 @@ html[lang="hy"] .footer-brand h2 {
 @media screen and (max-width: 430px) {
   .footer-main {
     grid-template-columns: 1fr;
-    padding: 28px 22px;
+    gap: 32px;
   }
 
   .footer-brand {
     min-height: auto;
     padding-top: 0;
     padding-left: 0;
-    border-top: 3px solid var(--orange);
     border-left: 0;
   }
 
   .footer-logo-link {
-    margin-top: 22px;
+    margin-top: 0;
   }
 
   .footer-bottom {
