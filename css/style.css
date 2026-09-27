@@ -5067,3 +5067,17 @@ html[lang="hy"] .inquiry-introduction h1 {
     line-height: 1.28;
   }
 }
+
+/* ==================================================
+   SMALLER ARMENIAN PLAN YOUR TRIP TITLE — DESKTOP
+   ================================================== */
+
+@media screen and (min-width: 901px) {
+  html[lang="hy"] .plan-trip-page-main .inquiry-introduction h1 {
+    max-width: 500px;
+    font-size: 42px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+}
+
