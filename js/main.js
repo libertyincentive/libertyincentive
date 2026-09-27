@@ -1033,27 +1033,27 @@ if (window.destinationTranslations) {
 
 /* Shared footer translations. */
 Object.assign(translations.en, {
-  footerDescription:
-    "Creating thoughtful journeys through Armenia and beyond since 2011.",
+  footerUsefulLinks: "Useful Links",
+  footerDestinations: "Destinations",
   footerContact: "Contact",
-  footerOffice: "Our Office",
-  footerOfficeValue: "Yerevan, Armenia",
-  footerCtaTitle: "Ready to plan your journey?",
-  footerCtaText:
-    "Share your ideas with us and our team will prepare a personalized proposal.",
-  footerPlanButton: "Plan Your Trip"
+  footerFollowUs: "Follow Us",
+  footerAddress: "Yerevan, Nairi Zaryan 2",
+  footerWeekdays: "Monday–Friday: 10:00–18:00",
+  footerSaturday: "Saturday: 10:00–16:00",
+  footerLocation: "Yerevan, Armenia",
+  whatsappLabel: "Chat with us on WhatsApp"
 });
 
 Object.assign(translations.hy, {
-  footerDescription:
-    "2011 թվականից ստեղծում ենք մտածված ճանապարհորդություններ Հայաստանում և այլ ուղղություններով։",
+  footerUsefulLinks: "Օգտակար հղումներ",
+  footerDestinations: "Ուղղություններ",
   footerContact: "Կապ",
-  footerOffice: "Մեր գրասենյակը",
-  footerOfficeValue: "Երևան, Հայաստան",
-  footerCtaTitle: "Պատրա՞ստ եք պլանավորել Ձեր ճանապարհորդությունը",
-  footerCtaText:
-    "Կիսվեք մեզ հետ Ձեր գաղափարներով, և մեր թիմը կպատրաստի անհատական առաջարկ։",
-  footerPlanButton: "Պլանավորեք ուղևորությունը"
+  footerFollowUs: "Հետևեք մեզ",
+  footerAddress: "Երևան, Նաիրի Զարյան 2",
+  footerWeekdays: "Երկուշաբթի–ուրբաթ՝ 10:00–18:00",
+  footerSaturday: "Շաբաթ՝ 10:00–16:00",
+  footerLocation: "Երևան, Հայաստան",
+  whatsappLabel: "Գրեք մեզ WhatsApp-ով"
 });
 
 
@@ -1069,45 +1069,64 @@ function createGlobalFooter() {
   footer.innerHTML = `
     <div class="footer-container">
       <div class="footer-main">
+        <nav class="footer-column footer-links" aria-label="Footer useful links">
+          <h2 data-i18n="footerUsefulLinks">Useful Links</h2>
+          <a href="about.html" data-i18n="navAbout">About Us</a>
+          <a href="index.html#armenia" data-i18n="navArmenia">Armenia</a>
+          <a href="blog.html" data-i18n="navBlog">Blog</a>
+          <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+          <a href="team.html" data-i18n="navTeam">Our Team</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+          <a href="plan-your-trip.html" data-i18n="planTrip">Plan Your Trip</a>
+        </nav>
+
+        <nav class="footer-column footer-destinations" aria-label="Footer destinations">
+          <h2 data-i18n="footerDestinations">Destinations</h2>
+          <a href="index.html#georgia" data-i18n="destinationGeorgia">Georgia</a>
+          <a href="index.html#caucasus" data-i18n="destinationCaucasus">Combined Caucasus</a>
+          <a href="index.html#egypt" data-i18n="destinationEgypt">Egypt</a>
+          <a href="index.html#qatar" data-i18n="destinationQatar">Qatar</a>
+          <a href="index.html#cyprus" data-i18n="destinationCyprus">Cyprus</a>
+          <a href="index.html#albania" data-i18n="destinationAlbania">Albania</a>
+          <a href="index.html#tunisia" data-i18n="destinationTunisia">Tunisia</a>
+          <a href="index.html#uae" data-i18n="destinationUAE">UAE</a>
+        </nav>
+
         <div class="footer-column footer-contact">
           <h2 data-i18n="footerContact">Contact</h2>
-          <a href="mailto:info@libertyincentive.am">info@libertyincentive.am</a>
           <a href="tel:+37455001489">+374 55 001489</a>
+          <a href="mailto:info@libertyincentive.am">info@libertyincentive.am</a>
           <a
             href="https://maps.app.goo.gl/L1pBAXaA1Eyc1RL1A"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="footerAddress"
           >
-            <span data-i18n="footerOffice">Our Office</span>
-            <strong data-i18n="footerOfficeValue">Yerevan, Armenia</strong>
+            Yerevan, Nairi Zaryan 2
           </a>
+          <p data-i18n="footerWeekdays">Monday–Friday: 10:00–18:00</p>
+          <p data-i18n="footerSaturday">Saturday: 10:00–16:00</p>
         </div>
 
         <div class="footer-brand">
           <a class="footer-logo-link" href="index.html" aria-label="Liberty Incentive home">
             <img class="footer-logo" src="assets/images/liberty-incentive-logo.jpg" alt="Liberty Incentive">
           </a>
-          <p data-i18n="footerDescription">
-            Creating thoughtful journeys through Armenia and beyond since 2011.
-          </p>
+          <h2 data-i18n="footerFollowUs">Follow Us</h2>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/liberty_travel_armenia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle class="social-dot" cx="17.4" cy="6.7" r="1"></circle></svg>
+            </a>
+            <a href="https://www.facebook.com/libertytravelarmenia" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 8.2V6.7c0-.7.5-.9 1-.9h2.6V2.2h-3.6c-3.4 0-4.5 2.1-4.5 4.5v1.5H7v4h2.7V22h4.5v-9.8h3.3l.5-4h-3.8Z"></path></svg>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="footer-cta">
-        <div>
-          <h2 data-i18n="footerCtaTitle">Ready to plan your journey?</h2>
-          <p data-i18n="footerCtaText">
-            Share your ideas with us and our team will prepare a personalized proposal.
-          </p>
-        </div>
-        <a class="footer-plan-button" href="plan-your-trip.html" data-i18n="footerPlanButton">
-          Plan Your Trip
-        </a>
       </div>
 
       <div class="footer-bottom">
         <p data-i18n="copyright">© Liberty Incentive</p>
-        <p>Yerevan · Armenia</p>
+        <p data-i18n="footerLocation">Yerevan, Armenia</p>
       </div>
     </div>
   `;
@@ -1119,6 +1138,24 @@ function createGlobalFooter() {
   } else {
     document.body.appendChild(footer);
   }
+
+  const oldWhatsappButton = document.querySelector(".floating-whatsapp");
+  if (oldWhatsappButton) oldWhatsappButton.remove();
+
+  const whatsappButton = document.createElement("a");
+  whatsappButton.className = "floating-whatsapp";
+  whatsappButton.href = "https://wa.me/37455001489";
+  whatsappButton.target = "_blank";
+  whatsappButton.rel = "noopener noreferrer";
+  whatsappButton.setAttribute("aria-label", "Chat with us on WhatsApp");
+  whatsappButton.setAttribute("data-i18n-aria-label", "whatsappLabel");
+  whatsappButton.innerHTML = `
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3.2A12.6 12.6 0 0 0 5.1 22.1L3.5 28.5l6.6-1.6A12.7 12.7 0 1 0 16 3.2Z"></path>
+      <path class="whatsapp-phone" d="M12.2 9.7c-.3-.7-.7-.7-1-.7h-.8c-.3 0-.7.1-1.1.5-.4.5-1.5 1.5-1.5 3.6s1.6 4.2 1.8 4.5c.2.3 3.1 4.8 7.7 6.5 3.8 1.5 4.6 1.2 5.4 1.1.8-.1 2.7-1.1 3.1-2.2.4-1.1.4-2 .3-2.2-.1-.2-.4-.3-.9-.6l-3.1-1.5c-.4-.2-.8-.3-1.1.2-.3.5-1.2 1.5-1.5 1.8-.3.3-.6.4-1.1.1-.5-.2-2.1-.8-4-2.5-1.5-1.3-2.5-3-2.8-3.5-.3-.5 0-.8.2-1l.8-.9c.3-.3.4-.5.5-.8.2-.3.1-.6 0-.9l-.9-1.5Z"></path>
+    </svg>
+  `;
+  document.body.appendChild(whatsappButton);
 }
 
 createGlobalFooter();
