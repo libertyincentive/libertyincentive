@@ -5081,3 +5081,222 @@ html[lang="hy"] .inquiry-introduction h1 {
   }
 }
 
+/* ==================================================
+   GLOBAL FOOTER
+   ================================================== */
+
+.site-footer {
+  color: var(--navy);
+  background: var(--white);
+  border-top: 1px solid rgba(11, 49, 80, 0.1);
+}
+
+.footer-container {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 76px 0 24px;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
+  align-items: start;
+  gap: clamp(50px, 10vw, 150px);
+}
+
+.footer-brand {
+  width: 100%;
+  max-width: 390px;
+  justify-self: end;
+  text-align: right;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.footer-logo {
+  display: block;
+  width: 155px;
+  height: auto;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: #587183;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.footer-column h2 {
+  margin: 0 0 10px;
+  color: var(--orange-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.footer-column a {
+  color: var(--navy);
+  font-size: 14px;
+  line-height: 1.45;
+  text-decoration: none;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.footer-column a:hover {
+  color: var(--primary-blue);
+  transform: translateX(3px);
+}
+
+.footer-contact a {
+  overflow-wrap: anywhere;
+}
+
+.footer-contact a span,
+.footer-contact a strong {
+  display: block;
+}
+
+.footer-contact a span {
+  margin-bottom: 4px;
+  color: #587183;
+  font-size: 12px;
+}
+
+.footer-contact a strong {
+  font-size: 14px;
+}
+
+.footer-cta {
+  display: flex;
+  margin-top: 60px;
+  padding: 30px 34px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: var(--white);
+  background: var(--primary-blue);
+  border-radius: 18px;
+}
+
+.footer-cta h2 {
+  margin: 0 0 7px;
+  font-family: var(--serif-font);
+  font-size: clamp(25px, 3vw, 36px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.footer-cta p {
+  max-width: 650px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.footer-plan-button {
+  display: inline-flex;
+  min-height: 48px;
+  padding: 12px 22px;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--orange);
+  border-radius: 8px;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.footer-plan-button:hover {
+  background: #ffb62e;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  display: flex;
+  margin-top: 26px;
+  padding-top: 22px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: #72808b;
+  border-top: 1px solid rgba(11, 49, 80, 0.09);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+html[lang="hy"] .footer-column h2 {
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+html[lang="hy"] .footer-cta h2 {
+  font-size: clamp(23px, 2.7vw, 32px);
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 980px) {
+  .footer-main {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 330px);
+    gap: 54px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer-container {
+    width: calc(100% - 28px);
+    padding-top: 54px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .footer-brand {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .footer-contact {
+    display: flex;
+  }
+
+  .footer-cta {
+    margin-top: 48px;
+    padding: 28px 24px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-plan-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
