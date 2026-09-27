@@ -5021,3 +5021,49 @@ html[lang="hy"] .inquiry-introduction h2 {
     line-height: 1.28;
   }
 }
+
+/* ==================================================
+   STANDALONE PLAN YOUR TRIP PAGE
+   ================================================== */
+
+.plan-trip-page-main {
+  min-height: 100vh;
+  padding-top: var(--header-height);
+  background: var(--navy);
+}
+
+.plan-trip-page-section {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.inquiry-introduction h1 {
+  max-width: 520px;
+  margin-bottom: 25px;
+  font-family: var(--serif-font);
+  font-size: clamp(45px, 5vw, 70px);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+html[lang="hy"] .inquiry-introduction h1 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 600px) {
+  .plan-trip-page-main {
+    padding-top: var(--header-height);
+  }
+
+  .inquiry-introduction h1 {
+    font-size: clamp(38px, 11vw, 49px);
+  }
+
+  html[lang="hy"] .inquiry-introduction h1 {
+    font-size: 30px;
+    line-height: 1.28;
+  }
+}
