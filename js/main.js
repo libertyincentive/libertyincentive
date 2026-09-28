@@ -1082,7 +1082,7 @@ function createGlobalFooter() {
 
         <nav class="footer-column footer-destinations" aria-label="Footer destinations">
           <h2 data-i18n="footerDestinations">Destinations</h2>
-          <a href="index.html#georgia" data-i18n="destinationGeorgia">Georgia</a>
+          <a href="georgia.html" data-i18n="destinationGeorgia">Georgia</a>
           <a href="index.html#caucasus" data-i18n="destinationCaucasus">Combined Caucasus</a>
           <a href="index.html#egypt" data-i18n="destinationEgypt">Egypt</a>
           <a href="index.html#qatar" data-i18n="destinationQatar">Qatar</a>
@@ -1159,6 +1159,27 @@ function createGlobalFooter() {
 }
 
 createGlobalFooter();
+
+
+/* ==================================================
+   DESTINATION PAGE LINKS
+   ================================================== */
+
+function connectDestinationPages() {
+  const destinationPages = {
+    destinationGeorgia: "georgia.html"
+  };
+
+  Object.entries(destinationPages).forEach(([translationKey, pageUrl]) => {
+    document
+      .querySelectorAll(`a[data-i18n="${translationKey}"]`)
+      .forEach((link) => {
+        link.href = pageUrl;
+      });
+  });
+}
+
+connectDestinationPages();
 
 
 /* ==================================================
