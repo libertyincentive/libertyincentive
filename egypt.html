@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Egypt with Liberty Incentive: the Pyramids of Giza, Cairo, Luxor, Hurghada and Sharm El Sheikh.">
+  <title data-i18n="egyptPageTitle">Egypt | Liberty Incentive</title>
+  <link rel="icon" href="assets/images/liberty-incentive-logo.jpg">
+  <link rel="stylesheet" href="css/style.css?v=22">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a class="logo-link" href="index.html" aria-label="Liberty Incentive home">
+        <img class="site-logo" src="assets/images/liberty-incentive-logo.jpg" alt="Liberty Incentive">
+      </a>
+
+      <nav class="desktop-navigation" aria-label="Main navigation">
+        <a href="about.html" data-i18n="navAbout">About Us</a>
+        <a href="index.html#armenia" data-i18n="navArmenia">Armenia</a>
+
+        <div class="navigation-dropdown">
+          <button class="dropdown-button" type="button" aria-expanded="false">
+            <span data-i18n="navDestinations">Other Destinations</span>
+            <span class="dropdown-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="georgia.html" data-i18n="destinationGeorgia">Georgia</a>
+            <a href="combined-caucasus.html" data-i18n="destinationCaucasus">Combined Caucasus</a>
+            <a href="egypt.html" data-i18n="destinationEgypt" aria-current="page">Egypt</a>
+            <a href="index.html#qatar" data-i18n="destinationQatar">Qatar</a>
+            <a href="index.html#cyprus" data-i18n="destinationCyprus">Cyprus</a>
+            <a href="index.html#albania" data-i18n="destinationAlbania">Albania</a>
+            <a href="index.html#tunisia" data-i18n="destinationTunisia">Tunisia</a>
+            <a href="index.html#uae" data-i18n="destinationUAE">UAE</a>
+          </div>
+        </div>
+
+        <a href="blog.html" data-i18n="navBlog">Blog</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="team.html" data-i18n="navTeam">Our Team</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-selector">
+          <button class="language-button" id="language-button" type="button" aria-expanded="false" aria-label="Choose language">
+            <span id="current-language">EN</span>
+            <span class="language-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="language-menu" id="language-menu">
+            <button type="button" data-language="en">English</button>
+            <button type="button" data-language="hy">Հայերեն</button>
+          </div>
+        </div>
+        <a class="header-inquiry-button" href="#request" data-i18n="planTrip">Plan Your Trip</a>
+        <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-navigation" id="mobile-navigation" aria-label="Mobile navigation">
+      <a href="about.html" data-i18n="navAbout">About Us</a>
+      <a href="index.html#armenia" data-i18n="navArmenia">Armenia</a>
+      <div class="mobile-destinations">
+        <button class="mobile-destinations-button" id="mobile-destinations-button" type="button" aria-expanded="false" aria-controls="mobile-destinations-menu">
+          <span data-i18n="navDestinations">Other Destinations</span>
+          <span class="mobile-dropdown-arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="mobile-destinations-menu" id="mobile-destinations-menu">
+          <a href="georgia.html" data-i18n="destinationGeorgia">Georgia</a>
+          <a href="combined-caucasus.html" data-i18n="destinationCaucasus">Combined Caucasus</a>
+          <a href="egypt.html" data-i18n="destinationEgypt" aria-current="page">Egypt</a>
+          <a href="index.html#qatar" data-i18n="destinationQatar">Qatar</a>
+          <a href="index.html#cyprus" data-i18n="destinationCyprus">Cyprus</a>
+          <a href="index.html#albania" data-i18n="destinationAlbania">Albania</a>
+          <a href="index.html#tunisia" data-i18n="destinationTunisia">Tunisia</a>
+          <a href="index.html#uae" data-i18n="destinationUAE">UAE</a>
+        </div>
+      </div>
+      <a href="blog.html" data-i18n="navBlog">Blog</a>
+      <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+      <a href="team.html" data-i18n="navTeam">Our Team</a>
+      <a href="contact.html" data-i18n="navContact">Contact</a>
+      <a class="mobile-inquiry-button" href="#request" data-i18n="planTrip">Plan Your Trip</a>
+    </nav>
+  </header>
+
+  <main class="destination-page-main egypt-page">
+    <section class="destination-hero">
+      <img class="destination-hero-image" src="assets/images/egypt-giza-pyramids.jpg" alt="Pyramids of Giza rising above the desert" fetchpriority="high">
+      <div class="destination-hero-overlay"></div>
+      <div class="destination-page-container destination-hero-content">
+        <p class="destination-hero-eyebrow" data-i18n="egyptHeroEyebrow">Discover Egypt</p>
+        <h1 data-i18n="egyptHeroTitle">Egypt</h1>
+        <p data-i18n="egyptHeroText">Ancient wonders, vibrant cities and the blue waters of the Red Sea make every journey a story worth sharing.</p>
+        <a class="destination-hero-button" href="#places">
+          <span data-i18n="egyptExploreButton">Explore Egypt</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="destination-introduction">
+      <div class="destination-page-container destination-introduction-grid">
+        <div>
+          <p class="destination-section-eyebrow" data-i18n="egyptIntroEyebrow">A World of Contrasts</p>
+          <h2 data-i18n="egyptIntroTitle">History and discovery at every turn.</h2>
+        </div>
+        <div class="destination-introduction-copy">
+          <p data-i18n="egyptIntroTextOne">Egypt brings together places unlike anywhere else: the monumental pyramids of Giza, Cairo’s lively streets and markets, and the temples of Luxor. Each destination reveals another chapter of the country’s rich heritage.</p>
+          <p data-i18n="egyptIntroTextTwo">Along the Red Sea, Hurghada and Sharm El Sheikh offer warm sunshine, clear water and a different pace. Combine culture and coast in a journey designed around the experiences you enjoy most.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination-highlights" aria-label="Egypt highlights">
+      <div class="destination-page-container destination-highlights-grid">
+        <article>
+          <span>01</span>
+          <h3 data-i18n="egyptHighlightOneTitle">Ancient Wonders</h3>
+          <p data-i18n="egyptHighlightOneText">Discover the pyramids, monumental temples and stories that have shaped Egypt for thousands of years.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3 data-i18n="egyptHighlightTwoTitle">Living Cities</h3>
+          <p data-i18n="egyptHighlightTwoText">Explore Cairo’s colourful markets, local flavours and the energy of everyday Egyptian life.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3 data-i18n="egyptHighlightThreeTitle">Red Sea Escapes</h3>
+          <p data-i18n="egyptHighlightThreeText">Slow down by the sea in Hurghada and Sharm El Sheikh, with beaches and water activities to enjoy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="destination-places" id="places">
+      <div class="destination-page-container">
+        <div class="destination-section-heading">
+          <p class="destination-section-eyebrow" data-i18n="egyptPlacesEyebrow">Places to Experience</p>
+          <h2 data-i18n="egyptPlacesTitle">Discover Egypt's many sides.</h2>
+        </div>
+
+        <div class="destination-places-grid">
+          <article class="destination-place-card destination-place-card-featured">
+            <img src="assets/images/egypt-giza-pyramids.jpg" alt="Pyramids of Giza in the desert" loading="lazy">
+            <div class="destination-place-copy">
+              <p>01</p>
+              <h3 data-i18n="egyptGizaTitle">Pyramids of Giza</h3>
+              <span data-i18n="egyptGizaText">Stand beside the pyramids and feel the scale of one of the world's most extraordinary ancient sites.</span>
+            </div>
+          </article>
+
+          <article class="destination-place-card">
+            <img src="assets/images/egypt-cairo-market.jpg" alt="Lanterns and stalls at Khan el-Khalili market in Cairo" loading="lazy">
+            <div class="destination-place-copy">
+              <p>02</p>
+              <h3 data-i18n="egyptCairoTitle">Cairo</h3>
+              <span data-i18n="egyptCairoText">Experience the capital's lively character, from historic streets to the colourful stalls of Khan el-Khalili.</span>
+            </div>
+          </article>
+
+          <article class="destination-place-card">
+            <img src="assets/images/egypt-luxor-karnak.jpg" alt="Carved columns at Karnak Temple in Luxor" loading="lazy">
+            <div class="destination-place-copy">
+              <p>03</p>
+              <h3 data-i18n="egyptLuxorTitle">Luxor</h3>
+              <span data-i18n="egyptLuxorText">Walk among Karnak's towering columns and discover the remarkable monuments of ancient Egypt.</span>
+            </div>
+          </article>
+
+          <article class="destination-place-card">
+            <img src="assets/images/egypt-hurghada.jpg" alt="Hurghada waterfront on the Red Sea" loading="lazy">
+            <div class="destination-place-copy">
+              <p>04</p>
+              <h3 data-i18n="egyptHurghadaTitle">Hurghada</h3>
+              <span data-i18n="egyptHurghadaText">Enjoy the Red Sea coast, with time for relaxation, boat trips and experiences on the water.</span>
+            </div>
+          </article>
+
+          <article class="destination-place-card">
+            <img src="assets/images/egypt-sharm-beach.jpg" alt="Beach and pier beside the Red Sea in Sharm El Sheikh" loading="lazy">
+            <div class="destination-place-copy">
+              <p>05</p>
+              <h3 data-i18n="egyptSharmTitle">Sharm El Sheikh</h3>
+              <span data-i18n="egyptSharmText">Unwind beside clear blue water and discover the relaxed atmosphere of this Sinai resort destination.</span>
+            </div>
+          </article>
+
+          <article class="destination-place-card destination-place-card-featured">
+            <img src="assets/images/egypt-sharm-old-market.jpg" alt="Al Sahaba Mosque by the Old Market in Sharm El Sheikh" loading="lazy">
+            <div class="destination-place-copy">
+              <p>06</p>
+              <h3 data-i18n="egyptOldMarketTitle">Sharm Old Market</h3>
+              <span data-i18n="egyptOldMarketText">See Al Sahaba Mosque and explore a colourful local market beyond the beach.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="inquiry-section destination-inquiry-section" id="request" aria-labelledby="inquiry-title">
+      <div class="inquiry-container">
+        <div class="inquiry-introduction">
+          <p class="inquiry-eyebrow" data-i18n="egyptRequestEyebrow">Your Egypt Journey</p>
+          <h2 id="inquiry-title" data-i18n="egyptRequestTitle">Send us your request.</h2>
+          <p data-i18n="egyptRequestText">Tell us your dates, travel style and interests. Our team will prepare a personalized Egypt proposal.</p>
+        </div>
+
+        <form class="inquiry-form" id="inquiry-form" action="https://formspree.io/f/maenqjqk" method="POST">
+          <input type="hidden" name="subject" value="New Egypt Travel Request — Liberty Incentive">
+          <input type="hidden" name="destination" value="Egypt">
+          <div class="inquiry-honeypot" aria-hidden="true">
+            <label>Leave this field empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <div class="form-section-heading">
+            <span>01</span>
+            <h3 data-i18n="tripDetailsTitle">Trip Details</h3>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="arrival-date" data-i18n="arrivalDateLabel">Arrival Date</label>
+              <input id="arrival-date" name="arrival_date" type="date" required>
+            </div>
+            <div class="form-field">
+              <label for="departure-date" data-i18n="departureDateLabel">Departure Date</label>
+              <input id="departure-date" name="departure_date" type="date" required>
+            </div>
+            <div class="form-field">
+              <label for="adults" data-i18n="adultsLabel">Adults</label>
+              <input id="adults" name="adults" type="number" min="1" max="100" value="2" required>
+            </div>
+            <div class="form-field">
+              <label for="children" data-i18n="childrenLabel">Children</label>
+              <input id="children" name="children" type="number" min="0" max="10" value="0">
+            </div>
+            <div class="children-ages form-field-full" id="children-ages" aria-live="polite"></div>
+            <div class="form-field form-field-full">
+              <label for="hotel-category" data-i18n="hotelCategoryLabel">Hotel Category</label>
+              <select id="hotel-category" name="hotel_category">
+                <option value="" data-i18n="hotelFlexible">Flexible / Not decided</option>
+                <option value="3 star">3★</option>
+                <option value="4 star">4★</option>
+                <option value="5 star">5★</option>
+                <option value="Luxury" data-i18n="hotelLuxury">Luxury</option>
+              </select>
+            </div>
+            <fieldset class="form-field form-field-full interests-fieldset">
+              <legend data-i18n="interestsLabel">Travel Interests</legend>
+              <div class="interest-options">
+                <label><input type="checkbox" name="interests" value="Culture and History"><span data-i18n="interestCulture">Culture &amp; History</span></label>
+                <label><input type="checkbox" name="interests" value="Nature"><span data-i18n="interestNature">Nature</span></label>
+                <label><input type="checkbox" name="interests" value="Adventure"><span data-i18n="interestAdventure">Adventure</span></label>
+                <label><input type="checkbox" name="interests" value="Food and Wine"><span data-i18n="interestFoodWine">Food &amp; Wine</span></label>
+                <label><input type="checkbox" name="interests" value="MICE and Events"><span data-i18n="interestMice">MICE &amp; Events</span></label>
+                <label><input type="checkbox" name="interests" value="Family Travel"><span data-i18n="interestFamily">Family Travel</span></label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-section-heading form-section-heading-contact">
+            <span>02</span>
+            <h3 data-i18n="contactDetailsTitle">Contact Details</h3>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="full-name" data-i18n="fullNameLabel">Full Name</label>
+              <input id="full-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email" data-i18n="emailLabel">Email Address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field form-field-full">
+              <label for="phone" data-i18n="phoneLabel">Phone / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="form-field form-field-full">
+              <label for="message" data-i18n="messageLabel">Tell Us More</label>
+              <textarea id="message" name="message" rows="5" data-i18n-placeholder="egyptMessagePlaceholder" placeholder="Tell us which places you would like to visit and any special requirements."></textarea>
+            </div>
+          </div>
+          <label class="privacy-consent">
+            <input type="checkbox" name="privacy_consent" value="Accepted" required>
+            <span data-i18n="privacyConsent">I agree that Liberty Incentive may use this information to respond to my travel inquiry.</span>
+          </label>
+          <button class="inquiry-submit-button" id="inquiry-submit-button" type="submit">
+            <span data-i18n="sendInquiry">Send Inquiry</span><span aria-hidden="true">→</span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="article-simple-footer"><p data-i18n="copyright">© Liberty Incentive</p></footer>
+
+  <script>
+    window.destinationTranslations = {
+      en: {
+        egyptPageTitle: "Egypt | Liberty Incentive",
+        egyptHeroEyebrow: "Discover Egypt",
+        egyptHeroTitle: "Egypt",
+        egyptHeroText: "Ancient wonders, vibrant cities and the blue waters of the Red Sea make every journey a story worth sharing.",
+        egyptExploreButton: "Explore Egypt",
+        egyptIntroEyebrow: "A World of Contrasts",
+        egyptIntroTitle: "History and discovery at every turn.",
+        egyptIntroTextOne: "Egypt brings together places unlike anywhere else: the monumental pyramids of Giza, Cairo’s lively streets and markets, and the temples of Luxor. Each destination reveals another chapter of the country’s rich heritage.",
+        egyptIntroTextTwo: "Along the Red Sea, Hurghada and Sharm El Sheikh offer warm sunshine, clear water and a different pace. Combine culture and coast in a journey designed around the experiences you enjoy most.",
+        egyptHighlightOneTitle: "Ancient Wonders",
+        egyptHighlightOneText: "Discover the pyramids, monumental temples and stories that have shaped Egypt for thousands of years.",
+        egyptHighlightTwoTitle: "Living Cities",
+        egyptHighlightTwoText: "Explore Cairo’s colourful markets, local flavours and the energy of everyday Egyptian life.",
+        egyptHighlightThreeTitle: "Red Sea Escapes",
+        egyptHighlightThreeText: "Slow down by the sea in Hurghada and Sharm El Sheikh, with beaches and water activities to enjoy.",
+        egyptPlacesEyebrow: "Places to Experience",
+        egyptPlacesTitle: "Discover Egypt’s many sides.",
+        egyptGizaTitle: "Pyramids of Giza",
+        egyptGizaText: "Stand beside the pyramids and feel the scale of one of the world’s most extraordinary ancient sites.",
+        egyptCairoTitle: "Cairo",
+        egyptCairoText: "Experience the capital’s lively character, from historic streets to the colourful stalls of Khan el-Khalili.",
+        egyptLuxorTitle: "Luxor",
+        egyptLuxorText: "Walk among Karnak’s towering columns and discover the remarkable monuments of ancient Egypt.",
+        egyptHurghadaTitle: "Hurghada",
+        egyptHurghadaText: "Enjoy the Red Sea coast, with time for relaxation, boat trips and experiences on the water.",
+        egyptSharmTitle: "Sharm El Sheikh",
+        egyptSharmText: "Unwind beside clear blue water and discover the relaxed atmosphere of this Sinai resort destination.",
+        egyptOldMarketTitle: "Sharm Old Market",
+        egyptOldMarketText: "See Al Sahaba Mosque and explore a colourful local market beyond the beach.",
+        egyptRequestEyebrow: "Your Egypt Journey",
+        egyptRequestTitle: "Send us your request.",
+        egyptRequestText: "Tell us your dates, travel style and interests. Our team will prepare a personalized Egypt proposal.",
+        egyptMessagePlaceholder: "Tell us which places you would like to visit and any special requirements."
+      },
+      hy: {
+        egyptPageTitle: "Եգիպտոս | Liberty Incentive",
+        egyptHeroEyebrow: "Բացահայտեք Եգիպտոսը",
+        egyptHeroTitle: "Եգիպտոս",
+        egyptHeroText: "Հնագույն հրաշալիքները, աշխույժ քաղաքներն ու Կարմիր ծովի կապույտ ջրերը յուրաքանչյուր ուղևորություն դարձնում են հիշարժան։",
+        egyptExploreButton: "Բացահայտել Եգիպտոսը",
+        egyptIntroEyebrow: "Հակադրություններով լի աշխարհ",
+        egyptIntroTitle: "Պատմություն և բացահայտումներ ամեն քայլափոխի։",
+        egyptIntroTextOne: "Եգիպտոսը միավորում է բացառիկ վայրեր՝ Գիզայի հսկայական բուրգերը, Կահիրեի աշխույժ փողոցներն ու շուկաները և Լուքսորի տաճարները։ Յուրաքանչյուր ուղղություն բացահայտում է երկրի հարուստ ժառանգության նոր էջը։",
+        egyptIntroTextTwo: "Կարմիր ծովի ափին Հուրգադան և Շարմ էլ Շեյխը առաջարկում են արև, մաքուր ջուր և հանգստի այլ ռիթմ։ Համադրեք մշակութային բացահայտումներն ու ծովափնյա հանգիստը Ձեր նախընտրություններին համապատասխան։",
+        egyptHighlightOneTitle: "Հնագույն հրաշալիքներ",
+        egyptHighlightOneText: "Բացահայտեք բուրգերը, վեհ տաճարներն ու հազարամյակների ընթացքում Եգիպտոսը ձևավորած պատմությունները։",
+        egyptHighlightTwoTitle: "Աշխույժ քաղաքներ",
+        egyptHighlightTwoText: "Ծանոթացեք Կահիրեի գունավոր շուկաներին, տեղական համերին և եգիպտական առօրյայի եռանդին։",
+        egyptHighlightThreeTitle: "Հանգիստ Կարմիր ծովում",
+        egyptHighlightThreeText: "Վայելեք Հուրգադայի և Շարմ էլ Շեյխի լողափերն ու ծովային զբաղմունքները։",
+        egyptPlacesEyebrow: "Բացահայտման վայրեր",
+        egyptPlacesTitle: "Բացահայտեք Եգիպտոսի բազմազանությունը։",
+        egyptGizaTitle: "Գիզայի բուրգեր",
+        egyptGizaText: "Կանգնեք բուրգերի կողքին և զգացեք աշխարհի ամենատպավորիչ հնագույն հուշարձաններից մեկի վեհությունը։",
+        egyptCairoTitle: "Կահիրե",
+        egyptCairoText: "Զգացեք մայրաքաղաքի աշխույժ մթնոլորտը՝ պատմական փողոցներից մինչև Խան էլ Խալիլիի գունավոր շուկան։",
+        egyptLuxorTitle: "Լուքսոր",
+        egyptLuxorText: "Քայլեք Կառնակի հսկայական սյուների միջով և բացահայտեք հին Եգիպտոսի նշանավոր հուշարձանները։",
+        egyptHurghadaTitle: "Հուրգադա",
+        egyptHurghadaText: "Վայելեք Կարմիր ծովի ափը՝ հանգստով, նավային զբոսանքներով և ջրային փորձառություններով։",
+        egyptSharmTitle: "Շարմ էլ Շեյխ",
+        egyptSharmText: "Հանգստացեք կապույտ ծովի ափին և զգացեք Սինայի այս հանգստավայրի խաղաղ մթնոլորտը։",
+        egyptOldMarketTitle: "Շարմի Հին շուկա",
+        egyptOldMarketText: "Տեսեք Ալ Սահաբա մզկիթը և բացահայտեք գունավոր շուկան՝ ծովափից դուրս։",
+        egyptRequestEyebrow: "Ձեր ճանապարհորդությունը Եգիպտոսում",
+        egyptRequestTitle: "Ուղարկեք Ձեր հարցումը։",
+        egyptRequestText: "Նշեք Ձեր ամսաթվերը, ճանապարհորդության ոճն ու հետաքրքրությունները։ Մեր թիմը կպատրաստի անհատական առաջարկ Եգիպտոսի համար։",
+        egyptMessagePlaceholder: "Նշեք, թե որ վայրերն եք ցանկանում այցելել և ինչ հատուկ պահանջներ ունեք։"
+      }
+    };
+  </script>
+  <script src="js/main.js?v=16"></script>
+</body>
+</html>
