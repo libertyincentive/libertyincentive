@@ -5380,7 +5380,7 @@ html[lang="hy"] .footer-brand h2 {
 }
 
 /* ==================================================
-   GEORGIA DESTINATION PAGE
+   SHARED DESTINATION PAGES
    ================================================== */
 
 .destination-page-main {
@@ -5787,5 +5787,44 @@ html[lang="hy"] .destination-section-heading h2 {
 
   .destination-place-card {
     min-height: 390px;
+  }
+}
+
+/* Long destination names and bilingual content. */
+.destination-hero-content,
+.destination-introduction-grid > *,
+.destination-highlights-grid > *,
+.destination-place-copy {
+  min-width: 0;
+}
+
+.destination-hero h1,
+.destination-introduction h2,
+.destination-section-heading h2,
+.destination-highlights h3,
+.destination-place-copy h3 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+html[lang="hy"] .destination-hero h1 {
+  line-height: 1.12;
+}
+
+html[lang="hy"] .destination-place-copy h3 {
+  font-family: var(--body-font);
+  font-size: clamp(26px, 3.2vw, 40px);
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 700px) {
+  .destination-place-copy h3 {
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.1;
+  }
+
+  html[lang="hy"] .destination-place-copy h3 {
+    font-size: clamp(24px, 6.6vw, 32px);
+    line-height: 1.25;
   }
 }
