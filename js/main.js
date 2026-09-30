@@ -1083,13 +1083,13 @@ function createGlobalFooter() {
         <nav class="footer-column footer-destinations" aria-label="Footer destinations">
           <h2 data-i18n="footerDestinations">Destinations</h2>
           <a href="georgia.html" data-i18n="destinationGeorgia">Georgia</a>
-          <a href="index.html#caucasus" data-i18n="destinationCaucasus">Combined Caucasus</a>
-          <a href="index.html#egypt" data-i18n="destinationEgypt">Egypt</a>
-          <a href="index.html#qatar" data-i18n="destinationQatar">Qatar</a>
-          <a href="index.html#cyprus" data-i18n="destinationCyprus">Cyprus</a>
-          <a href="index.html#albania" data-i18n="destinationAlbania">Albania</a>
-          <a href="index.html#tunisia" data-i18n="destinationTunisia">Tunisia</a>
-          <a href="index.html#uae" data-i18n="destinationUAE">UAE</a>
+          <a href="combined-caucasus.html" data-i18n="destinationCaucasus">Combined Caucasus</a>
+          <a href="egypt.html" data-i18n="destinationEgypt">Egypt</a>
+          <a href="qatar.html" data-i18n="destinationQatar">Qatar</a>
+          <a href="cyprus.html" data-i18n="destinationCyprus">Cyprus</a>
+          <a href="albania.html" data-i18n="destinationAlbania">Albania</a>
+          <a href="tunisia.html" data-i18n="destinationTunisia">Tunisia</a>
+          <a href="uae.html" data-i18n="destinationUAE">UAE</a>
         </nav>
 
         <div class="footer-column footer-contact">
@@ -1167,7 +1167,14 @@ createGlobalFooter();
 
 function connectDestinationPages() {
   const destinationPages = {
-    destinationGeorgia: "georgia.html"
+    destinationGeorgia: "georgia.html",
+    destinationCaucasus: "combined-caucasus.html",
+    destinationEgypt: "egypt.html",
+    destinationQatar: "qatar.html",
+    destinationCyprus: "cyprus.html",
+    destinationAlbania: "albania.html",
+    destinationTunisia: "tunisia.html",
+    destinationUAE: "uae.html"
   };
 
   Object.entries(destinationPages).forEach(([translationKey, pageUrl]) => {
@@ -1333,6 +1340,11 @@ function updateLanguage(language) {
         element.placeholder = translatedText;
       }
     });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const text = selectedTranslations[element.dataset.i18nAriaLabel];
+    if (text !== undefined) element.setAttribute("aria-label", text);
+  });
 
   renderChildrenAgeFields();
 
